@@ -1,0 +1,23 @@
+.scroll-pane .viewport {
+  -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+  -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+  -fx-pref-width: 12px;
+}
+
+.scroll-bar .thumb {
+  -fx-background-color: #bbbbbb;
+  -fx-background-radius: 8px;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+  -fx-background-color: transparent;
+  -fx-padding: 0;
+}

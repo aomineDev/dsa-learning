@@ -1,0 +1,8 @@
+.simple-code {
+  -fx-background-color: #212121;
+  -fx-padding: 12;
+}
+
+.simple-code .code {
+  -fx-fill: white;
+}

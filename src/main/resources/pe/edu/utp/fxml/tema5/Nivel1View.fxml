@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.Nivel1Controller">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-padding: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefHeight="400.0" prefWidth="300.0" spacing="12.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="¿Qué es una lista enlazada?" />
+                  <TextFlow>
+                     <children>
+                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una lista enlazada es una colección de elementos (llamados nodos) donde cada nodo apunta al siguiente." />
+                     </children>
+                  </TextFlow>
+                  <VBox prefWidth="100.0">
+                     <children>
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A diferencia de un Array, los elementos no están uno al lado del otro en memoria. En su lugar, cada nodo contiene:" />
+                           </children>
+                        </TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• un dato" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• y una referencia (puntero) al siguiente nodo" />
+                     </children>
+                  </VBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplo visual" />
+                  <TextFlow styleClass="simple-code">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="code" text="[5] → [10] → [15] → null" />
+                     </children>
+                  </TextFlow>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cada → representa el puntero al siguiente nodo." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El último nodo apunta a null (fin de la lista)." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estructura de un Nodo en Java" />
+                  <WebView fx:id="code1" minHeight="190.0" prefHeight="300.0" prefWidth="560.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="valor almacena el dato." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="siguiente es un puntero al próximo nodo." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ejemplo: crear dos nodos enlazados" />
+                  <WebView fx:id="code2" minHeight="75.0" prefHeight="-1.0" prefWidth="-1.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado" />
+                  <TextFlow prefWidth="200.0" styleClass="simple-code">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="code" text="[5] → [10] → null" />
+                     </children>
+                  </TextFlow>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleContinueBtnClick" text="Con" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="60.0" right="60.0" top="40.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/scroll.css" />
+      <URL value="@../../css/nivel.css" />
+   </stylesheets>
+</AnchorPane>
