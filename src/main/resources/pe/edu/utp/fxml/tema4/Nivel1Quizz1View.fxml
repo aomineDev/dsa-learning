@@ -8,10 +8,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema4.Nivel1Quizz1Controller">
    <children>
-      <VBox prefHeight="720.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="648.0" prefWidth="640.0" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZZ" textAlignment="CENTER" wrappingWidth="640.0">
                <font>
@@ -29,7 +28,7 @@
                   <Insets bottom="20.0" top="50.0" />
                </VBox.margin>
             </Text>
-            <RadioButton mnemonicParsing="false" prefHeight="19.0" prefWidth="640.0" text="Listas enlazadas">
+            <RadioButton fx:id="rdbtnListasEnlazadas" mnemonicParsing="false" prefHeight="19.0" prefWidth="640.0" text="Listas enlazadas">
                <font>
                   <Font size="13.0" />
                </font>
@@ -40,7 +39,7 @@
                   <Insets bottom="20.0" top="70.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" prefHeight="19.0" prefWidth="667.0" text="Arrays" textAlignment="CENTER">
+            <RadioButton fx:id="rdbtnArrays" mnemonicParsing="false" prefHeight="19.0" prefWidth="667.0" text="Arrays" textAlignment="CENTER">
                <font>
                   <Font size="13.0" />
                </font>
@@ -51,7 +50,7 @@
                   <Insets bottom="20.0" top="25.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" prefHeight="19.0" prefWidth="640.0" text="Colas" textAlignment="CENTER">
+            <RadioButton fx:id="rdbtnColas" mnemonicParsing="false" prefHeight="19.0" prefWidth="640.0" text="Colas" textAlignment="CENTER">
                <font>
                   <Font size="13.0" />
                </font>
@@ -62,7 +61,7 @@
                   <Insets bottom="20.0" top="20.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" prefHeight="19.0" prefWidth="642.0" text="String">
+            <RadioButton fx:id="rdbtnString" mnemonicParsing="false" prefHeight="19.0" prefWidth="642.0" text="String">
                <font>
                   <Font size="13.0" />
                </font>
@@ -73,7 +72,7 @@
                   <Insets bottom="20.0" top="20.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" prefHeight="18.0" prefWidth="644.0" text="Pilas" textAlignment="CENTER">
+            <RadioButton fx:id="rdbtnPilas" mnemonicParsing="false" prefHeight="18.0" prefWidth="644.0" text="Pilas" textAlignment="CENTER">
                <font>
                   <Font size="13.0" />
                </font>
@@ -84,12 +83,9 @@
                   <Insets bottom="20.0" top="20.0" />
                </VBox.margin>
             </RadioButton>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Button">
-               <VBox.margin>
-                  <Insets left="500.0" top="90.0" />
-               </VBox.margin>
-            </Button>
          </children>
       </VBox>
+      <Button layoutX="171.0" layoutY="642.0" mnemonicParsing="false" onAction="#retroceder" prefHeight="34.0" prefWidth="90.0" text="Atras" />
+      <Button layoutX="366.0" layoutY="647.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="87.0" text="Confirmar" />
    </children>
 </AnchorPane>
