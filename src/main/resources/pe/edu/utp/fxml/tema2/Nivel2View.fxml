@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel2Controller">
+   <children>
+      <ScrollPane AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="780.0" prefWidth="640.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <children>
+                  <Label text="Nivel 2: Comparación de arreglos unidimensionales">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="617.0" prefWidth="560.0" spacing="6.0">
+                     <children>
+                        <Label text="¿Cómo comparar correctamente los arreglos?" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextFlow prefHeight="39.0" prefWidth="560.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Java proporciona un método directo Arrays.equals() para comparar el contenido de dos arrays. Existe una lista de métodos equals() en la clase Arrays para diferentes tipos primitivos (int, char, etc.)." wrappingWidth="535.123046875">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplo visual:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <WebView fx:id="code1" minHeight="135.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="69.0" prefWidth="560.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Este método sí compara elemento por elemento, en el mismo orden." wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Label text="Otras formas de comparar arrays en Java" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="1. Comparación manual" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplo visual:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <WebView fx:id="code2" minHeight="245.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="91.0" prefWidth="560.0" />
+                        <Label text="2. Usando Arrays.compare()" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Este método compara arreglos y devuelve:" wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- 0 si son iguales" wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- un número negativo si el primero es &quot;menor&quot;" wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- un número positivo si el primero es &quot;mayor&quot;" wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplo visual:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <WebView fx:id="code3" minHeight="35.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="74.0" prefWidth="560.0" />
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#handleaactionbtn" text="Continuar" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

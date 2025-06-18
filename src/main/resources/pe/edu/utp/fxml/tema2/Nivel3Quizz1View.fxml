@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel3Quizz1Controller">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+         <children>
+            <Label text="Quizz">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="232.0" prefWidth="560.0" spacing="20.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué hace el método .clone() cuando se aplica a un arreglo unidimensional?" textAlignment="CENTER" wrappingWidth="535.123046875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Button mnemonicParsing="false" text="A) Crea una copia exacta del contenido en una nueva posición de memoria" />
+                  <Button mnemonicParsing="false" text="B) Borra el contenido original" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="261.0" text="C) Compara el contenido del arreglo con otro" />
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" text="Continuar" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

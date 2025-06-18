@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel3Controller">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="640.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <children>
+                  <Label text="Nivel 3: Clonación de arreglos unidimensionales">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="617.0" prefWidth="560.0" spacing="6.0">
+                     <children>
+                        <TextFlow prefHeight="39.0" prefWidth="560.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clonar un arreglo significa crear una copia del arreglo original. Esta copia tiene los mismos elementos, pero está en una nueva posición de memoria, es decir, es un nuevo objeto independiente del original." wrappingWidth="535.123046875">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <Label text="Forma incorrecta de clonar un arreglo" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplo visual:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <WebView fx:id="code1" minHeight="90.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="69.0" prefWidth="560.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="En este ejemplo solo estas copiando el contenido, pero sigue apuntando al mismo objeto en memoria, no lo esta clonando." wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Label text="¿Cómo se clona un arreglo unidimensional en Java?" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Usando .clone()" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplo visual:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <WebView fx:id="code2" minHeight="90.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="91.0" prefWidth="560.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ambos arreglos tienen el mismo contenido pero apuntan a diferentes objetos en memoria." wrappingWidth="535.123046875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#handleaactionbtn" text="Continuar" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
