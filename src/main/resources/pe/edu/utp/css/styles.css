@@ -1,0 +1,48 @@
+.background {
+  -fx-background-color: #ffffff;
+}
+
+Text,
+.text {
+  -fx-font-family: 'Poppins', sans-serif;
+  -fx-font-size: 16;
+}
+
+.title-2,
+.text_content {
+  -fx-fill: #212121;
+}
+
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
+  -fx-font-weight: bold;
+}
+
+.title-1 {
+  -fx-font-size: 28;
+  -fx-fill: #2493DF;
+}
+
+.title-2 {
+  -fx-font-size: 24;
+}
+
+.title-3 {
+  -fx-font-size: 20;
+}
+
+.btn__go-back__container {
+  -fx-alignment: center-left;
+  -fx-spacing: 12;
+}
+
+.btn__go-back {
+  -fx-background-color: #ffffff;
+  -fx-cursor: hand;
+}
+
+.btn__go-back__icon {
+  -fx-fill: #2493DF;
+}

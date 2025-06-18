@@ -1,8 +1,11 @@
 package pe.edu.utp.controller.tema5;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.web.WebView;
+import pe.edu.utp.App;
 
 public class Nivel1Controller {
   @FXML
@@ -18,7 +21,7 @@ public class Nivel1Controller {
   }
 
   @FXML
-  void handleContinueBtnClick(ActionEvent event) {
-
+  void handleContinueBtnClick(ActionEvent event) throws IOException {
+    App.setRoot("tema5/Nivel1Quizz1View");
   }
 }

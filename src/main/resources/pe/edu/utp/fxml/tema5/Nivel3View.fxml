@@ -10,8 +10,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.Nivel3Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="151.0" layoutY="46.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -34,7 +33,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="La nueva cabeza es el nuevo nodo." />
                      </children>
                   </VBox>
-                  <WebView prefHeight="200.0" prefWidth="200.0" />
+                  <WebView fx:id="code1" minHeight="110.0" prefHeight="200.0" prefWidth="200.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insertar al final" />
                   <VBox prefWidth="100.0">
                      <children>
@@ -43,7 +42,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hacer que el último nodo apunte al nuevo." />
                      </children>
                   </VBox>
-                  <WebView prefHeight="200.0" prefWidth="200.0" />
+                  <WebView fx:id="code2" minHeight="265.0" prefHeight="200.0" prefWidth="200.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insertar en una posición específica" />
                   <VBox prefWidth="100.0">
                      <children>
@@ -51,7 +50,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insertar el nuevo nodo en medio." />
                      </children>
                   </VBox>
-                  <WebView prefHeight="200.0" prefWidth="200.0" />
+                  <WebView fx:id="code3" minHeight="460.0" prefHeight="200.0" prefWidth="200.0" />
                   <HBox alignment="CENTER" prefWidth="200.0">
                      <children>
                         <Button mnemonicParsing="false" text="Continuar" />

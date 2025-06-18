@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body,
+    #container {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+  <script src="../min/vs/loader.js"></script>
+  <script>
+    let editor
+
+    require.config({ paths: { vs: '../min/vs' } });
+    require(['vs/editor/editor.main'], function () {
+
+      editor = monaco.editor.create(document.getElementById('container'), {
+        value: `public void insertarEn(int pos, int valor) {
+    if (pos == 0) {
+        insertarAlInicio(valor);
+        return;
+    }
+
+    Nodo nuevo = new Nodo(valor);
+    Nodo actual = cabeza;
+    int i = 0;
+
+    while  (actual.siguiente != null) {
+        if  (i == pos - 1) {
+            nuevo.siguiente = actual.siguiente;
+            actual.siguiente = nuevo;
+            return;
+        }
+
+        i++;
+        actual = actual.siguiente;
+    }
+}`,
+        language: 'java',
+        theme: 'vs-dark',
+        fontSize: 14,
+        readOnly: true,
+        minimap: {
+          enabled: false
+        },
+        scrollbar: {
+          vertical: 'hidden',
+          handleMouseWheel: false
+        },
+        scrollBeyondLastLine: false,
+        contextmenu: false,
+        padding: {
+          top: 12
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+</html>

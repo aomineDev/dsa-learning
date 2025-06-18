@@ -10,13 +10,18 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.Nivel4Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="221.0" layoutY="83.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0">
                <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="atras" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminacion" />
+                     </children>
+                  </HBox>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" ¿Qué significa eliminar?" />
                   <TextFlow prefWidth="200.0">
                      <children>
@@ -30,7 +35,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El primer nodo queda &quot;fuera de la lista&quot;." />
                      </children>
                   </VBox>
-                  <WebView prefHeight="200.0" prefWidth="200.0" />
+                  <WebView fx:id="code1" minHeight="115.0" prefHeight="200.0" prefWidth="200.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar el último nodo" />
                   <VBox prefWidth="100.0">
                      <children>
@@ -38,7 +43,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Poner actual.siguiente = null" />
                      </children>
                   </VBox>
-                  <WebView prefHeight="200.0" prefWidth="200.0" />
+                  <WebView fx:id="code2" minHeight="265.0" prefHeight="200.0" prefWidth="200.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar en una posición específica" />
                   <VBox prefWidth="100.0">
                      <children>
@@ -46,7 +51,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si es en medio, encontrar el nodo anterior y reconectar los punteros." />
                      </children>
                   </VBox>
-                  <WebView prefHeight="200.0" prefWidth="200.0" />
+                  <WebView fx:id="code3" minHeight="375.0" prefHeight="200.0" prefWidth="200.0" />
                   <HBox prefWidth="200.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="verificar si la lista está vacía (cabeza == null)." />
