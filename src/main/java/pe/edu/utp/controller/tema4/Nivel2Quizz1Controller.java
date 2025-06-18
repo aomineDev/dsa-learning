@@ -4,7 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 
-public class Nivel2Quizzi1Controller {
+public class Nivel2Quizz1Controller {
+
     @FXML
     private RadioButton rdbtnVCalcularPromedio;
 
