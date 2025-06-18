@@ -16,7 +16,7 @@
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
-            <VBox prefHeight="400.0" prefWidth="300.0" styleClass="container">
+            <VBox prefHeight="400.0" prefWidth="300.0" styleClass="nivel-container">
                <children>
                   <HBox prefHeight="100.0" prefWidth="200.0" styleClass="btn__go-back__container">
                      <children>
