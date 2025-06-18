@@ -16,6 +16,6 @@ public class Nivel1Controller {
 
     @FXML
     void handleaactionbtn(ActionEvent event) {
-
+        System.out.println("prueba");
     }
 }
