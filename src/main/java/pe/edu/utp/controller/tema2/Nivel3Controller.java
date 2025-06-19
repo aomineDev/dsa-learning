@@ -1,7 +1,11 @@
 package pe.edu.utp.controller.tema2;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
 
@@ -14,9 +18,28 @@ public class Nivel3Controller {
     private WebView code2;
 
     @FXML
+    private Button btn1;
+
+    @FXML
+    private Button btn2;
+
+    @FXML
+    private Button btn3;
+
+    @FXML
+    private ComboBox<String> nivelSelector;
+
+    @FXML
+    void handleNivelSelectorClick(ActionEvent event) throws IOException {
+        String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
+        App.setRoot("tema2/Nivel" + nivel + "View");
+    }
+
+    @FXML
     void initialize() {
         code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema2/t2n3_1.html").toExternalForm());
         code2.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema2/t2n3_2.html").toExternalForm());
+        nivelSelector.getItems().addAll("nivel 1", "nivel 2", "nivel 3", "nivel 4", "nivel 5");
     }
 
     @FXML
@@ -25,8 +48,8 @@ public class Nivel3Controller {
     }
 
     @FXML
-    void handleaactionbtn(ActionEvent event) {
-
+    void handleActionBtn(ActionEvent event) throws Exception {
+        App.setRoot("tema2/Nivel3Quizz1View");
     }
 
 }

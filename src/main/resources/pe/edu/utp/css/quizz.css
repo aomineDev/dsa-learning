@@ -5,11 +5,11 @@
 .quizz-type-1-container {
   -fx-alignment: center;
   -fx-spacing: 24;
-  -fx-vgrow: ALWAYS;
 }
 
 .btn-quizz {
   -fx-background-color: transparent;
+  -fx-background-radius: 10;
   -fx-border-color: #9da3a7;
   -fx-border-radius: 10;
   -fx-border-width: 2 2 3 2;
@@ -21,9 +21,12 @@
   -fx-padding: 8 0;
 }
 
+.btn-quizz:hover {
+  -fx-background-color: rgba(223, 223, 223, .3);
+}
+
 .btn-quizz--success,
 .btn-quizz--error {
-  -fx-background-radius: 10;
   -fx-border-width: 0 0 3 0;
   -fx-text-fill: white;
 }
@@ -33,7 +36,51 @@
   -fx-border-color: #2fa870;
 }
 
+.btn-quizz--success:hover {
+  -fx-background-color: #24df88;
+}
+
 .btn-quizz--error {
   -fx-background-color: #f1275a;
   -fx-border-color: #bb2a4e;
+}
+
+.btn-quizz--error:hover {
+  -fx-background-color: #f1275a;
+}
+
+.quizz-code {
+  -fx-background-color: #212121;
+  -fx-background-radius: 10;
+  -fx-padding: 28 20;
+  -fx-spacing: 12;
+}
+
+.quizz-code Text {
+  -fx-fill: white;
+  -fx-font-family: 'Consolas';
+  -fx-font-weight: bold;
+}
+
+.quizz-code TextField {
+  -fx-background-color: transparent;
+  -fx-border-color: #9da3a7;
+  -fx-border-radius: 8;
+  -fx-border-width: 2 2 3 2;
+  -fx-text-fill: rgb(228, 228, 228);
+  -fx-font-family: 'Consolas';
+  -fx-font-weight: bold;
+  -fx-font-size: 14;
+  -fx-max-width: 60;
+  -fx-min-width: 0;
+}
+
+.quizz-code--success {
+  -fx-border-color: #24df88;
+  -fx-text-fill: #24df88;
+}
+
+.quizz-code--error {
+  -fx-border-color: #f1275a;
+  -fx-text-fill: #f1275a;
 }

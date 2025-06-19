@@ -8,8 +8,7 @@ Text,
   -fx-font-size: 16;
 }
 
-.title-2,
-.text_content {
+Text {
   -fx-fill: #212121;
 }
 
@@ -45,4 +44,55 @@ Text,
 
 .btn__go-back__icon {
   -fx-fill: #2493DF;
+}
+
+.btn__go-back__icon:hover {
+  -fx-fill: #37afff;
+}
+
+.btn-next,
+.btn-confirm {
+  -fx-background-radius: 8;
+  -fx-border-radius: 8;
+  -fx-border-width: 0 0 3 0;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-padding: 12 24 12 24;
+  -fx-cursor: hand;
+}
+
+.btn-next {
+  -fx-background-color: #2493DF;
+  -fx-border-color: #1f73aa;
+}
+
+.btn-next:hover {
+  -fx-background-color: #37afff;
+}
+
+.btn-confirm {
+  -fx-background-color: #24df88;
+  -fx-border-color: #2fa870;
+}
+
+.btn-confirm:hover {
+  -fx-background-color: #28c47b;
+}
+
+.btn-next__icon,
+.btn-confirm__icon {
+  -fx-fill: white;
+}
+
+.nivel-selector {
+  -fx-background-color: transparent;
+  -fx-border-color: #2493DF;
+  -fx-border-radius: 10;
+  -fx-border-width: 2 2 3 2;
+  -fx-cursor: hand;
+}
+
+.nivel-selector .arrow {
+  -fx-background-color: #2493DF;
+  -fx-font-size: 16;
 }

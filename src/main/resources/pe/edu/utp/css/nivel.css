@@ -13,7 +13,7 @@
   -fx-background-radius: 4;
 }
 
-.simple-code__text {
+.simple-code Text {
   -fx-fill: white;
   -fx-font-family: 'Consolas';
 }
@@ -30,6 +30,21 @@
 .note-box__text,
 .note-box__icon {
   -fx-fill: #2493DF;
+}
+
+.note-box--error {
+  -fx-border-color: #f1275a;
+  -fx-border-radius: 20;
+  -fx-border-width: 2;
+  -fx-padding: 20;
+  -fx-spacing: 12;
+  -fx-alignment: center;
+  
+}
+
+.note-box__text--red,
+.note-box__icon--red {
+  -fx-fill: #f1275a;
 }
 
 .btn-next {
