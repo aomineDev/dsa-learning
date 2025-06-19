@@ -1,16 +1,95 @@
 .sidebar {
-  -fx-background-color: #3b3b3b;
+  -fx-background-color: #2493DF;
+  -fx-alignment: TOP_LEFT;
 }
 
-.btn-subject {
-  -fx-min-width: 120;
-  -fx-max-width: 120;
-  -fx-min-height: 120;
-  -fx-min-height: 120;
-  -fx-background-color: #59df76;
-  -fx-text-fill: white;
-  -fx-border-radius: 60;
-  -fx-background-radius: 60;
-  -fx-cursor: hand;
+.sidebar__title-container {
+  -fx-padding: 20 20 40 20;
+}
 
+.sidebar__title {
+  -fx-font-weight: bold;
+  -fx-font-size: 24;
+  -fx-fill: white;
+}
+
+.sidebar__link {
+  -fx-font-weight: bold;
+  -fx-font-size: 16;
+  -fx-text-fill: rgba(255, 255, 255, .7);
+  -fx-cursor: hand;
+  -fx-min-width: 300;
+  -fx-min-height: 60;
+  -fx-padding: 0 0 0 20;
+  -fx-cursor: hand;
+  -fx-background-color: transparent;
+  /* -fx-background-color: transparent; */
+}
+
+.sidebar__link--active {
+  -fx-text-fill: rgb(255, 255, 255);
+}
+
+.sidebar__link:hover {
+  -fx-background-color: #1b84ca;
+  -fx-text-fill: rgb(255, 255, 255);
+}
+
+.btn-subject--1,
+.btn-subject--2 {
+  -fx-min-width: 150;
+  -fx-max-width: 150;
+  -fx-min-height: 150;
+  -fx-min-height: 150;
+  -fx-text-fill: white;
+  -fx-border-radius: 75;
+  -fx-background-radius: 75;
+  -fx-cursor: hand;
+  -fx-font-weight: bold;
+  -fx-font-size: 24;
+}
+
+.btn-subject--1 {
+  -fx-background-color: #74df59;
+  -fx-effect: dropshadow(gaussian, rgba(66, 168, 88, .8), 10, .5, 0, 4);
+
+}
+
+.btn-subject--2 {
+  -fx-background-color: #8762FC;
+  -fx-effect: dropshadow(gaussian, rgba(120, 87, 230, .8), 10, .5, 0, 4);
+}
+
+.btn-subject--1:hover {
+  -fx-background-color: #69ca51;
+  -fx-effect: dropshadow(gaussian, rgba(66, 168, 88, .8), 10, .6, 0, 4);
+}
+
+.btn-subject--2:hover {
+  -fx-background-color: #7756e2;
+}
+
+.btn__container {
+  -fx-alignment: center;
+  -fx-spacing: 20;
+}
+
+.btn__title {
+  -fx-font-weight: bold;
+  -fx-font-size: 20;
+}
+
+.home__title-1,
+.home__title-2 {
+  -fx-font-size: 35;
+  -fx-font-weight: bold;
+  -fx-fill: #74df59;
+}
+
+.home__title-1 {
+  -fx-fill: #74df59;
+}
+
+.home__title-2 {
+  -fx-fill: #8762FC;
 }

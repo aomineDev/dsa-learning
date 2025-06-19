@@ -100,8 +100,8 @@ public class Nivel1Quizz3Controller {
   }
 
   @FXML
-  void handleGoBackBtnClick(ActionEvent event) {
-
+  void handleGoBackBtnClick(ActionEvent event) throws IOException {
+    App.setRoot("HomeView");
   }
 
   @FXML

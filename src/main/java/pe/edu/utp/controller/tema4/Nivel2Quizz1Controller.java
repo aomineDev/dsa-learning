@@ -10,7 +10,7 @@ import javafx.util.Duration;
 import pe.edu.utp.App;
 
 public class Nivel2Quizz1Controller {
- 
+
     @FXML
     private Button btnconfirmar;
 
@@ -78,6 +78,6 @@ public class Nivel2Quizz1Controller {
 
     @FXML
     void retroceder(ActionEvent event) throws Exception {
-        App.setRoot("tema4/Nivel2View");
+        App.setRoot("HomeView");
     }
 }

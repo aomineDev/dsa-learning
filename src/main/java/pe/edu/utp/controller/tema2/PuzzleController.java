@@ -8,7 +8,7 @@ public class PuzzleController {
 
     @FXML
     void handleActionBtnAtras(ActionEvent event) throws Exception {
-        App.setRoot("tema2/Nivel1View");
+        App.setRoot("HomeView");
     }
 
 }

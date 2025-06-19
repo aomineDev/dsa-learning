@@ -38,7 +38,7 @@ public class Nivel2Controller {
 
     @FXML
     void handleActionBtnAtras(ActionEvent event) throws Exception {
-        App.setRoot("tema2/Nivel1View");
+        App.setRoot("HomeView");
     }
 
     @FXML
