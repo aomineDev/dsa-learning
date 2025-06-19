@@ -34,8 +34,8 @@ public class Nivel1Controller {
     }
 
     @FXML
-    void handleGoBackBtnClick(ActionEvent event) {
-
+    void handleGoBackBtnClick(ActionEvent event) throws Exception {
+        App.setRoot("HomeView");
     }
 
 }
