@@ -30,7 +30,7 @@
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 3: Ordenamiento (Burbuja)" />
                            </children>
                         </TextFlow>
-                        <ComboBox fx:id="idselector" onAction="#handleNivelSelectorClick" prefWidth="150.0" promptText="Nivel" styleClass="nivel-selector" />
+                        <ComboBox fx:id="idselector" onAction="#handleNivelSelectorClick" prefHeight="40.0" prefWidth="199.0" promptText="Nivel" styleClass="nivel-selector" />
                      </children>
                   </HBox>
                   <TextFlow styleClass="text">

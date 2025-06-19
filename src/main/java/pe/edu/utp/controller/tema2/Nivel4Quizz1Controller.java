@@ -24,19 +24,19 @@ public class Nivel4Quizz1Controller {
     private Button nextBtn;
 
     @FXML
-    void handleActionBtn1(ActionEvent event) throws Exception{
+    void handleActionBtn1(ActionEvent event) throws Exception {
         cleanBtns();
         btn1.getStyleClass().add("btn-quizz--error");
     }
 
     @FXML
-    void handleActionBtn2(ActionEvent event) throws Exception{
+    void handleActionBtn2(ActionEvent event) throws Exception {
         cleanBtns();
         btn2.getStyleClass().add("btn-quizz--error");
     }
 
     @FXML
-    void handleActionBtn3(ActionEvent event) throws Exception{
+    void handleActionBtn3(ActionEvent event) throws Exception {
         cleanBtns();
         btn3.getStyleClass().add("btn-quizz--success");
         disableBtns();
@@ -60,7 +60,7 @@ public class Nivel4Quizz1Controller {
 
     @FXML
     void handleActionBtnAtras(ActionEvent event) throws Exception {
-        App.setRoot("tema2/Nivel1View");
+        App.setRoot("HomeView");
     }
 
 }

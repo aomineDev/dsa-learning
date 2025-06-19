@@ -15,8 +15,8 @@ public class Nivel1ViewController {
     }
 
     @FXML
-    void retroceder(ActionEvent event) {
-
+    void retroceder(ActionEvent event) throws Exception {
+        App.setRoot("HomeView");
     }
 
     @FXML

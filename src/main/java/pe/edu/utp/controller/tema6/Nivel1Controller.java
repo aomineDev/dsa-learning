@@ -15,8 +15,13 @@ public class Nivel1Controller {
   @FXML
   void initialize() {
     Code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema6/t6n1_1.html").toExternalForm());
-    idselector.getItems().addAll("nivel 1", "nivel 2" ,"nivel 3");
+    idselector.getItems().addAll("nivel 1", "nivel 2", "nivel 3");
 
+  }
+
+  @FXML
+  void handleGoBackBtnClick(ActionEvent event) throws Exception {
+    App.setRoot("HomeView");
   }
 
   @FXML
@@ -26,7 +31,7 @@ public class Nivel1Controller {
 
   @FXML
   void handleTAnteriorBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema5/Nivel4Quizz2View");
+    App.setRoot("HomeView");
   }
 
   @FXML
