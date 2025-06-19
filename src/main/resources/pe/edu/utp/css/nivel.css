@@ -41,6 +41,11 @@
   -fx-cursor: hand;
 }
 
+.btn-next:hover {
+  -fx-background-color: #37afff;
+  -fx-cursor: hand;
+}
+
 .btn-next__icon {
   -fx-fill: white;
 }

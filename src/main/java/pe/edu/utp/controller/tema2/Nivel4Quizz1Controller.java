@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import pe.edu.utp.App;
 
-public class Nivel3Quizz1Controller {
+public class Nivel4Quizz1Controller {
 
     @FXML
     void handleActionBtnAtras(ActionEvent event) throws Exception {

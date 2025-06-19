@@ -3,6 +3,7 @@ package pe.edu.utp.controller.tema2;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.web.WebView;
+import pe.edu.utp.App;
 
 public class Nivel2Controller {
 
@@ -20,6 +21,11 @@ public class Nivel2Controller {
         code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema2/t2n2_1.html").toExternalForm());
         code2.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema2/t2n2_2.html").toExternalForm());
         code3.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema2/t2n2_3.html").toExternalForm());
+    }
+
+    @FXML
+    void handleActionBtnAtras(ActionEvent event) throws Exception {
+        App.setRoot("tema2/Nivel1View");
     }
 
     @FXML
