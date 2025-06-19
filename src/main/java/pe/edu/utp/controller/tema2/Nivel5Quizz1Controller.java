@@ -69,7 +69,7 @@ public class Nivel5Quizz1Controller {
 
     @FXML
     void handleActionBtnAtras(ActionEvent event) throws Exception {
-        App.setRoot("tema2/Nivel1View");
+        App.setRoot("HomeView");
     }
 
 }

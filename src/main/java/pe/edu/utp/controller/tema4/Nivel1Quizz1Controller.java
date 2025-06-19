@@ -30,7 +30,8 @@ public class Nivel1Quizz1Controller {
 
     @FXML
     private Button btnconfirmar;
-     @FXML
+
+    @FXML
     public void initialize() {
         agregarListenersCambio();
     }
@@ -89,7 +90,7 @@ public class Nivel1Quizz1Controller {
 
     @FXML
     void retroceder(ActionEvent event) throws Exception {
-        App.setRoot("tema4/Nivel1View");
+        App.setRoot("HomeView");
     }
 
     @FXML

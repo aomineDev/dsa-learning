@@ -52,7 +52,7 @@ public class Nivel1Quizz2Controller {
 
   @FXML
   void handleGoBackBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema5/Nivel1View");
+    App.setRoot("HomeView");
   }
 
   @FXML
