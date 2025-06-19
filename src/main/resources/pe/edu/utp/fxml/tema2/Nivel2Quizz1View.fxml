@@ -37,9 +37,9 @@
                      </font>
                   </Text>
                   <WebView fx:id="code1" minHeight="90.0" prefHeight="95.0" prefWidth="560.0" />
-                  <Button mnemonicParsing="false" styleClass="btn-quizz" text="A) true" />
-                  <Button mnemonicParsing="false" styleClass="btn-quizz" text="B) false" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" styleClass="btn-quizz" text="C) Error de compilación" />
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleActionBtn1" styleClass="btn-quizz" text="A) true" />
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#handleActionBtn2" styleClass="btn-quizz" text="B) false" />
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#handleActionBtn3" prefHeight="25.0" prefWidth="181.0" styleClass="btn-quizz" text="C) Error de compilación" />
                </children>
             </VBox>
          </children>

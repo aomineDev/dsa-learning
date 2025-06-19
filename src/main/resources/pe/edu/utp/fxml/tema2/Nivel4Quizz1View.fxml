@@ -38,9 +38,9 @@
                         <Font size="14.0" />
                      </font>
                   </Text>
-                  <Button mnemonicParsing="false" styleClass="btn-quizz" text="A) int[] b = a.clone();" />
-                  <Button mnemonicParsing="false" styleClass="btn-quizz" text="B) int[] b = Arrays.copyOf(a, a.length);" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="261.0" styleClass="btn-quizz" text="C) int[] b = a;" />
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleActionBtn1" styleClass="btn-quizz" text="A) int[] b = a.clone();" />
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#handleActionBtn2" styleClass="btn-quizz" text="B) int[] b = Arrays.copyOf(a, a.length);" />
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#handleActionBtn3" prefHeight="25.0" prefWidth="261.0" styleClass="btn-quizz" text="C) int[] b = a;" />
                </children>
             </VBox>
          </children>

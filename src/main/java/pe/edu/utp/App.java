@@ -20,7 +20,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         loadPoppinsFont();
 
-        scene = new Scene(loadFXML("tema4/Nivel2View"));
+        scene = new Scene(loadFXML("tema2/Nivel3View"));
 
         stage.setScene(scene);
         stage.show();

@@ -13,7 +13,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel2Controller">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel2Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -40,7 +40,11 @@
                         </TextFlow>
                      </children>
                   </HBox>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="¿Cómo comparar correctamente los arreglos?" />
+                  <TextFlow>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="¿Cómo comparar correctamente los arreglos?" />
+                     </children>
+                  </TextFlow>
                   <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Java proporciona un método directo Arrays.equals() para comparar el contenido de dos arrays. Existe una lista de métodos equals() en la clase Arrays para diferentes tipos primitivos (int, char, etc.).">

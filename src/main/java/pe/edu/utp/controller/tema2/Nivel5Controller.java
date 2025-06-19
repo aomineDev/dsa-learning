@@ -36,4 +36,9 @@ public class Nivel5Controller {
         App.setRoot("tema2/Nivel1View");
     }
 
+    @FXML
+    void handleActionBtn(ActionEvent event) throws Exception {
+        App.setRoot("tema2/Nivel5Quizz1View");
+    }
+
 }
