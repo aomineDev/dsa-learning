@@ -4,59 +4,135 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import pe.edu.utp.App;
 
 import java.io.IOException;
 
 public class Nivel5Quizz1Controller {
 
     @FXML
-    private Label preguntaLabel;
+    private VBox btnContainer;
 
     @FXML
-    private Button opcion1, opcion2, opcion3, btnFinalizar;
-
-    private String respuestaCorrecta = "int[] copia = Arrays.copyOf(original, original.length);";
+    private TextField input1;
 
     @FXML
-    public void initialize() {
-        preguntaLabel.setText("¿Cuál es la forma correcta de copiar un arreglo en Java?");
-        opcion1.setText("int[] copia = original;");
-        opcion2.setText("int[] copia = Arrays.copyOf(original, original.length);");
-        opcion3.setText("copy(original, copia);");
-        btnFinalizar.setDisable(true);
-    }
+    private TextField input2;
 
     @FXML
-    private void responder(ActionEvent event) {
-        Button btn = (Button) event.getSource();
-        String seleccion = btn.getText();
-        if (seleccion.equals(respuestaCorrecta)) {
-            mostrarAlerta("Correcto", "¡Buen trabajo! Has completado el tema.");
-            btnFinalizar.setDisable(false);
+    private TextField input3;
+
+    @FXML
+    private TextField input4;
+
+    @FXML
+    private TextField input5;
+
+    @FXML
+    private TextField input6;
+
+    @FXML
+    private Button nextBtn;
+
+    @FXML
+    private HBox result;
+
+    @FXML
+    void handleConfirmBtnClick(ActionEvent event) {
+        clearAllBtnStyle();
+
+        int errorCount = 0;
+
+        if (input1.getText().equals("5")) {
+            input1.getStyleClass().add("quizz-code--success");
         } else {
-            mostrarAlerta("Incorrecto", "Revisa cómo se usa Arrays.copyOf en Java.");
+            errorCount++;
+            input1.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input2.getText().equals("copia")) {
+            input2.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input2.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input3.getText().equals("1")) {
+            input3.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input3.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input4.getText().equals("0")) {
+            input4.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input4.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input5.getText().equals("<")) {
+            input5.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input5.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input6.getText().equals("nums")) {
+            input6.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input6.getStyleClass().add("quizz-code--error");
+        }
+
+        if (errorCount == 0) {
+            btnContainer.getChildren().removeFirst();
+            nextBtn.setVisible(true);
+            result.setVisible(true);
         }
     }
 
     @FXML
-    private void irAlJuegoFinal(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/juego/JuegoFinalView.fxml"));
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.show();
+    void handleGoBackBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("HomeView");
+
     }
 
-    private void mostrarAlerta(String titulo, String mensaje) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(titulo);
-        alert.setHeaderText(null);
-        alert.setContentText(mensaje);
-        alert.showAndWait();
+    @FXML
+    void handleInputTyped(KeyEvent event) {
+        TextField textField = (TextField) event.getSource();
+        textField.getStyleClass().remove("quizz-code--error");
+        textField.getStyleClass().remove("quizz-code--success");
+    }
+
+    @FXML
+    void handleNextBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("HomeView");
+
+    }
+
+    void clearAllBtnStyle() {
+        input1.getStyleClass().remove("quizz-code--success");
+        input2.getStyleClass().remove("quizz-code--success");
+        input3.getStyleClass().remove("quizz-code--success");
+        input4.getStyleClass().remove("quizz-code--success");
+        input5.getStyleClass().remove("quizz-code--success");
+        input6.getStyleClass().remove("quizz-code--success");
+        input1.getStyleClass().remove("quizz-code--error");
+        input2.getStyleClass().remove("quizz-code--error");
+        input3.getStyleClass().remove("quizz-code--error");
+        input4.getStyleClass().remove("quizz-code--error");
+        input5.getStyleClass().remove("quizz-code--error");
+        input6.getStyleClass().remove("quizz-code--error");
     }
 }

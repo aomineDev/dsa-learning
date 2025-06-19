@@ -85,6 +85,17 @@ Text {
   -fx-fill: white;
 }
 
+.simple-code {
+  -fx-background-color: #212121;
+  -fx-padding: 16;
+  -fx-background-radius: 4;
+}
+
+.simple-code Text {
+  -fx-fill: white;
+  -fx-font-family: 'Consolas';
+}
+
 .nivel-selector {
   -fx-background-color: transparent;
   -fx-border-color: #2493DF;

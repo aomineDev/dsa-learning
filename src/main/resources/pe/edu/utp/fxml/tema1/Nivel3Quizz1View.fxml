@@ -12,7 +12,7 @@
 <?import javafx.scene.text.TextFlow?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema1.Nivel3Quizz1Controller">
    <children>
       <VBox layoutX="198.0" layoutY="119.0" prefHeight="200.0" prefWidth="100.0" styleClass="quizz-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -49,9 +49,6 @@
                               <TextField fx:id="input2" onKeyTyped="#handleInputTyped" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="] = 1;" />
                            </children>
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="4.0">
                            <children>
@@ -59,9 +56,6 @@
                               <TextField fx:id="input3" onKeyTyped="#handleInputTyped" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text=";" />
                            </children>
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="4.0">
                            <children>
@@ -69,13 +63,10 @@
                               <TextField fx:id="input4" onKeyTyped="#handleInputTyped" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="; i &lt; nums.length - 1; i++) {" />
                            </children>
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="4.0">
                            <padding>
-                              <Insets left="40.0" />
+                              <Insets left="20.0" />
                            </padding>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="numeros[i] = numeros[i +" />
@@ -84,22 +75,17 @@
                            </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="4.0">
-                           <padding>
-                              <Insets left="40.0" />
-                           </padding>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="}" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="4.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="numeros[numeros.length - 1] = 0;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="numeros[" />
+                              <TextField fx:id="input6" onKeyTyped="#handleInputTyped" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=".length - 1] = 0;" />
                            </children>
-                           <padding>
-                              <Insets left="20.0" />
-                           </padding>
                         </HBox>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="}" />
                      </children>
                   </VBox>
                   <VBox fx:id="btnContainer" alignment="CENTER">

@@ -1,62 +1,126 @@
 package pe.edu.utp.controller.tema1;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.event.ActionEvent;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.VBox;
+import pe.edu.utp.App;
 
 import java.io.IOException;
 
+import javafx.event.ActionEvent;
+
 public class Nivel3Quizz1Controller {
+    @FXML
+    private VBox btnContainer;
 
     @FXML
-    private Label preguntaLabel;
+    private TextField input1;
 
     @FXML
-    private Button opcion1, opcion2, opcion3, btnContinuar;
-
-    private String respuestaCorrecta = "numeros.remove(2)";
+    private TextField input2;
 
     @FXML
-    public void initialize() {
-        preguntaLabel.setText("¿Cuál es la forma correcta de eliminar el elemento en la posición 2 del arreglo numeros?");
-        opcion1.setText("numeros[2] = 0");
-        opcion2.setText("numeros.remove(2)");
-        opcion3.setText("delete numeros[2]");
-        btnContinuar.setDisable(true);
-    }
+    private TextField input3;
 
     @FXML
-    private void responder(ActionEvent event) {
-        Button btn = (Button) event.getSource();
-        String seleccion = btn.getText();
-        if (seleccion.equals(respuestaCorrecta)) {
-            mostrarAlerta("Correcto", "¡Buena elección!");
-            btnContinuar.setDisable(false);
+    private TextField input4;
+
+    @FXML
+    private TextField input5;
+
+    @FXML
+    private TextField input6;
+
+    @FXML
+    private Button nextBtn;
+
+    @FXML
+    void handleConfirmBtnClick(ActionEvent event) {
+        clearAllBtnStyle();
+
+        int errorCount = 0;
+
+        if (input1.getText().equals("4")) {
+            input1.getStyleClass().add("quizz-code--success");
         } else {
-            mostrarAlerta("Incorrecto", "Recuerda cómo se elimina en Java una posición de un ArrayList.");
+            errorCount++;
+            input1.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input2.getText().equals("0")) {
+            input2.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input2.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input3.getText().equals("1")) {
+            input3.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input3.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input4.getText().equals("pos")) {
+            input4.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input4.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input5.getText().equals("1")) {
+            input5.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input5.getStyleClass().add("quizz-code--error");
+        }
+
+        if (input6.getText().equals("numeros")) {
+            input6.getStyleClass().add("quizz-code--success");
+        } else {
+            errorCount++;
+            input6.getStyleClass().add("quizz-code--error");
+        }
+
+        if (errorCount == 0) {
+            btnContainer.getChildren().removeFirst();
+            nextBtn.setVisible(true);
         }
     }
 
     @FXML
-    private void irANivel4(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/tema1/Nivel4View.fxml"));
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.show();
+    void handleGoBackBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("HomeView");
+
     }
 
-    private void mostrarAlerta(String titulo, String mensaje) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(titulo);
-        alert.setHeaderText(null);
-        alert.setContentText(mensaje);
-        alert.showAndWait();
+    @FXML
+    void handleInputTyped(KeyEvent event) {
+        TextField textField = (TextField) event.getSource();
+        textField.getStyleClass().remove("quizz-code--error");
+        textField.getStyleClass().remove("quizz-code--success");
+    }
+
+    @FXML
+    void handleNextBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("tema1/Nivel4View");
+
+    }
+
+    void clearAllBtnStyle() {
+        input1.getStyleClass().remove("quizz-code--success");
+        input2.getStyleClass().remove("quizz-code--success");
+        input3.getStyleClass().remove("quizz-code--success");
+        input4.getStyleClass().remove("quizz-code--success");
+        input5.getStyleClass().remove("quizz-code--success");
+        input6.getStyleClass().remove("quizz-code--success");
+        input1.getStyleClass().remove("quizz-code--error");
+        input2.getStyleClass().remove("quizz-code--error");
+        input3.getStyleClass().remove("quizz-code--error");
+        input4.getStyleClass().remove("quizz-code--error");
+        input5.getStyleClass().remove("quizz-code--error");
+        input6.getStyleClass().remove("quizz-code--error");
     }
 }
