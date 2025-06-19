@@ -19,7 +19,6 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         loadPoppinsFont();
-
         scene = new Scene(loadFXML("tema3/Nivel1View"));
 
         stage.setScene(scene);

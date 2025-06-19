@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import pe.edu.utp.App;
 
-public class Nivel1Quizz1Controller {
+public class Nivel1Quizz2Controller {
   @FXML
   private Button btn1;
 
@@ -25,28 +25,28 @@ public class Nivel1Quizz1Controller {
 
   @FXML
   void handleBtn1Click(ActionEvent event) {
-    cleanBtns();
-    btn1.getStyleClass().add("btn-quizz--error");
+    clearAllBtns();
+    addBtnErrorClass(btn1);
   }
 
   @FXML
   void handleBtn2Click(ActionEvent event) {
-    cleanBtns();
-    btn2.getStyleClass().add("btn-quizz--error");
-  }
-
-  @FXML
-  void handleBtn3Click(ActionEvent event) {
-    cleanBtns();
-    btn3.getStyleClass().add("btn-quizz--success");
+    clearAllBtns();
+    btn2.getStyleClass().add("btn-quizz--success");
     disableBtns();
     nextBtn.setVisible(true);
   }
 
   @FXML
+  void handleBtn3Click(ActionEvent event) {
+    clearAllBtns();
+    addBtnErrorClass(btn3);
+  }
+
+  @FXML
   void handleBtn4Click(ActionEvent event) {
-    cleanBtns();
-    btn4.getStyleClass().add("btn-quizz--error");
+    clearAllBtns();
+    addBtnErrorClass(btn4);
 
   }
 
@@ -57,18 +57,22 @@ public class Nivel1Quizz1Controller {
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema5/Nivel1Quizz2View");
+    App.setRoot("tema5/Nivel1Quizz3View");
   }
 
-  void cleanBtns() {
+  void addBtnErrorClass(Button btn) {
+    btn.getStyleClass().add("btn-quizz--error");
+  }
+
+  void clearAllBtns() {
     btn1.getStyleClass().remove("btn-quizz--error");
-    btn2.getStyleClass().remove("btn-quizz--error");
+    btn3.getStyleClass().remove("btn-quizz--error");
     btn4.getStyleClass().remove("btn-quizz--error");
   }
 
   void disableBtns() {
     btn1.setDisable(true);
-    btn2.setDisable(true);
+    btn3.setDisable(true);
     btn4.setDisable(true);
   }
 }

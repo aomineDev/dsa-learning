@@ -13,7 +13,7 @@
   -fx-background-radius: 4;
 }
 
-.simple-code__text {
+.simple-code Text {
   -fx-fill: white;
   -fx-font-family: 'Consolas';
 }
