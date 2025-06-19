@@ -2,14 +2,12 @@ package pe.edu.utp.controller.tema3;
 
 import java.io.IOException;
 
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.util.Duration;
 import pe.edu.utp.App;
 
-public class Nivel1Quizz1Controller {
+public class Nivel4Quizz1Controller {
 
     @FXML
     private Button btn1;
@@ -24,13 +22,13 @@ public class Nivel1Quizz1Controller {
     private Button nextBtn;
 
     @FXML
-    void handleActionBtn(ActionEvent event) throws Exception {
-        App.setRoot("tema3/Nivel1View");
+    void handleActionBtn(ActionEvent event) {
+
     }
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema3/Nivel2View");
+        App.setRoot("tema3/Nivel5View");
     }
 
     @FXML

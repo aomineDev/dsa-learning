@@ -29,8 +29,8 @@ public class Nivel6Controller {
     }
 
     @FXML
-    void handleActionBtn(ActionEvent event) {
-
+    void handleActionBtn(ActionEvent event) throws IOException{
+        App.setRoot("tema3/Nivel6Quizz1View");
     }
 
     @FXML

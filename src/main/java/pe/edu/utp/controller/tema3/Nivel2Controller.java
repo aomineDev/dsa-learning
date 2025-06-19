@@ -33,8 +33,8 @@ public class Nivel2Controller {
     }
 
     @FXML
-    void handleActionBtn(ActionEvent event) {
-
+    void handleActionBtn(ActionEvent event) throws IOException{
+        App.setRoot("tema3/Nivel2Quizz1View");
     }
 
     @FXML
