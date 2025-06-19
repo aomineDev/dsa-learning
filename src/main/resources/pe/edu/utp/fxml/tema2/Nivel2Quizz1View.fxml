@@ -40,11 +40,6 @@
                   <Button mnemonicParsing="false" styleClass="btn-quizz" text="A) true" />
                   <Button mnemonicParsing="false" styleClass="btn-quizz" text="B) false" />
                   <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" styleClass="btn-quizz" text="C) Error de compilación" />
-                  <HBox alignment="CENTER">
-                     <children>
-                        <Button mnemonicParsing="false" styleClass="btn-quizz" text="Continuar" />
-                     </children>
-                  </HBox>
                </children>
             </VBox>
          </children>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.edu.utp.controller.tema1.Nivel5Controller"
+      spacing="20" alignment="CENTER" stylesheets="@/css/estilos.css"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="NIVEL 5 - COPIA DE ARREGLOS" styleClass="titulo"/>
+
+    <Label text="DEFINICIÓN" styleClass="subtitulo"/>
+    <Label wrapText="true" text="Copiar un arreglo significa duplicar su contenido en otra variable. Se puede usar Arrays.copyOf para lograrlo de manera segura."/>
+
+    <Label text="EJEMPLO VISUAL" styleClass="subtitulo"/>
+    <TextArea editable="false" wrapText="true" prefHeight="100">
+        <text>
+            int[] original = {1, 2, 3};
+            int[] copia = Arrays.copyOf(original, original.length);
+            Resultado: copia = [1, 2, 3]
+        </text>
+    </TextArea>
+
+    <Label text="PREGUNTA REFLEXIVA" styleClass="subtitulo"/>
+    <Label wrapText="true" text="¿Qué sucede si copias con = directamente en vez de usar copyOf?"/>
+
+    <Button text="Continuar al Quiz" onAction="#irAlQuiz"/>
+</VBox>
