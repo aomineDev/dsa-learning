@@ -14,7 +14,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema3.Nivel2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema3.Nivel6Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="720.0" prefWidth="640.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -22,7 +22,7 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="560.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleBtnAtras" prefHeight="25.0" prefWidth="92.0" styleClass="btn__go-back">
+                        <Button mnemonicParsing="false" onAction="#handleBtnAtras" prefHeight="30.0" prefWidth="61.0" styleClass="btn__go-back">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -32,7 +32,7 @@
                         </Button>
                         <TextFlow prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Matriz Cuadrada Poco Densa">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Matriz Simétrica" wrappingWidth="368.7839660644531">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -44,11 +44,52 @@
                   </HBox>
                   <TextFlow prefHeight="39.0" prefWidth="560.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Una matriz cuadrada poco densa es una matriz donde la mayoría de los elementos son ceros. Se utiliza para optimizar recursos de memoria cuando la cantidad de datos útiles es baja respecto al total." wrappingWidth="535.123046875">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Una matriz simétrica es aquella donde:" wrappingWidth="535.123046875">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow styleClass="simple-code" textAlignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="m[i][j] == m[j][i]">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo visual">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow styleClass="simple-code" textAlignment="CENTER">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="[1 4 7]">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="[4 2 5]">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="[7 5 3]">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
                      </children>
                   </TextFlow>
                   <TextFlow>
@@ -62,7 +103,7 @@
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• En una matriz de n x n, hay n² elementos. Si la mayoría son ceros (por ejemplo, más del 60%), se dice que es poco densa.">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Una matriz es igual a su transpuesta cuando todos los valores se reflejan respecto a la diagonal.">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -71,7 +112,7 @@
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Esta evaluación es útil para bases de datos, gráficos, inteligencia artificial, etc.">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Esto significa que la celda [1][2] debe ser igual a [2][1], y así sucesivamente.">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -87,26 +128,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <TextFlow>
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Primero se verifica que sea cuadrada:">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </TextFlow>
-                  <WebView fx:id="code1" minHeight="103.0" prefHeight="103.0" prefWidth="546.0" />
-                  <TextFlow>
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Luego, se cuenta cuántos ceros contiene y se evalúa el porcentaje:">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </TextFlow>
-                  <WebView fx:id="code2" minHeight="250.0" prefHeight="263.0" prefWidth="558.0" />
+                  <WebView fx:id="code1" minHeight="190.0" prefHeight="263.0" prefWidth="558.0" />
                   <HBox alignment="CENTER">
                      <children>
                         <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleActionBtn" styleClass="btn-next" text="Continuar">
