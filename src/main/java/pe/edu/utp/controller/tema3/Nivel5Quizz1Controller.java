@@ -2,14 +2,12 @@ package pe.edu.utp.controller.tema3;
 
 import java.io.IOException;
 
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.util.Duration;
 import pe.edu.utp.App;
 
-public class Nivel1Quizz1Controller {
+public class Nivel5Quizz1Controller {
 
     @FXML
     private Button btn1;
@@ -24,13 +22,13 @@ public class Nivel1Quizz1Controller {
     private Button nextBtn;
 
     @FXML
-    void handleActionBtn(ActionEvent event) throws Exception {
-        App.setRoot("tema3/Nivel1View");
+    void handleActionBtn(ActionEvent event) {
+
     }
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema3/Nivel2View");
+        App.setRoot("tema3/Nivel6View");
     }
 
     @FXML
@@ -38,7 +36,7 @@ public class Nivel1Quizz1Controller {
         clearAllBtns();
         Button btn = (Button) event.getSource();
 
-        if (btn.getId().equals("btn3")) {
+        if (btn.getId().equals("btn2")) {
             disableAllBtns();
             btn.getStyleClass().add("btn-quizz--success");
             nextBtn.setVisible(true);
@@ -49,12 +47,12 @@ public class Nivel1Quizz1Controller {
 
     void clearAllBtns() {
         btn1.getStyleClass().remove("btn-quizz--error");
-        btn2.getStyleClass().remove("btn-quizz--error");
+        btn3.getStyleClass().remove("btn-quizz--error");
     }
 
     void disableAllBtns() {
         btn1.setDisable(true);
-        btn2.setDisable(true);
+        btn3.setDisable(true);
     }
 
 }
