@@ -1,10 +1,10 @@
 package pe.edu.utp.controller.tema2;
 
-import javafx.animation.PauseTransition;
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.util.Duration;
 import pe.edu.utp.App;
 
 public class Nivel1Quizz1Controller {
@@ -19,38 +19,45 @@ public class Nivel1Quizz1Controller {
     private Button btn3;
 
     @FXML
-    void handleActionBtn1(ActionEvent event) throws Exception{
+    private Button nextBtn;
+
+    @FXML
+    void handleActionBtn1(ActionEvent event) throws Exception {
+        cleanBtns();
         btn1.getStyleClass().add("btn-quizz--error");
-        btn2.getStyleClass().remove("btn-quizz--error");
-        btn3.getStyleClass().remove("btn-quizz--success");
     }
 
     @FXML
-    void handleActionBtn2(ActionEvent event) throws Exception{
-        btn1.getStyleClass().remove("btn-quizz--error");
+    void handleActionBtn2(ActionEvent event) throws Exception {
+        cleanBtns();
         btn2.getStyleClass().add("btn-quizz--error");
-        btn3.getStyleClass().remove("btn-quizz--success");
     }
 
     @FXML
-    void handleActionBtn3(ActionEvent event) throws Exception{
+    void handleActionBtn3(ActionEvent event) throws Exception {
+        cleanBtns();
+        btn3.getStyleClass().add("btn-quizz--success");
+        disableBtns();
+        nextBtn.setVisible(true);
+    }
+
+    @FXML
+    void handleNextBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("tema2/Nivel2View");
+    }
+
+    void cleanBtns() {
         btn1.getStyleClass().remove("btn-quizz--error");
         btn2.getStyleClass().remove("btn-quizz--error");
-        btn3.getStyleClass().add("btn-quizz--success");
+    }
 
-        PauseTransition delay = new PauseTransition(Duration.seconds(3));
-        delay.setOnFinished(e -> {
-            try {
-             App.setRoot("tema2/Nivel2View");  
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        });
-        delay.play();
+    void disableBtns() {
+        btn1.setDisable(true);
+        btn2.setDisable(true);
     }
 
     @FXML
-    void handleActionBtn(ActionEvent event) throws Exception{
+    void handleActionBtn(ActionEvent event) throws Exception {
 
         App.setRoot("tema2/Nivel1View");
 
