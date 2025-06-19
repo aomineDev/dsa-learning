@@ -46,3 +46,7 @@ Text,
 .btn__go-back__icon {
   -fx-fill: #2493DF;
 }
+
+.btn__go-back__icon:hover {
+  -fx-fill: #37afff;
+}
