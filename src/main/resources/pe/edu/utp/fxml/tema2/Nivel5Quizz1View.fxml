@@ -37,9 +37,9 @@
                      </font>
                   </Text>
                   <WebView fx:id="code1" minHeight="130.0" prefHeight="133.0" prefWidth="560.0" />
-                  <Button mnemonicParsing="false" styleClass="btn-quizz" text="A) [1, 2, 3, 4]" />
-                  <Button mnemonicParsing="false" styleClass="btn-quizz" text="B) [3, 4, 1, 2]" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" styleClass="btn-quizz" text="C) [1, 2, 0, 0]" />
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleActionBtn1" styleClass="btn-quizz" text="A) [1, 2, 3, 4]" />
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#handleActionBtn1" styleClass="btn-quizz" text="B) [3, 4, 1, 2]" />
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#handleActionBtn3" prefHeight="25.0" prefWidth="82.0" styleClass="btn-quizz" text="C) [1, 2, 0, 0]" />
                </children>
             </VBox>
          </children>

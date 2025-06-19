@@ -34,9 +34,9 @@
                         <Font size="14.0" />
                      </font>
                   </Text>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="583.0" styleClass="btn-quizz" text="A) Para comparar si los arreglos tienen el mismo contenido" />
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="588.0" styleClass="btn-quizz" text="B) Para comparar si los arreglos tienen la misma longitud" />
-                  <Button mnemonicParsing="false" prefHeight="19.0" prefWidth="560.0" styleClass="btn-quizz" text="C) Para comparar si los arreglos apuntan al mismo objeto en memoria" />
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleActionBtn1" prefHeight="45.0" prefWidth="583.0" styleClass="btn-quizz" text="A) Para comparar si los arreglos tienen el mismo contenido" />
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#handleActionBtn2" prefHeight="45.0" prefWidth="588.0" styleClass="btn-quizz" text="B) Para comparar si los arreglos tienen la misma longitud" />
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#handleActionBtn3" prefHeight="19.0" prefWidth="560.0" styleClass="btn-quizz" text="C) Comparar si los arreglos apuntan al mismo objeto en memoria" />
                </children>
             </VBox>
          </children>

@@ -2,6 +2,7 @@ package pe.edu.utp.controller.tema2;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
 
@@ -12,6 +13,15 @@ public class Nivel3Controller {
 
     @FXML
     private WebView code2;
+
+    @FXML
+    private Button btn1;
+
+    @FXML
+    private Button btn2;
+
+    @FXML
+    private Button btn3;
 
     @FXML
     void initialize() {
@@ -25,8 +35,8 @@ public class Nivel3Controller {
     }
 
     @FXML
-    void handleaactionbtn(ActionEvent event) {
-
+    void handleActionBtn(ActionEvent event) throws Exception {
+        App.setRoot("tema2/Nivel3Quizz1View");
     }
 
 }

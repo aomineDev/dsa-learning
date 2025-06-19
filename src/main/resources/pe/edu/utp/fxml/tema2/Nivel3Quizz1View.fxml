@@ -35,9 +35,9 @@
                         <Font size="14.0" />
                      </font>
                   </Text>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="563.0" styleClass="btn-quizz" text="A) Crea copia  del contenido en una nueva posición de memoria" />
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="565.0" styleClass="btn-quizz" text="B) Borra el contenido original" />
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="584.0" styleClass="btn-quizz" text="C) Compara el contenido del arreglo con otro" />
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleActionBtn1" prefHeight="45.0" prefWidth="563.0" styleClass="btn-quizz" text="A) Crea copia  del contenido en una nueva posición de memoria" />
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#handleActionBtn2" prefHeight="45.0" prefWidth="565.0" styleClass="btn-quizz" text="B) Borra el contenido original" />
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#handleActionBtn3" prefHeight="45.0" prefWidth="584.0" styleClass="btn-quizz" text="C) Compara el contenido del arreglo con otro" />
                </children>
             </VBox>
          </children>
