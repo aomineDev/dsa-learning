@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.edu.utp.controller.tema1.Nivel3Controller"
+      spacing="20" alignment="CENTER" stylesheets="@/css/estilos.css"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="NIVEL 3 - ELIMINACIÓN EN ARREGLOS" styleClass="titulo"/>
+
+    <Label text="DEFINICIÓN" styleClass="subtitulo"/>
+    <Label wrapText="true" text="Eliminar significa quitar un elemento de una posición específica. En estructuras dinámicas como ArrayList, se usa remove(posición). En arreglos estáticos, se debe desplazar el contenido."/>
+
+    <Label text="EJEMPLO VISUAL" styleClass="subtitulo"/>
+    <TextArea editable="false" wrapText="true" prefHeight="100">
+        <text>
+            numeros = [10, 15, 50, 20, 30]
+            numeros.remove(2)
+            Resultado: [10, 15, 20, 30]
+        </text>
+    </TextArea>
+
+    <Label text="PREGUNTA REFLEXIVA" styleClass="subtitulo"/>
+    <Label wrapText="true" text="¿Qué sucede con los elementos posteriores cuando eliminas uno del arreglo?"/>
+
+    <Button text="Continuar al Quiz" onAction="#irAlQuiz"/>
+</VBox>

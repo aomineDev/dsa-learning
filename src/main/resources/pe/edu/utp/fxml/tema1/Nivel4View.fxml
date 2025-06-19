@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.edu.utp.controller.tema1.Nivel4Controller"
+      spacing="20" alignment="CENTER" stylesheets="@/css/estilos.css"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="NIVEL 4 - RECORRIDO EN ARREGLOS" styleClass="titulo"/>
+
+    <Label text="DEFINICIÓN" styleClass="subtitulo"/>
+    <Label wrapText="true" text="El recorrido de un arreglo es el proceso de acceder uno por uno a todos sus elementos, generalmente usando un bucle for o foreach."/>
+
+    <Label text="EJEMPLO VISUAL" styleClass="subtitulo"/>
+    <TextArea editable="false" wrapText="true" prefHeight="100">
+        <text>
+            for (int i = 0; i < numeros.length; i++) {
+                System.out.println(numeros[i]);
+            }
+        </text>
+    </TextArea>
+
+    <Label text="PREGUNTA REFLEXIVA" styleClass="subtitulo"/>
+    <Label wrapText="true" text="¿Qué pasaría si olvidamos incrementar el valor de 'i' en el bucle?"/>
+
+    <Button text="Continuar al Quiz" onAction="#irAlQuiz"/>
+</VBox>

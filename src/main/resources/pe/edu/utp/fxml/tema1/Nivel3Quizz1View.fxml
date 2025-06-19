@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.edu.utp.controller.tema1.Nivel3Quizz1Controller"
+      spacing="15" alignment="CENTER" stylesheets="@/css/estilos.css"
+      prefWidth="800" prefHeight="600">
+
+    <Label fx:id="preguntaLabel" wrapText="true" styleClass="titulo"/>
+    <HBox spacing="10">
+        <Button fx:id="opcion1" onAction="#responder"/>
+        <Button fx:id="opcion2" onAction="#responder"/>
+        <Button fx:id="opcion3" onAction="#responder"/>
+    </HBox>
+    <Button fx:id="btnContinuar" text="Siguiente Nivel" onAction="#irANivel4"/>
+</VBox>

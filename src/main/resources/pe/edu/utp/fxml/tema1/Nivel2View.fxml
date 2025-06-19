@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.edu.utp.controller.tema1.Nivel2Controller"
+      spacing="20" alignment="CENTER" stylesheets="@/css/estilos.css"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="NIVEL 2 - ACTUALIZACIÓN EN ARREGLOS" styleClass="titulo"/>
+
+    <Label text="DEFINICIÓN" styleClass="subtitulo"/>
+    <Label wrapText="true" text="Actualizar un arreglo significa cambiar el valor de un elemento en una posición específica. Esto se hace asignando un nuevo valor al índice deseado."/>
+
+    <Label text="EJEMPLO VISUAL" styleClass="subtitulo"/>
+    <TextArea editable="false" wrapText="true" prefHeight="100">
+        <text>
+            int[] numeros = {10, 20, 30};
+            numeros[2] = 45;
+            Resultado: {10, 20, 45}
+        </text>
+    </TextArea>
+
+    <Label text="PREGUNTA REFLEXIVA" styleClass="subtitulo"/>
+    <Label wrapText="true" text="¿Qué pasaría si intentas actualizar una posición que no existe?"/>
+
+    <Button text="Continuar al Quiz" onAction="#irAlQuiz"/>
+</VBox>

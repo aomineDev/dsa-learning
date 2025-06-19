@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.edu.utp.controller.tema1.Nivel1Controller"
+      spacing="20" alignment="CENTER" stylesheets="@/css/estilos.css"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="NIVEL 1 - ARREGLO CON INSERCIÓN" styleClass="titulo"/>
+
+    <Label text="DEFINICIÓN" styleClass="subtitulo"/>
+    <Label wrapText="true" text="La inserción es el proceso de agregar un nuevo elemento a un arreglo, ya sea al final, en una posición específica o al principio. En arreglos estáticos, esto puede requerir desplazar elementos si se inserta en el medio."/>
+
+    <Label text="EJEMPLO VISUAL" styleClass="subtitulo"/>
+    <TextArea editable="false" wrapText="true" prefHeight="120">
+        <text>
+            numeros = [10, 15, 20, 30]
+            numeros.insert(2, 25)
+            Resultado: [10, 15, 25, 20, 30]
+        </text>
+    </TextArea>
+
+    <Label text="PREGUNTA REFLEXIVA" styleClass="subtitulo"/>
+    <Label wrapText="true" text="¿Por qué no puedes insertar directamente en medio de un arreglo sin mover otros elementos?"/>
+
+    <Button text="Continuar al Quiz" onAction="#irAlQuiz"/>
+</VBox>
