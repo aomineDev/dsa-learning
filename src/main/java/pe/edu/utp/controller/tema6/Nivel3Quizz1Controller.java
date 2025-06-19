@@ -55,7 +55,7 @@ public class Nivel3Quizz1Controller {
         PauseTransition delay = new PauseTransition(javafx.util.Duration.seconds(3));
         delay.setOnFinished(e -> {
             try {
-             App.setRoot("tema7/Nivel1View");  
+             App.setRoot("HomeView");  
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

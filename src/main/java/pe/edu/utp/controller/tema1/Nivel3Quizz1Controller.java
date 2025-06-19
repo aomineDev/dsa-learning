@@ -77,7 +77,7 @@ public class Nivel3Quizz1Controller {
             input5.getStyleClass().add("quizz-code--error");
         }
 
-        if (input6.getText().equals("numeros")) {
+        if (input6.getText().equals("nums")) {
             input6.getStyleClass().add("quizz-code--success");
         } else {
             errorCount++;

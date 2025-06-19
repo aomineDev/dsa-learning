@@ -34,7 +34,7 @@ public class Nivel5Controller {
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema1/Nivel5Qizz1View");
+        App.setRoot("tema1/Nivel5Quizz1View");
     }
 
     @FXML

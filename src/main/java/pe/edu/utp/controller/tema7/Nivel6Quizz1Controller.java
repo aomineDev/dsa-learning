@@ -28,7 +28,7 @@ public class Nivel6Quizz1Controller {
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("");
+        App.setRoot("HomeView");
     }
 
     @FXML
