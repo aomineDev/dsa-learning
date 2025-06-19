@@ -1,13 +1,13 @@
 package pe.edu.utp;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 /**
  * JavaFX App
@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         loadPoppinsFont();
-        scene = new Scene(loadFXML("tema2/Nivel2Quizz1View"));
+        scene = new Scene(loadFXML("tema6/Nivel1View"));
         stage.setScene(scene);
         stage.show();
     }
