@@ -128,11 +128,12 @@ public class Nivel4Quizz3Controller {
   void handleInputTyped(KeyEvent event) {
     TextField textField = (TextField) event.getSource();
     textField.getStyleClass().remove("quizz-code--error");
+    textField.getStyleClass().remove("quizz-code--success");
   }
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("");
+    App.setRoot("HomeView");
   }
 
   void clearAllBtnStyle() {

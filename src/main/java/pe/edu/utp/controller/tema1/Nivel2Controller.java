@@ -1,15 +1,10 @@
 package pe.edu.utp.controller.tema1;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.web.WebView;
-import javafx.scene.Parent;
-import javafx.stage.Stage;
 import pe.edu.utp.App;
 import javafx.event.ActionEvent;
-import javafx.scene.Node;
 
 import java.io.IOException;
 

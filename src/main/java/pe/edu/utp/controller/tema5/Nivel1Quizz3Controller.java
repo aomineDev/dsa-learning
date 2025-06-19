@@ -113,6 +113,7 @@ public class Nivel1Quizz3Controller {
   void handleInputTyped(KeyEvent event) {
     TextField textField = (TextField) event.getSource();
     textField.getStyleClass().remove("quizz-code--error");
+    textField.getStyleClass().remove("quizz-code--success");
   }
 
   void clearAllBtnStyle() {
