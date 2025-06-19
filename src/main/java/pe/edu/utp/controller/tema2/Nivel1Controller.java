@@ -32,4 +32,5 @@ public class Nivel1Controller {
     void handleaactionbtn(ActionEvent event) throws Exception {
         App.setRoot("tema2/Nivel1Quizz1View");
     }
+    
 }
