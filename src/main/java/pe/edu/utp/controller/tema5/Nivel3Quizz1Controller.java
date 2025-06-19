@@ -5,10 +5,10 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.web.WebView;
 import pe.edu.utp.App;
 
-public class Nivel4Quizz2Controller {
+public class Nivel3Quizz1Controller {
+
   @FXML
   private Button btn1;
 
@@ -22,24 +22,16 @@ public class Nivel4Quizz2Controller {
   private Button btn4;
 
   @FXML
-  private WebView code;
-
-  @FXML
   private Button nextBtn;
 
   @FXML
-  void initialize() {
-    code.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema5/t5n4q2.html").toExternalForm());
-  }
-
-  @FXML
-  void handleGoBackBtnClick(ActionEvent event) {
+  void handleGoBackBtnClick(ActionEvent event) throws IOException {
 
   }
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema5/Nivel4Quizz3View");
+    App.setRoot("tema5/Nivel3Quizz2View");
   }
 
   @FXML

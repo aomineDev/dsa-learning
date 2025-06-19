@@ -1,0 +1,16 @@
+.sidebar {
+  -fx-background-color: #3b3b3b;
+}
+
+.btn-subject {
+  -fx-min-width: 120;
+  -fx-max-width: 120;
+  -fx-min-height: 120;
+  -fx-min-height: 120;
+  -fx-background-color: #59df76;
+  -fx-text-fill: white;
+  -fx-border-radius: 60;
+  -fx-background-radius: 60;
+  -fx-cursor: hand;
+
+}

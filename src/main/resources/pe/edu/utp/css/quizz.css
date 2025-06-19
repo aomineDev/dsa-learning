@@ -71,8 +71,10 @@
   -fx-font-family: 'Consolas';
   -fx-font-weight: bold;
   -fx-font-size: 14;
-  -fx-max-width: 60;
+  -fx-max-width: 120;
+  -fx-pref-width: 70;
   -fx-min-width: 0;
+  -fx-alignment: center;
 }
 
 .quizz-code--success {
