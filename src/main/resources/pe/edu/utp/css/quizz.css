@@ -5,6 +5,7 @@
 .quizz-type-1-container {
   -fx-alignment: center;
   -fx-spacing: 24;
+  -fx-vgrow: ALWAYS;
 }
 
 .btn-quizz {

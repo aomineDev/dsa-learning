@@ -5,13 +5,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel3Controller">
    <children>
@@ -22,11 +22,20 @@
                   <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                </padding>
                <children>
-                  <Label text="Nivel 3: Clonación de arreglos unidimensionales">
-                     <font>
-                        <Font name="System Bold" size="22.0" />
-                     </font>
-                  </Label>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="0.0" prefWidth="560.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleActionBtnAtras" prefHeight="25.0" prefWidth="92.0" text="Atras">
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nivel 3: Clonación de arreglos unidimensionales" wrappingWidth="308.048828125">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
                   <VBox prefHeight="617.0" prefWidth="560.0" spacing="6.0">
                      <children>
                         <TextFlow prefHeight="39.0" prefWidth="560.0">
