@@ -24,8 +24,8 @@ public class Nivel1Quizz1Controller {
     private Button nextBtn;
 
     @FXML
-    void handleActionBtn(ActionEvent event) throws Exception {
-        App.setRoot("tema3/Nivel1View");
+    void handleGoBackBtnClick(ActionEvent event) throws Exception {
+        App.setRoot("HomeView");
     }
 
     @FXML

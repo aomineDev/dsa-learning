@@ -38,8 +38,8 @@ public class Nivel2Controller {
     }
 
     @FXML
-    void handleBtnAtras(ActionEvent event) {
-
+    void handleGoBackBtnClick(ActionEvent event) throws Exception {
+        App.setRoot("HomeView");
     }
 
 }

@@ -14,15 +14,15 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema2.Nivel1Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="720.0" prefWidth="640.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <VBox prefHeight="806.0" prefWidth="658.0" styleClass="nivel-container">
                <children>
-                  <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="560.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="560.0" styleClass="btn__go-back__container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleGoBackBtnClick" prefHeight="25.0" prefWidth="92.0" styleClass="btn__go-back">
+                        <Button mnemonicParsing="false" onAction="#handleGoBackBtnClick" styleClass="btn__go-back">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>

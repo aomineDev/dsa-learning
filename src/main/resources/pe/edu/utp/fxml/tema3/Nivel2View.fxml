@@ -22,7 +22,7 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="560.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleBtnAtras" prefHeight="25.0" prefWidth="92.0" styleClass="btn__go-back">
+                        <Button mnemonicParsing="false" onAction="#handleGoBackBtnClick" styleClass="btn__go-back">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
