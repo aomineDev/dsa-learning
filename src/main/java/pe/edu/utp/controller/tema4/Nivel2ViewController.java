@@ -7,13 +7,13 @@ import pe.edu.utp.App;
 public class Nivel2ViewController {
 
     @FXML
-    void avanzar(ActionEvent event) throws Exception{
-                App.setRoot("tema4/Nivel2Quizz1View");
+    void avanzar(ActionEvent event) throws Exception {
+        App.setRoot("tema4/Nivel2Quizz1View");
 
     }
 
     @FXML
-    void retroceder(ActionEvent event)  {
+    void retroceder(ActionEvent event) {
 
     }
 }
