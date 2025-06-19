@@ -37,3 +37,16 @@
   -fx-background-color: #f1275a;
   -fx-border-color: #bb2a4e;
 }
+.btn-next {
+  -fx-background-color: #2493DF;
+  -fx-background-radius: 4;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-padding: 12 24 12 24;
+  -fx-cursor: hand;
+}
+
+.btn-next:hover {
+  -fx-background-color: #37afff;
+  -fx-cursor: hand;
+}
