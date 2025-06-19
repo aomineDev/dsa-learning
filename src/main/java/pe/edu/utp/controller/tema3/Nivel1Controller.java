@@ -33,4 +33,9 @@ public class Nivel1Controller {
         App.setRoot("tema3/Nivel1Quizz1View");
     }
 
+    @FXML
+    void handleGoBackBtnClick(ActionEvent event) throws Exception {
+        App.setRoot("HomeView");
+    }
+
 }

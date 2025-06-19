@@ -23,6 +23,7 @@ public class App extends Application {
         loadPoppinsFont();
         scene = new Scene(loadFXML("HomeView"));
         stage.setScene(scene);
+        stage.setTitle("Sistema Educativo - Estructura de Datos");
         stage.show();
     }
 

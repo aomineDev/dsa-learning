@@ -27,7 +27,7 @@ public class Nivel3Quizz1Controller {
 
     @FXML
     void btnRegresar(ActionEvent event) throws IOException {
-    App.setRoot("tema6/Nivel3View");
+    App.setRoot("HomeView");
     }
 
     @FXML

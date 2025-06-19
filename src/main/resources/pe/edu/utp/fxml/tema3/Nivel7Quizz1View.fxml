@@ -16,7 +16,7 @@
          <children>
             <HBox styleClass="btn__go-back__container">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handleActionBtn" styleClass="btn__go-back">
+                  <Button mnemonicParsing="false" onAction="#handleGoBackBtnClick" styleClass="btn__go-back">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
