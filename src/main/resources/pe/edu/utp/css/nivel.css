@@ -13,7 +13,7 @@
   -fx-background-radius: 4;
 }
 
-.simple-code__text {
+.simple-code Text {
   -fx-fill: white;
   -fx-font-family: 'Consolas';
 }
@@ -30,22 +30,4 @@
 .note-box__text,
 .note-box__icon {
   -fx-fill: #2493DF;
-}
-
-.btn-next {
-  -fx-background-color: #2493DF;
-  -fx-background-radius: 4;
-  -fx-text-fill: white;
-  -fx-font-weight: bold;
-  -fx-padding: 12 24 12 24;
-  -fx-cursor: hand;
-}
-
-.btn-next:hover {
-  -fx-background-color: #37afff;
-  -fx-cursor: hand;
-}
-
-.btn-next__icon {
-  -fx-fill: white;
 }
