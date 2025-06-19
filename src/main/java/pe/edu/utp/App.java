@@ -19,7 +19,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        this.stage = stage;
+        App.stage = stage;
         loadPoppinsFont();
         scene = new Scene(loadFXML("HomeView"));
         stage.setScene(scene);
