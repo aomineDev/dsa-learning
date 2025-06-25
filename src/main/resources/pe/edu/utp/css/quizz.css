@@ -3,11 +3,12 @@
 }
 
 .quizz-type-1-container {
-  -fx-alignment: center;
+  /* -fx-alignment: CENTER; */
+  -fx-alignment: CENTER;
   -fx-spacing: 24;
 }
 
-.btn-quizz{
+.btn-quizz {
   -fx-background-color: transparent;
   -fx-background-radius: 10;
   -fx-border-color: #9da3a7;

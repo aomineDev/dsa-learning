@@ -9,9 +9,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema1.Nivel3Quizz1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema1.Nivel3Quizz1Controller">
    <children>
       <VBox layoutX="198.0" layoutY="119.0" prefHeight="200.0" prefWidth="100.0" styleClass="quizz-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -28,11 +27,13 @@
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="SOMETIMES">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Completa el siguiente codigo" />
-                  <TextFlow textAlignment="CENTER">
+                  <VBox>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Queremos una lista con los siguiente numeros: 12, 4, 3, actualizar el 12 por 1 y eliminar el 4" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Una lista con los siguiente numeros: 12, 4, 3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Intercambiar el 12 por 1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Eliminar el 4" />
                      </children>
-                  </TextFlow>
+                  </VBox>
                   <VBox styleClass="quizz-code">
                      <children>
                         <HBox alignment="CENTER_LEFT" spacing="4.0">

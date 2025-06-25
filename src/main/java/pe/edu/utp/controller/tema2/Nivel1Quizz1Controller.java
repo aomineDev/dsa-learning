@@ -30,15 +30,15 @@ public class Nivel1Quizz1Controller {
     @FXML
     void handleActionBtn2(ActionEvent event) throws Exception {
         cleanBtns();
-        btn2.getStyleClass().add("btn-quizz--error");
+        btn2.getStyleClass().add("btn-quizz--success");
+        disableBtns();
+        nextBtn.setVisible(true);
     }
 
     @FXML
     void handleActionBtn3(ActionEvent event) throws Exception {
         cleanBtns();
-        btn3.getStyleClass().add("btn-quizz--success");
-        disableBtns();
-        nextBtn.setVisible(true);
+        btn3.getStyleClass().add("btn-quizz--error");
     }
 
     @FXML
@@ -48,12 +48,12 @@ public class Nivel1Quizz1Controller {
 
     void cleanBtns() {
         btn1.getStyleClass().remove("btn-quizz--error");
-        btn2.getStyleClass().remove("btn-quizz--error");
+        btn3.getStyleClass().remove("btn-quizz--error");
     }
 
     void disableBtns() {
         btn1.setDisable(true);
-        btn2.setDisable(true);
+        btn3.setDisable(true);
     }
 
     @FXML
