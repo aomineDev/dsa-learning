@@ -32,13 +32,18 @@ Text {
   -fx-font-size: 20;
 }
 
+.list {
+  -fx-padding: 0 0 0 20;
+}
+
+
 .btn__go-back__container {
   -fx-alignment: center-left;
   -fx-spacing: 12;
 }
 
 .btn__go-back {
-  -fx-background-color: #ffffff;
+  -fx-background-color: transparent;
   -fx-cursor: hand;
 }
 

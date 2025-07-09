@@ -3,9 +3,6 @@
   -fx-spacing: 16;
 }
 
-.list {
-  -fx-padding: 0 0 0 20;
-}
 
 .note-box {
   -fx-border-color: #2493DF;
@@ -34,22 +31,4 @@
 .note-box__text--red,
 .note-box__icon--red {
   -fx-fill: #f1275a;
-}
-
-.btn-next {
-  -fx-background-color: #2493DF;
-  -fx-background-radius: 4;
-  -fx-text-fill: white;
-  -fx-font-weight: bold;
-  -fx-padding: 12 24 12 24;
-  -fx-cursor: hand;
-}
-
-.btn-next:hover {
-  -fx-background-color: #37afff;
-  -fx-cursor: hand;
-}
-
-.btn-next__icon {
-  -fx-fill: white;
 }
