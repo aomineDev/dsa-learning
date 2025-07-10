@@ -20,16 +20,14 @@
 
             editor = monaco.editor.create(document.getElementById('container'), {
                 value: `public boolean buscar(Nodo nodo, int valor) {
-    if (nodo == null) {
-        return false;
-    }
-
-    if (nodo.valor == valor) {
-        return true;
-    }
-
-     return buscar(nodo.izquierdo, valor) || buscar(nodo.derecho, valor);
-    }
+if (nodo == null) {
+    return false;
+}
+if (nodo.valor == valor) {
+    return true;
+}
+return buscar(nodo.izquierdo, valor) || buscar(nodo.derecho,valor);
+}
 `,
                 language: 'java',
                 theme: 'vs-dark',
