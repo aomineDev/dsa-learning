@@ -1,4 +1,4 @@
-package pe.edu.utp.controller.template;
+package pe.edu.utp.controller.tema1;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javafx.scene.layout.VBox;
 import pe.edu.utp.App;
 import pe.edu.utp.util.Quizz;
 
-public class Quizz1Controller {
+public class Nivel1Quizz1Controller {
   @FXML
   private Button correct;
 

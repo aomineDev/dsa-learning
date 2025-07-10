@@ -2,8 +2,8 @@
   -fx-padding: 20 40 20 40;
 }
 
-.quizz-type-1-container {
-  /* -fx-alignment: CENTER; */
+.quizz-type-1-container,
+.btn-quizz-container {
   -fx-alignment: CENTER;
   -fx-spacing: 24;
 }
@@ -48,6 +48,11 @@
 
 .btn-quizz--error:hover {
   -fx-background-color: #f1275a;
+}
+
+.btn-quizz--error:disabled,
+.btn-quizz--success:disabled {
+  -fx-opacity: 1.0
 }
 
 .quizz-code {
