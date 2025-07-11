@@ -20,5 +20,7 @@ public class Nivel {
   public void setNivelItems(ComboBox<String> selector, int max) {
     for (int i = 1; i <= max; i++)
       selector.getItems().add("nivel " + i);
+
+    selector.getSelectionModel().select(nivel - 1);
   }
 }

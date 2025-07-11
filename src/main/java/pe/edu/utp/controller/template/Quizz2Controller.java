@@ -7,15 +7,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.TextFlow;
 import pe.edu.utp.App;
+import pe.edu.utp.util.Quizz;
 
 public class Quizz2Controller {
   private String[] answers = {};
-  private int index = 0;
-  private int errorCount = 0;
 
   @FXML
   private VBox btnContainer;
@@ -31,25 +29,9 @@ public class Quizz2Controller {
 
   @FXML
   void handleConfirmBtnClick(ActionEvent event) {
-    code.getChildren().forEach(node -> {
-      HBox line = (HBox) node;
+    boolean correct = Quizz.handleQuizzInputs(code, answers);
 
-      line.getChildren().forEach(subnode -> {
-        if (!(subnode instanceof TextField))
-          return;
-
-        TextField input = (TextField) subnode;
-
-        if (input.getText().equals(answers[index++]))
-          input.getStyleClass().add("quizz-code--success");
-        else {
-          errorCount++;
-          input.getStyleClass().add("quizz-code--error");
-        }
-      });
-    });
-
-    if (errorCount == 0) {
+    if (correct) {
       btnContainer.getChildren().removeFirst();
       nextBtn.setVisible(true);
       result.setVisible(true);
@@ -58,7 +40,7 @@ public class Quizz2Controller {
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("HomeView");
+    App.setRoot("");
   }
 
   @FXML
