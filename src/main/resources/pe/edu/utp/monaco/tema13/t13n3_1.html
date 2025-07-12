@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body,
+    #container {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+  <script src="../min/vs/loader.js"></script>
+  <script>
+    let editor
+
+    require.config({ paths: { vs: '../min/vs' } });
+    require(['vs/editor/editor.main'], function () {
+
+      editor = monaco.editor.create(document.getElementById('container'), {
+        value: `public class ArbolBusqueda {
+    static class Nodo {
+        int valor;
+        Nodo izquierdo, derecho;
+
+        public Nodo(int valor) {
+            this.valor = valor;
+        }
+    }
+
+    public static Nodo insertar(Nodo raiz, int valor) {
+        if (raiz == null) return new Nodo(valor);
+        if (valor < raiz.valor)
+            raiz.izquierdo = insertar(raiz.izquierdo, valor);
+        else
+            raiz.derecho = insertar(raiz.derecho, valor);
+        return raiz;
+    }
+
+    public static void main(String[] args) {
+        Nodo raiz = null;
+        raiz = insertar(raiz, 10);
+        raiz = insertar(raiz, 5);
+        raiz = insertar(raiz, 15);
+
+        System.out.println("Raíz: " + raiz.valor);
+        System.out.println("Izquierdo: " + raiz.izquierdo.valor);
+        System.out.println("Derecho: " + raiz.derecho.valor);
+    }
+}`,
+        language: 'java',
+        theme: 'vs-dark',
+        fontSize: 14,
+        readOnly: true,
+        minimap: {
+          enabled: false
+        },
+        scrollbar: {
+          vertical: 'hidden',
+          horizontal: 'hidden',
+          handleMouseWheel: false
+        },
+        scrollBeyondLastLine: false,
+        contextmenu: false,
+        padding: {
+          top: 12
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+</html>
