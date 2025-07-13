@@ -31,7 +31,7 @@ public class Quizz1Controller {
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema1/Nivel2View");
+    App.setRoot("");
   }
 
   @FXML
