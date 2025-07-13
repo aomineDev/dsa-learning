@@ -25,7 +25,7 @@
                               <SVGPath content="M28 16C28 15.4696 27.7893 14.9609 27.4142 14.5858C27.0391 14.2107 26.5304 14 26 14H10.16L15.4133 8.74668C15.7666 8.36755 15.9589 7.86609 15.9498 7.34796C15.9407 6.82982 15.7308 6.33546 15.3643 5.96903C14.9979 5.60259 14.5035 5.39269 13.9854 5.38355C13.4673 5.37441 12.9658 5.56674 12.5867 5.92002L3.92 14.5867C3.54546 14.9617 3.33509 15.47 3.33509 16C3.33509 16.53 3.54546 17.0384 3.92 17.4134L12.5867 26.08C12.9658 26.4333 13.4673 26.6256 13.9854 26.6165C14.5035 26.6073 14.9979 26.3974 15.3643 26.031C15.7308 25.6646 15.9407 25.1702 15.9498 24.6521C15.9589 24.1339 15.7666 23.6325 15.4133 23.2534L10.16 18H26C26.5304 18 27.0391 17.7893 27.4142 17.4142C27.7893 17.0392 28 16.5305 28 16Z" styleClass="btn__go-back__icon" />
                            </graphic>
                         </Button>
-                        <TextFlow prefHeight="82.0" prefWidth="288.0" HBox.hgrow="ALWAYS">
+                        <TextFlow HBox.hgrow="ALWAYS">
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Usando la clase Stack de Java" />
                            </children>
@@ -73,11 +73,11 @@
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="35.0">
+                        <HBox spacing="23.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="push :" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="push() :" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
@@ -87,44 +87,44 @@
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="42.0">
+                        <HBox spacing="30.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pop :" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pop() :" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserta un elemento en la parte superior de la pila." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Elimina y devuelve el elemento en la parte superior." />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="35.0">
+                        <HBox spacing="25.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="peek :" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="peek() :" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserta un elemento en la parte superior de la pila." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Devuelve el elemento en la cima sin eliminarlo." />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox>
+                        <HBox spacing="12.0">
                            <children>
-                              <TextFlow prefHeight="47.0" prefWidth="67.0" textAlignment="CENTER">
+                              <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="empty :" wrappingWidth="63.19200134277344" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="empty() :" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Devuelve true si la pila está vacía, false en caso contrario." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verifica si la pila está vacía" />
                                  </children>
                               </TextFlow>
                            </children>
@@ -133,12 +133,12 @@
                            <children>
                               <TextFlow prefHeight="369.0" prefWidth="64.0" textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="search :" wrappingWidth="58.12000274658203" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="search() :" wrappingWidth="106.53600311279297" />
                                  </children>
                               </TextFlow>
                               <TextFlow prefHeight="71.0" prefWidth="408.0" textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Devuelve la posición del elemento desde la cima de la pila (1 basado). Si no se encuentra, devuelve -1." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Devuelve la posición desde la cima de la pila (1 basado). Si no existe, devuelve -1." />
                                  </children>
                               </TextFlow>
                            </children>
