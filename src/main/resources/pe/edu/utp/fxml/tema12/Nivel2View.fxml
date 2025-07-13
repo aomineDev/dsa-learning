@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel2Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -133,74 +133,6 @@
                            </graphic></Button>
                      </children>
                   </HBox>
-                  <TextFlow prefHeight="145.0" prefWidth="558.0" styleClass="simple-code" textAlignment="CENTER">
-                     <children>
-                        <VBox>
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Insertar 10: ">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="     10">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="10.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Insertar 5:">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="     10">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="    /">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="   5">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="10.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Insertar 15:">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="10.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="      10">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="10.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="     /  \">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="10.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="    5   15">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                        </VBox>
-                     </children>
-                  </TextFlow>
                </children>
             </VBox>
          </content>
