@@ -28,7 +28,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Titulo" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Titulo1" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />

@@ -1,4 +1,4 @@
-package pe.edu.utp.controller.tema11;
+package pe.edu.utp.controller.tema13;
 
 import java.io.IOException;
 
@@ -10,47 +10,40 @@ import pe.edu.utp.App;
 import pe.edu.utp.util.Nivel;
 
 public class Nivel4Controller {
+    @FXML
+    private WebView code1;
+
+
+    @FXML
+    private ComboBox<String> nivelSelector;
     private String tema;
     private int nivel;
 
     @FXML
-    private WebView code1;
-
-    @FXML
-    private WebView code2;
-
-    @FXML
-    private WebView code3;
-
-    @FXML
-    private ComboBox<String> nivelSelector;
-
-    @FXML
     void initialize() {
-        tema = "tema" + 11;
+        tema = "tema" + 13;
         nivel = 4;
 
         Nivel n = new Nivel(tema, nivel);
 
-        n.setCodeView(code1, 1);
-        n.setCodeView(code2, 2);
-        n.setCodeView(code3, 3);
         n.setNivelItems(nivelSelector, 4);
+        code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema13/t13n4_1.html").toExternalForm());
     }
+
+    @FXML
+    void handleGoBackBtnClick(ActionEvent event) throws Exception {
+    App.setRoot("HomeView");
+  }
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot(tema + "/Nivel4Quizz1View");
-    }
-
-    @FXML
-    void handleGoBackBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("HomeView");
-    }
+    App.setRoot("tema13/Nivel4Quizz1View");
+  }
 
     @FXML
     void handleNivelSelectorClick(ActionEvent event) throws IOException {
         String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
         App.setRoot(tema + "/Nivel" + nivel + "View");
     }
+
 }
