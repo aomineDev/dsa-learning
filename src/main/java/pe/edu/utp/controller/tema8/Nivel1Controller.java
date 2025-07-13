@@ -28,7 +28,7 @@ public class Nivel1Controller {
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot(tema + "/Nivel2View");
+        App.setRoot(tema + "/Nivel1Quizz1View");
     }
 
     @FXML

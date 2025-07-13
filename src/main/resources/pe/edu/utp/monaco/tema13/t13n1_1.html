@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body,
+    #container {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+  <script src="../min/vs/loader.js"></script>
+  <script>
+    let editor
+
+    require.config({ paths: { vs: '../min/vs' } });
+    require(['vs/editor/editor.main'], function () {
+
+      editor = monaco.editor.create(document.getElementById('container'), {
+        value: `public class Nodo {
+    int valor;
+    Nodo izquierdo;
+    Nodo derecho;
+
+    public Nodo(int valor) {
+        this.valor = valor;
+    }
+
+    public static void main(String[] args) {
+        Nodo raiz = new Nodo(10);
+        raiz.izquierdo = new Nodo(5);
+        raiz.derecho = new Nodo(15);
+
+        System.out.println("Raíz: " + raiz.valor);
+        System.out.println("Izquierdo: " + raiz.izquierdo.valor);
+        System.out.println("Derecho: " + raiz.derecho.valor);
+    }
+}`,
+        language: 'java',
+        theme: 'vs-dark',
+        fontSize: 14,
+        readOnly: true,
+        minimap: {
+          enabled: false
+        },
+        scrollbar: {
+          vertical: 'hidden',
+          horizontal: 'hidden',
+          handleMouseWheel: false
+        },
+        scrollBeyondLastLine: false,
+        contextmenu: false,
+        padding: {
+          top: 12
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+</html>
