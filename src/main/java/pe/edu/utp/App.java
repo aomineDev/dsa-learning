@@ -15,11 +15,9 @@ import javafx.stage.Stage;
 public class App extends Application {
 
     private static Scene scene;
-    private static Stage stage;
 
     @Override
     public void start(Stage stage) throws IOException {
-        App.stage = stage;
         loadPoppinsFont();
         scene = new Scene(loadFXML("HomeView"));
         stage.setTitle("Sistema Educativo - Estructura de Datos");
@@ -29,7 +27,6 @@ public class App extends Application {
 
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
-        stage.sizeToScene();
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
