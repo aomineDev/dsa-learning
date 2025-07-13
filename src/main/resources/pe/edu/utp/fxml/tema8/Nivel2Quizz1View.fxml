@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema8.Nivel2Quizz1Controller">
+   <children>
+      <VBox layoutX="198.0" layoutY="119.0" prefHeight="200.0" prefWidth="100.0" styleClass="quizz-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox styleClass="btn__go-back__container">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleGoBackBtnClick" styleClass="btn__go-back">
+                     <graphic>
+                        <SVGPath content="M28 16C28 15.4696 27.7893 14.9609 27.4142 14.5858C27.0391 14.2107 26.5304 14 26 14H10.16L15.4133 8.74668C15.7666 8.36755 15.9589 7.86609 15.9498 7.34796C15.9407 6.82982 15.7308 6.33546 15.3643 5.96903C14.9979 5.60259 14.5035 5.39269 13.9854 5.38355C13.4673 5.37441 12.9658 5.56674 12.5867 5.92002L3.92 14.5867C3.54546 14.9617 3.33509 15.47 3.33509 16C3.33509 16.53 3.54546 17.0384 3.92 17.4134L12.5867 26.08C12.9658 26.4333 13.4673 26.6256 13.9854 26.6165C14.5035 26.6073 14.9979 26.3974 15.3643 26.031C15.7308 25.6646 15.9407 25.1702 15.9498 24.6521C15.9589 24.1339 15.7666 23.6325 15.4133 23.2534L10.16 18H26C26.5304 18 27.0391 17.7893 27.4142 17.4142C27.7893 17.0392 28 16.5305 28 16Z" styleClass="btn__go-back__icon" />
+                     </graphic>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Quizz 2" />
+               </children>
+            </HBox>
+            <VBox styleClass="quizz-type-1-container" VBox.vgrow="SOMETIMES">
+               <children>
+                  <TextFlow textAlignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Completa el código en base a los métodos mencionados anteriormente" />
+                     </children>
+                  </TextFlow>
+                  <VBox fx:id="code" styleClass="quizz-code">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stack&lt;String&gt; pila = new Stack&lt;&gt;();" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pila." />
+                              <TextField onKeyTyped="#handleInputTyped" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(&quot;Libro A&quot;);" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pila." />
+                              <TextField onKeyTyped="#handleInputTyped" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(&quot;Libro B&quot;);" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pila." />
+                              <TextField onKeyTyped="#handleInputTyped" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(&quot;Libro C&quot;);" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="// Eliminar &quot;Libro C&quot;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pila." />
+                              <TextField onKeyTyped="#handleInputTyped" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="());" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="// Debería mostrar &quot;Libro B&quot;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="System.out.println(&quot;Nuevo tope: &quot; + pila." />
+                              <TextField onKeyTyped="#handleInputTyped" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="());" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnContainer" alignment="CENTER" spacing="8.0">
+                     <children>
+                        <Button graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleConfirmBtnClick" styleClass="btn-confirm" text="Confirmar">
+                           <graphic>
+                              <SVGPath content="M15.5294 0.409577C15.819 0.682827 15.9881 1.05968 15.9994 1.45728C16.0107 1.85487 15.8632 2.24066 15.5895 2.52982L7.06932 11.5309C6.93124 11.6765 6.7653 11.793 6.58131 11.8736C6.39732 11.9541 6.19902 11.9971 5.99812 11.9999C5.79722 12.0027 5.59779 11.9652 5.41163 11.8898C5.22546 11.8144 5.05633 11.7026 4.91422 11.5609L0.403539 7.06034C0.13795 6.77596 -0.00663846 6.39983 0.000234249 6.01118C0.00710696 5.62253 0.164905 5.25172 0.440383 4.97686C0.715861 4.702 1.08751 4.54456 1.47704 4.5377C1.86656 4.53085 2.24355 4.67511 2.52857 4.9401L5.94667 8.34849L13.4043 0.469584C13.6782 0.180545 14.0559 0.0118539 14.4544 0.000601156C14.8529 -0.0106516 15.2395 0.136455 15.5294 0.409577Z" styleClass="btn-confirm__icon" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">
+                           <graphic>
+                              <SVGPath content="M2.5 9.99999C2.5 9.66847 2.6317 9.35052 2.86612 9.1161C3.10054 8.88168 3.41848 8.74999 3.75 8.74999H13.65L10.3667 5.46665C10.1459 5.2297 10.0257 4.91629 10.0314 4.59245C10.0371 4.26862 10.1683 3.95964 10.3973 3.73062C10.6263 3.5016 10.9353 3.37041 11.2591 3.3647C11.583 3.35898 11.8964 3.47919 12.1333 3.69999L17.55 9.11665C17.7841 9.35103 17.9156 9.66874 17.9156 9.99999C17.9156 10.3312 17.7841 10.6489 17.55 10.8833L12.1333 16.3C11.8964 16.5208 11.583 16.641 11.2591 16.6353C10.9353 16.6296 10.6263 16.4984 10.3973 16.2694C10.1683 16.0403 10.0371 15.7314 10.0314 15.4075C10.0257 15.0837 10.1459 14.7703 10.3667 14.5333L13.65 11.25H3.75C3.41848 11.25 3.10054 11.1183 2.86612 10.8839C2.6317 10.6495 2.5 10.3315 2.5 9.99999Z" styleClass="btn-next__icon" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/styles.css" />
+      <URL value="@../../css/quizz.css" />
+   </stylesheets>
+</AnchorPane>
