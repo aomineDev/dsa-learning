@@ -39,13 +39,13 @@ public class Quizz2Controller {
   }
 
   @FXML
-  void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("");
+  void handleGoBackBtnClick(ActionEvent event) throws IOException {
+    App.setRoot("HomeView");
   }
 
   @FXML
-  void handleGoBackBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("HomeView");
+  void handleNextBtnClick(ActionEvent event) throws IOException {
+    App.setRoot("");
   }
 
   @FXML
