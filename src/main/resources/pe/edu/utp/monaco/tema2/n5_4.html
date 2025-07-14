@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body,
+    #container {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+  <script src="../min/vs/loader.js"></script>
+  <script>
+    let editor
+
+    require.config({ paths: { vs: '../min/vs' } });
+    require(['vs/editor/editor.main'], function () {
+
+      editor = monaco.editor.create(document.getElementById('container'), {
+        value: `int[] a = {1, 2};
+int[] b = {3, 4, 5};
+int[] fusion = new int[a.length + b.length]; 
+
+// Copiamos el arreglo 'a'
+for (int i = 0; i < a.length; i++) {
+    fusion[i] = a[i];
+}
+
+// Copiamos el arreglo 'b'
+for (int i = 0; i < b.length; i++) {
+    fusion[a.length + i] = b[i]; // Ojo: se empieza desde el final de 'a'
+}
+`,
+        language: 'java',
+        theme: 'vs-dark',
+        fontSize: 14,
+        readOnly: true,
+        minimap: {
+          enabled: false
+        },
+        scrollbar: {
+          vertical: 'hidden',
+          horizontal: 'hidden',
+          handleMouseWheel: false
+        },
+        scrollBeyondLastLine: false,
+        contextmenu: false,
+        padding: {
+          top: 12
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+</html>
