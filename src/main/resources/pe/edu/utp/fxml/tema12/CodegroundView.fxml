@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema8.CodegroundController">
+   <children>
+      <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane hgap="20.0" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="566.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane style="-fx-background-color: transparent;">
+                     <children>
+                        <WebView fx:id="code" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleExceuteClick" text="Ejecutar">
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="btn-execute" />
+                           </styleClass>
+                           <graphic>
+                              <SVGPath content="M10.0792 4.41185C10.3573 4.5651 10.5899 4.79386 10.7521 5.07362C10.9143 5.35339 11 5.67362 11 6.00001C11 6.32639 10.9143 6.64662 10.7521 6.92639C10.5899 7.20615 10.3573 7.43492 10.0792 7.58816L2.66151 11.7682C1.4671 12.442 0 11.566 0 10.1807V1.81993C0 0.433972 1.4671 -0.441402 2.66151 0.231178L10.0792 4.41185Z" styleClass="btn-execute__icon" />
+                           </graphic>
+                        </Button>
+                        <VBox styleClass="console-output">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Salida de Consola:" />
+                              <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="console-output-scroll">
+                                 <content>
+                                    <StackPane>
+                                       <children>
+                                          <TextFlow fx:id="output1" styleClass="console-output__content">
+                                             <children>
+                                                <Text fx:id="outputText1" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                             </children>
+                                          </TextFlow>
+                                          <TextFlow fx:id="output2" styleClass="console-output__content" visible="false">
+                                             <children>
+                                                <Text fx:id="outputText2" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </StackPane>
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="panel" />
+                        <String fx:value="panel-content" />
+                     </styleClass>
+                  </VBox>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="panel" GridPane.columnIndex="1">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="panel-content">
+                           <children>
+                              <TextFlow>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Eliminar nodo en un ABB" />
+                                 </children>
+                              </TextFlow>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una referencia de nodo raíz de un ABB y una clave, elimine el nodo con la clave dada en el ABB. Regresar el referencia del nodo raíz (posiblemente actualizado) del ABB." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow layoutX="10.0" layoutY="10.0">
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Básicamente, la eliminación se puede dividir en dos etapas:" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Busque un nodo para eliminar." />
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </TextFlow>
+                                    <TextFlow layoutX="10.0" layoutY="136.0">
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si se encuentra el nodo, elimínelo." />
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </TextFlow>
+                                 </children>
+                              </VBox>
+                              <TextFlow>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
+                                 </children>
+                              </TextFlow>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="raíz = [5,3,6,2,4,nulo,7], clave = 3" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La clave dada para eliminar es 3. Entonces encontramos el nodo con valor 3 y lo eliminamos." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una respuesta válida es [5,4,6,2,null,null,7], que se muestra en el ABB anterior.Tenga en cuenta que otra respuesta válida es [5,2,6,null,4,null,7] y también se acepta." />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </VBox>
+                              <TextFlow>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
+                                 </children>
+                              </TextFlow>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="raíz = [5,3,6,2,4,nulo,7], clave = 0" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,3,6,2,4,nulo,7]" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Text>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El árbol no contiene un nodo con valor = 0." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La clave que se desea eliminar es 0, pero como ese valor no se encuentra en el árbol, el árbol permanece igual. Por eso, la salida es exactamente la misma que la entrada: [5,3,6,2,4,nulo,7]." />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="panel" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="panel-content">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Casos de Prueba" />
+                              <HBox styleClass="test-btn-container">
+                                 <children>
+                                    <Button fx:id="btnCase1" mnemonicParsing="false" onAction="#handleBtnCase1Click" styleClass="test-btn" text="Caso 1" />
+                                    <Button fx:id="btnCase2" mnemonicParsing="false" onAction="#handleBtnCase2Click" styleClass="test-btn" text="Caso 2" />
+                                 </children>
+                              </HBox>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox fx:id="case1" prefHeight="200.0" prefWidth="100.0" styleClass="test-wrapper">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <VBox>
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: [5,3,6,2,4,nulo,7]" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="clave: 3" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </TextFlow>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
+                                             </children>
+                                          </TextFlow>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text fx:id="resultCase1" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="case2" prefHeight="200.0" prefWidth="100.0" styleClass="test-wrapper" visible="false">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <VBox>
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: [5,3,6,2,4,nulo,7]" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="clave: 0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </TextFlow>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="[5,3,6,2,4,nulo,7]" />
+                                             </children>
+                                          </TextFlow>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text fx:id="resultCase2" strokeType="OUTSIDE" strokeWidth="0.0" text="--" />
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </GridPane>
+            <StackPane fx:id="modal" prefHeight="150.0" prefWidth="200.0" visible="false">
+               <children>
+                  <VBox fillWidth="false" onMouseClicked="#handleCloseModalClick" styleClass="modal-overlay">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="200.0" styleClass="modal-content">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="¡RETO SUPERADO!">
+                                 <styleClass>
+                                    <String fx:value="title-2" />
+                                    <String fx:value="modal-title" />
+                                 </styleClass>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haz  superado co exito este reto y superaste los 2 casos. Felicidades!" />
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/codeground/success.png" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleContinueBtnClick" styleClass="btn-next" text="Continuar">
+                                 <graphic>
+                                    <SVGPath content="M2.5 9.99999C2.5 9.66847 2.6317 9.35052 2.86612 9.1161C3.10054 8.88168 3.41848 8.74999 3.75 8.74999H13.65L10.3667 5.46665C10.1459 5.2297 10.0257 4.91629 10.0314 4.59245C10.0371 4.26862 10.1683 3.95964 10.3973 3.73062C10.6263 3.5016 10.9353 3.37041 11.2591 3.3647C11.583 3.35898 11.8964 3.47919 12.1333 3.69999L17.55 9.11665C17.7841 9.35103 17.9156 9.66874 17.9156 9.99999C17.9156 10.3312 17.7841 10.6489 17.55 10.8833L12.1333 16.3C11.8964 16.5208 11.583 16.641 11.2591 16.6353C10.9353 16.6296 10.6263 16.4984 10.3973 16.2694C10.1683 16.0403 10.0371 15.7314 10.0314 15.4075C10.0257 15.0837 10.1459 14.7703 10.3667 14.5333L13.65 11.25H3.75C3.41848 11.25 3.10054 11.1183 2.86612 10.8839C2.6317 10.6495 2.5 10.3315 2.5 9.99999Z" styleClass="btn-next__icon" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/styles.css" />
+      <URL value="@../../css/scroll.css" />
+      <URL value="@../../css/codeground.css" />
+   </stylesheets>
+</AnchorPane>
