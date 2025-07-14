@@ -13,27 +13,32 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema6.Nivel2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema6.Nivel2Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="834.0" prefWidth="640.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <VBox prefHeight="799.0" prefWidth="610.0" spacing="10.0" styleClass="nivel-container">
                <children>
-                  <HBox styleClass="btn__go-back__container">
+                  <HBox fillHeight="false" styleClass="btn__go-back__container">
                      <children>
-                        <Button fx:id="btnAnterior" mnemonicParsing="false" onAction="#handleTAnteriorBtnClick" styleClass="btn__go-back">
+                        <Button mnemonicParsing="false" onAction="#handleGoBackBtnClick" styleClass="btn__go-back">
                            <graphic>
                               <SVGPath content="M28 16C28 15.4696 27.7893 14.9609 27.4142 14.5858C27.0391 14.2107 26.5304 14 26 14H10.16L15.4133 8.74668C15.7666 8.36755 15.9589 7.86609 15.9498 7.34796C15.9407 6.82982 15.7308 6.33546 15.3643 5.96903C14.9979 5.60259 14.5035 5.39269 13.9854 5.38355C13.4673 5.37441 12.9658 5.56674 12.5867 5.92002L3.92 14.5867C3.54546 14.9617 3.33509 15.47 3.33509 16C3.33509 16.53 3.54546 17.0384 3.92 17.4134L12.5867 26.08C12.9658 26.4333 13.4673 26.6256 13.9854 26.6165C14.5035 26.6073 14.9979 26.3974 15.3643 26.031C15.7308 25.6646 15.9407 25.1702 15.9498 24.6521C15.9589 24.1339 15.7666 23.6325 15.4133 23.2534L10.16 18H26C26.5304 18 27.0391 17.7893 27.4142 17.4142C27.7893 17.0392 28 16.5305 28 16Z" styleClass="btn__go-back__icon" />
-                           </graphic></Button>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 2: Búsqueda" />
-                        <TextFlow>
+                           </graphic>
+                        </Button>
+                        <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <ComboBox fx:id="idselector" onAction="#handleNivelSelectorClick" prefWidth="150.0" promptText="Nivel" styleClass="nivel-selector" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 2: Búsqueda" />
                            </children>
                         </TextFlow>
+                        <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
                      </children>
                   </HBox>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="La operación de búsqueda en una lista enlazada simple consiste en localizar un nodo que contenga un &#10;valor específico.&#10;&#10;Dado que la lista enlazada no tiene índices como un arreglo, no se puede acceder directamente a una posición. En su lugar, se debe recorrer nodo por nodo desde el principio, comparando el dato de cada &#10;uno con el valor buscado." wrappingWidth="545.162109375" />
+                  <TextFlow>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="La operación de búsqueda en una lista enlazada simple consiste en localizar un nodo que contenga un &#10;valor específico.&#10;&#10;Dado que la lista enlazada no tiene índices como un arreglo, no se puede acceder directamente a una posición. En su lugar, se debe recorrer nodo por nodo desde el principio, comparando el dato de cada &#10;uno con el valor buscado." wrappingWidth="545.162109375" />
+                     </children>
+                  </TextFlow>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo Visual" />
                   <WebView fx:id="Code2" minHeight="200.0" prefHeight="-1.0" prefWidth="610.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Resumen Código:" />
@@ -70,7 +75,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <TextFlow prefHeight="61.0" prefWidth="558.0">
+                  <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Se repite el proceso mientras haya nodos por revisar (es decir, hasta llegar al final de la lista)." wrappingWidth="552.71875" />
                      </children>
@@ -84,7 +89,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <TextFlow prefHeight="61.0" prefWidth="558.0">
+                  <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="En cada nodo, se compara el valor del nodo (dato) con el valor buscado." wrappingWidth="552.71875" />
                      </children>
@@ -98,7 +103,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <TextFlow prefHeight="61.0" prefWidth="558.0">
+                  <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si el valor no coincide, se avanza al siguiente nodo." wrappingWidth="552.71875" />
                      </children>

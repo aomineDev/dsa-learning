@@ -2,11 +2,9 @@ package pe.edu.utp.controller.tema2;
 
 import java.io.IOException;
 
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.util.Duration;
 import pe.edu.utp.App;
 
 public class Nivel3Quizz1Controller {
