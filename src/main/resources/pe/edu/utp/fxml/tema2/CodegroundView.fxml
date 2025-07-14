@@ -132,7 +132,7 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" 2" />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
@@ -171,7 +171,7 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" 3" />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>

@@ -20,19 +20,19 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema8.CodegroundController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel5Controller">
    <children>
       <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <GridPane hgap="20.0" vgap="20.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints maxHeight="566.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
                <children>
                   <AnchorPane style="-fx-background-color: transparent;">
                      <children>
@@ -88,114 +88,45 @@
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Prefijo inverso de palabra" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Puzze final" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="20.0">
-                                 <children>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una cadena indexada desde 0 y un carácter ch, debes invertir el segmento de la cadena que empieza en el índice 0 y termina en la primera aparición de la ch." />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si el ch letra no se encuentra en la cadena, entonces la cadena debe permanecer igual (no se hace ningún cambio)." />
-                                       </children>
-                                       <padding>
-                                          <Insets left="20.0" />
-                                       </padding>
-                                    </TextFlow>
-                                 </children>
-                              </VBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Guardianes del arbol binario" />
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
+                                    <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En el reino digital de Estructurania, el equilibrio de la información está en manos del Árbol Binario Sagrado.Tú eres su Guardián, y tu tarea es clara:Construir, modificar y recorrer el árbol según las órdenes del Oráculo.Inserta nuevos nodos, elimina ramas inservibles y responde con sabiduría a los recorridos solicitados." />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
-                                 <children>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="cadena = &quot;abcdefd&quot;, ch = &quot;d&quot;" />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;dcbaefd&quot;" />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La primera aparición de &quot;d&quot; está en el índice 3. " />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Invierta la parte de la cadena de 0 a 3, la cadena resultante es &quot;dcbaefd&quot;." />
-                                       </children>
-                                    </TextFlow>
-                                 </children>
-                              </VBox>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reglas" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox prefWidth="100.0" styleClass="list">
                                  <children>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="cadena = &quot;abcd&quot;, ch = &quot;z&quot;" />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;abcd&quot;" />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
-                                             <font>
-                                                <Font name="System Bold" size="12.0" />
-                                             </font>
-                                          </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;z&quot; no existe en la palabra." />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="No debe realizar ninguna operación inversa, la cadena resultante es &quot;abcd&quot;." />
-                                       </children>
-                                    </TextFlow>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El primer nodo insertado siempre es la raíz." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Solo se puede eliminar un hijo si ya existe." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Cada nodo puede tener máximo dos hijos." />
                                  </children>
                               </VBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reestricciones" />
+                              <VBox prefWidth="100.0" styleClass="list">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Se garantiza que el nodo padre existe al insertar o eliminar." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El árbol no tendrá más de 100 nodos." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Cada nodo puede tener máximo dos hijos." />
+                                 </children>
+                              </VBox>
+                              <TextFlow styleClass="simple-code" visible="false">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="codigo simple">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Codigo" visible="false" />
                            </children>
                         </VBox>
                      </content>
@@ -218,20 +149,27 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <VBox>
-                                                   <children>
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadena: &quot;abcdefd&quot;" />
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ch: “d”" />
-                                                   </children>
-                                                </VBox>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserccion en la raiz -&gt; 10" />
+                                             </children>
+                                          </TextFlow>
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserccion en el hijo izquiero -&gt; 4" />
+                                             </children>
+                                          </TextFlow>
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserccion en el hijo derecho -&gt; 6" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
-                                          <TextFlow styleClass="test-content">
+                                          <VBox prefHeight="84.0" prefWidth="560.0" styleClass="simple-code">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="dcbaefd" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                          10                      " textAlignment="CENTER" wrappingWidth="482.296875" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                            / \            " wrappingWidth="506.890625" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                           4   6" wrappingWidth="497.53125" />
                                              </children>
-                                          </TextFlow>
+                                          </VBox>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
@@ -245,20 +183,17 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <VBox>
-                                                   <children>
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadena: &quot;abc&quot;" />
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ch: “o”" />
-                                                   </children>
-                                                </VBox>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Eliminar hijo izqueiro -&gt; 4" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
-                                          <TextFlow styleClass="test-content">
+                                          <VBox prefHeight="84.0" prefWidth="560.0" styleClass="simple-code">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="abc" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                          10                      " textAlignment="CENTER" wrappingWidth="482.296875" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                             \            " wrappingWidth="506.890625" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                             6" wrappingWidth="497.53125" />
                                              </children>
-                                          </TextFlow>
+                                          </VBox>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
                                           <TextFlow styleClass="test-content">
                                              <children>

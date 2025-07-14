@@ -1,4 +1,4 @@
-package pe.edu.utp.controller.tema2;
+package pe.edu.utp.controller.tema11;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -15,11 +15,10 @@ import javafx.scene.web.WebView;
 import pe.edu.utp.App;
 import pe.edu.utp.util.Codeground;
 
-public class CodegroundController {
+public class Nivel5Controller {
     private Codeground codeground;
-    private Object[][] testCase1 = { { "3,8,4,6,2", "3,8,4,2" }, { 3 } };
-    private Object[][] testCase2 = { { "10,9,8,7,6,5,4,3,2,1", "10,9,8,7,6,5,4,3,2,1" }, { -1 } };
-
+    private Object[][] testCase1 = { { 10 }, { 10 } };
+    private Object[][] testCase2 = { { 1 }, { 2 } };
     @FXML
     private Button btnCase1;
 
@@ -36,6 +35,9 @@ public class CodegroundController {
     private WebView code;
 
     @FXML
+    private StackPane modal;
+
+    @FXML
     private TextFlow output1;
 
     @FXML
@@ -48,9 +50,6 @@ public class CodegroundController {
     private Text outputText2;
 
     @FXML
-    private StackPane modal;
-
-    @FXML
     private Text resultCase1;
 
     @FXML
@@ -58,8 +57,8 @@ public class CodegroundController {
 
     @FXML
     void initialize() {
-        int tema = 2;
-        codeground = new Codeground(new Class[] { String.class, String.class });
+        int tema = 11;
+        codeground = new Codeground(new Class[] { Integer.class });
 
         code.getEngine()
                 .load(getClass().getResource("/pe/edu/utp/monaco/tema" + tema + "/codeground.html").toExternalForm());
@@ -67,7 +66,7 @@ public class CodegroundController {
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema3/Nivel1View");
+        App.setRoot("");
     }
 
     @FXML
