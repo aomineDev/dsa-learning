@@ -17,8 +17,8 @@ import pe.edu.utp.util.Codeground;
 
 public class CodegroundController {
   private Codeground codeground;
-  private Object[] testCase1 = { 0, 0 };
-  private Object[] testCase2 = { 0, 0 };
+  private Object[][] testCase1 = { { 0 }, { 0 } };
+  private Object[][] testCase2 = { { 0 }, { 0 } };
 
   @FXML
   private Button btnCase1;
@@ -59,7 +59,7 @@ public class CodegroundController {
   @FXML
   void initialize() {
     int tema = 0;
-    codeground = new Codeground(Integer.class);
+    codeground = new Codeground(new Class[] { Integer.class });
 
     code.getEngine()
         .load(getClass().getResource("/pe/edu/utp/monaco/tema" + tema + "/codeground.html").toExternalForm());
@@ -77,10 +77,10 @@ public class CodegroundController {
     try {
       codeground.compile(code);
 
-      codeground.testCase(testCase1[0], testCase1[1]);
+      codeground.testCase(testCase1[0], testCase1[1][0]);
       codeground.renderResult(resultCase1, outputText1, btnCase1);
 
-      codeground.testCase(testCase2[0], testCase2[1]);
+      codeground.testCase(testCase2[0], testCase2[1][0]);
       codeground.renderResult(resultCase2, outputText2, btnCase2);
 
       if (codeground.isValid())

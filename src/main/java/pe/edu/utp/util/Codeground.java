@@ -18,13 +18,13 @@ import netscape.javascript.JSObject;
 public class Codeground {
   private Method method;
   private int errorCount;
-  private Class<?> clazz;
+  private Class<?>[] clazz;
   private String testCaseOutput;
   private boolean testCaseResult;
   private String testCaseSystemOutput;
   private boolean hasError;
 
-  public Codeground(Class<?> clazz) {
+  public Codeground(Class<?>[] clazz) {
     this.clazz = clazz;
   }
 
@@ -44,7 +44,7 @@ public class Codeground {
     method = ejercicio.getMethod("solucion", clazz);
   }
 
-  public void testCase(Object param, Object expected) throws Exception {
+  public void testCase(Object[] param, Object expected) throws Exception {
     ByteArrayOutputStream outputCatched = new ByteArrayOutputStream();
     System.setOut(new PrintStream(outputCatched));
 
