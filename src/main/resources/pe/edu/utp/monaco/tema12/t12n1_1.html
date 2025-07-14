@@ -13,42 +13,27 @@
   </style>
   <script src="../min/vs/loader.js"></script>
   <script>
-    let editor
+    let editor;
 
     require.config({ paths: { vs: '../min/vs' } });
     require(['vs/editor/editor.main'], function () {
-
       editor = monaco.editor.create(document.getElementById('container'), {
-        value: `class ABB {
-    Nodo raiz;
-
-    void insertar(int v) {
-        raiz = insertar(raiz, v);
+        value: `public Nodo insertar(Nodo nodo, int valor) {
+    if (nodo == null) {
+        return new Nodo(valor);
     }
-
-    Nodo insertar(Nodo n, int v) {
-        if (n == null) return new Nodo(v);
-        if (v < n.valor) n.izq = insertar(n.izq, v);
-        else n.der = insertar(n.der, v);
-        return n;
+    if (valor < nodo.valor) {
+        nodo.izquierdo = insertar(nodo.izquierdo, valor);
+    } else {
+        nodo._____ = insertar(nodo.derecho, valor);
     }
-
-    void inorden(Nodo n) {
-        if (n != null) {
-            inorden(n.izq);
-            System.out.print(n.valor + " ");
-            inorden(n.der);
-        }
-    }
-}
-`,
+    return nodo;
+}`,
         language: 'java',
         theme: 'vs-dark',
         fontSize: 14,
-        readOnly: true,
-        minimap: {
-          enabled: false
-        },
+        readOnly: false,
+        minimap: { enabled: false },
         scrollbar: {
           vertical: 'hidden',
           horizontal: 'hidden',
@@ -56,9 +41,7 @@
         },
         scrollBeyondLastLine: false,
         contextmenu: false,
-        padding: {
-          top: 12
-        }
+        padding: { top: 12 }
       });
     });
   </script>

@@ -11,13 +11,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
-<?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel3Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
-            <VBox prefHeight="400.0" prefWidth="300.0" styleClass="nivel-container">
+            <VBox styleClass="nivel-container">
                <children>
                   <HBox fillHeight="false" styleClass="btn__go-back__container">
                      <children>
@@ -34,17 +33,33 @@
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
                      </children>
                   </HBox>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Cómo funciona la eliminación en un ABB" />
+                  <TextFlow>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Cómo funciona la eliminación en un ABB" />
+                     </children>
+                  </TextFlow>
                   <TextFlow>
                      <children>
                         <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar un nodo en un ABB requiere mantener la estructura del árbol:" />
                      </children>
                   </TextFlow>
-                  <VBox prefWidth="100.0" styleClass="list">
+                  <VBox prefWidth="100.0" spacing="20.0" styleClass="list">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si no tiene hijos, se borra." />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si tiene un hijo, se reemplaza por su hijo." />
-                        <Text layoutX="30.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si tiene dos hijos, se sustituye por su sucesor inmediato en orden ascendente." />
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si no tiene hijos, se borra." />
+                           </children>
+                        </TextFlow>
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si tiene un hijo, se reemplaza por su hijo." />
+                           </children>
+                        </TextFlow>
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si tiene dos hijos, se sustituye por su sucesor inmediato en orden ascendente." />
+                           </children>
+                        </TextFlow>
                      </children>
                   </VBox>
                   <TextFlow>
@@ -52,18 +67,80 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entendemos que la eliminación siempre debe preservar la organización del ABB." />
                      </children>
                   </TextFlow>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo Simple" />
-                  <TextFlow styleClass="simple-code">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo visual" />
+                  <TextFlow layoutX="50.0" layoutY="255.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="codigo simple">
-                           <font>
-                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar el nodo 3" />
                      </children>
                   </TextFlow>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Codigo" />
-                  <WebView fx:id="code1" minHeight="100.0" prefHeight="100.0" prefWidth="558.0" />
+                  <VBox layoutX="50.0" layoutY="174.0" prefWidth="100.0" spacing="20.0" styleClass="list">
+                     <children>
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Tiene dos hijos: 1 y 6" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Su sucesor inmediato es el menor del subárbol derecho → nodo 4" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Entonces, 4 sube y se elimina el 3" />
+                           </children>
+                        </TextFlow>
+                     </children>
+                  </VBox>
+                  <TextFlow prefHeight="145.0" prefWidth="558.0" styleClass="simple-code" textAlignment="CENTER">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="  8">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text=" / \">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="4  10">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="/\   \">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="1 6  13">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="   \ ">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="    7">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </TextFlow>
                   <VBox styleClass="list" />
+                  <TextFlow layoutX="50.0" layoutY="255.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El sucesor inmediato de un nodo con dos hijos es el menor valor del subárbol derecho, ya que es el siguiente valor más grande en orden ascendente." />
+                     </children>
+                  </TextFlow>
                   <VBox prefWidth="100.0" styleClass="note-box">
                      <children>
                         <SVGPath content="M16.9175 1.05394C16.5212 0.65769 16.0379 0.359463 15.506 0.183021C14.9741 0.00657868 14.4084 -0.0432011 13.8538 0.0376476C13.2993 0.118496 12.7713 0.327739 12.312 0.648703C11.8526 0.969668 11.4746 1.39348 11.2079 1.88638L7.54473 8.66344L1.95515 10.8897C1.77056 10.9631 1.60708 11.0812 1.4794 11.2334C1.35172 11.3855 1.26383 11.5671 1.22364 11.7616C1.18345 11.9561 1.1922 12.1576 1.24912 12.348C1.30603 12.5383 1.40933 12.7115 1.54973 12.852L5.50082 16.8031L0.352647 21.9513L0 24L2.04871 23.6474L7.19688 18.4992L11.1456 22.4479C11.2859 22.5883 11.459 22.6917 11.6492 22.7488C11.8394 22.8059 12.0408 22.8149 12.2353 22.7749C12.4298 22.735 12.6114 22.6474 12.7637 22.5199C12.916 22.3925 13.0343 22.2293 13.1079 22.0448L15.3462 16.4505L22.1136 12.7897C22.6065 12.523 23.0303 12.145 23.3513 11.6856C23.6723 11.2263 23.8815 10.6983 23.9624 10.1438C24.0432 9.58923 23.9934 9.02348 23.817 8.4916C23.6405 7.95971 23.3423 7.47639 22.9461 7.08013L16.9175 1.05394Z" fill="#b22c2c" styleClass="note-box__icon" />

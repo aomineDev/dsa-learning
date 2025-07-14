@@ -8,12 +8,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema8.Nivel4Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema9.Nivel4Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -28,7 +27,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Operaciones básicas de una Pila con Arreglos" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Operaciones básicas de una Cola con Arreglos" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
@@ -40,93 +39,54 @@
                      <children>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Agrega un nuevo elemento a la pila (si hay espacio)." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Inserta un nuevo elemento al final de la cola." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Usa ++tope para aumentar el índice antes de insertar el valor en el arreglo." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Usa ++fin para mover el índice de inserción." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si ya llegamos al límite (tope == pila.length - 1), no inserta nada y muestra &quot;Pila llena&quot;." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si la cola está llena, muestra &quot;Cola llena&quot;." />
                            </children>
                         </TextFlow>
                      </children>
                   </VBox>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo visual si insertamos 10, 20 y 30:" />
-                  <TextFlow styleClass="simple-code">
-                     <children>
-                        <VBox>
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Índice:   0    1    2">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Pila:   [10] [20] [30]">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Tope →    ↑    ↑    ↑">
-                                 <font>
-                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                        </VBox>
-                     </children>
-                  </TextFlow>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Método Eliminar" />
                   <WebView fx:id="code2" minHeight="145.0" prefHeight="100.0" prefWidth="558.0" />
                   <VBox prefWidth="100.0" spacing="20.0" styleClass="list">
                      <children>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Devuelve el último valor insertado y lo elimina de la pila." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Elimina y retorna el elemento del frente de la cola." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Usa pila[tope--]: primero obtiene el valor actual, luego reduce el tope en 1." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Usa frente++ para avanzar al siguiente." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si la pila ya está vacía (tope &lt; 0), muestra &quot;Pila vacía&quot; y devuelve -1." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si está vacía, muestra &quot;Cola vacía&quot; y devuelve -1." />
                            </children>
                         </TextFlow>
                      </children>
                   </VBox>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Si tienes:" />
-                  <TextFlow styleClass="simple-code">
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="[10, 20, 30] y tope = 2">
-                           <font>
-                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </TextFlow>
-                  <TextFlow>
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Después de hacer pop(), se devuelve 30 y tope se convierte en 1." />
-                     </children>
-                  </TextFlow>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Método para Mirar la cima" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Método para Mirar el frente" />
                   <WebView fx:id="code3" minHeight="145.0" prefHeight="100.0" prefWidth="558.0" />
                   <VBox prefWidth="100.0" spacing="20.0" styleClass="list">
                      <children>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Revisa si la pila está vacía." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Retorna el elemento del frente sin eliminarlo." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si no lo está, devuelve el valor del nodo en la cima sin eliminarlo." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Verifica que la cola no esté vacía." />
                            </children>
                         </TextFlow>
                         <TextFlow />
@@ -137,7 +97,7 @@
                         <SVGPath content="M16.9175 1.05394C16.5212 0.65769 16.0379 0.359463 15.506 0.183021C14.9741 0.00657868 14.4084 -0.0432011 13.8538 0.0376476C13.2993 0.118496 12.7713 0.327739 12.312 0.648703C11.8526 0.969668 11.4746 1.39348 11.2079 1.88638L7.54473 8.66344L1.95515 10.8897C1.77056 10.9631 1.60708 11.0812 1.4794 11.2334C1.35172 11.3855 1.26383 11.5671 1.22364 11.7616C1.18345 11.9561 1.1922 12.1576 1.24912 12.348C1.30603 12.5383 1.40933 12.7115 1.54973 12.852L5.50082 16.8031L0.352647 21.9513L0 24L2.04871 23.6474L7.19688 18.4992L11.1456 22.4479C11.2859 22.5883 11.459 22.6917 11.6492 22.7488C11.8394 22.8059 12.0408 22.8149 12.2353 22.7749C12.4298 22.735 12.6114 22.6474 12.7637 22.5199C12.916 22.3925 13.0343 22.2293 13.1079 22.0448L15.3462 16.4505L22.1136 12.7897C22.6065 12.523 23.0303 12.145 23.3513 11.6856C23.6723 11.2263 23.8815 10.6983 23.9624 10.1438C24.0432 9.58923 23.9934 9.02348 23.817 8.4916C23.6405 7.95971 23.3423 7.47639 22.9461 7.08013L16.9175 1.05394Z" fill="#b22c2c" styleClass="note-box__icon" />
                         <TextFlow textAlignment="CENTER">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="note-box__text" text="Sirve para ver cuál es el último valor agregado, pero sin modificar la pila." />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="note-box__text" text="Si usas frente++ y fin++ sin reiniciar o reutilizar posiciones, la cola puede llenarse aunque haya espacios vacíos al inicio del arreglo. Esto sucede porque el arreglo es de tamaño fijo y no hay desplazamiento de los elementos." />
                            </children>
                         </TextFlow>
                      </children>

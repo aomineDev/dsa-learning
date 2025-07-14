@@ -19,13 +19,10 @@
         require(['vs/editor/editor.main'], function () {
 
             editor = monaco.editor.create(document.getElementById('container'), {
-                value: `public class Main {
-    public static void main(String[] args) {
-        ABB a = new ABB();
-        a.insertar(10); a.insertar(5); a.insertar(15);
-        a.raiz = a.eliminar(a.raiz, 10);
-        a.inorden(a.raiz); // Salida: 5 15
-    }
+                value: `public ColaArreglo(int tamaño) {
+    cola = new int[tamaño];
+    frente = 0;
+    fin = -1;
 }
 `,
                 language: 'java',

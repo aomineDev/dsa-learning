@@ -19,13 +19,11 @@
         require(['vs/editor/editor.main'], function () {
 
             editor = monaco.editor.create(document.getElementById('container'), {
-                value: `class ABB {
-    Nodo raiz;
-
-    boolean buscar(Nodo n, int v) {
-        if (n == null) return false;
-        if (v == n.valor) return true;
-        return (v < n.valor) ? buscar(n.izq, v) : buscar(n.der, v);
+                value: `public int peek() {
+    if (frente <= fin) {
+        return cola[frente];
+    } else {
+        return -1;
     }
 }
 `,

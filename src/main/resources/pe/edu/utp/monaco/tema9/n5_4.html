@@ -19,23 +19,17 @@
         require(['vs/editor/editor.main'], function () {
 
             editor = monaco.editor.create(document.getElementById('container'), {
-                value: `class ABB {
-    Nodo raiz;
-
-    Nodo eliminar(Nodo n, int v) {
-        if (n == null) return null;
-        if (v < n.valor) n.izq = eliminar(n.izq, v);
-        else if (v > n.valor) n.der = eliminar(n.der, v);
-        else {
-            if (n.izq == null) return n.der;
-            if (n.der == null) return n.izq;
-            Nodo sucesor = n.der;
-            while (sucesor.izq != null) sucesor = sucesor.izq;
-            n.valor = sucesor.valor;
-            n.der = eliminar(n.der, sucesor.valor);
-        }
-        return n;
+                value: `public int dequeue() {
+    if (frente == null) {
+        System.out.println("Cola vacía");
+        return -1;
     }
+    int valor = frente.dato;
+    frente = frente.siguiente;
+    if (frente == null) {
+        fin = null;
+    }
+    return valor;
 }
 `,
                 language: 'java',

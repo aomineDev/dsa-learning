@@ -13,29 +13,36 @@
   </style>
   <script src="../min/vs/loader.js"></script>
   <script>
-    let editor
+    let editor;
 
     require.config({ paths: { vs: '../min/vs' } });
     require(['vs/editor/editor.main'], function () {
-
       editor = monaco.editor.create(document.getElementById('container'), {
-        value: `public class Main {
-    public static void main(String[] args) {
-        ABB a = new ABB();
-        a.insertar(10);
-        a.insertar(5);
-        a.insertar(15);
-        a.inorden(a.raiz); // Salida: 5 10 15
+        value: `public Nodo eliminar(Nodo nodo, int valor) {
+    if (nodo == null) {
+        return null;
     }
-}
-`,
+    if (valor < nodo.valor) {
+        nodo.izquierdo = eliminar(nodo.izquierdo, valor);
+    } else if (valor > nodo.valor) {
+        nodo.derecho = eliminar(nodo.derecho, valor);
+    } else {
+        if (nodo.izquierdo == null) {
+            return nodo.derecho;
+        } else if (nodo.derecho == null) {
+            return nodo.izquierdo;
+        }
+        Nodo sucesor = encontrarMin(_____);
+        nodo.valor = sucesor.valor;
+        nodo.derecho = eliminar(nodo.derecho, sucesor.valor);
+    }
+    return nodo;
+}`,
         language: 'java',
         theme: 'vs-dark',
         fontSize: 14,
-        readOnly: true,
-        minimap: {
-          enabled: false
-        },
+        readOnly: false,
+        minimap: { enabled: false },
         scrollbar: {
           vertical: 'hidden',
           horizontal: 'hidden',
@@ -43,9 +50,7 @@
         },
         scrollBeyondLastLine: false,
         contextmenu: false,
-        padding: {
-          top: 12
-        }
+        padding: { top: 12 }
       });
     });
   </script>

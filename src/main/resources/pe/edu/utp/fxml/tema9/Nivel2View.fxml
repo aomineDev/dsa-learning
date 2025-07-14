@@ -11,8 +11,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema8.Nivel2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema9.Nivel2Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -27,7 +28,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Usando la clase Stack de Java" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Usando la clase Queue de Java" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
@@ -35,12 +36,12 @@
                   </HBox>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Java proporciona una clase llamada Stack en el paquete java.util, que permite trabajar directamente con pilas." />
+                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Java proporciona la interfaz Queue y una de sus implementaciones más usadas es LinkedList." />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Stack&lt;String&gt; pila = new Stack&lt;&gt;();">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="Queue&lt;String&gt; cola = new LinkedList&lt;&gt;();">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -49,7 +50,7 @@
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Primero instanciamos un objeto de dicha clase, el tipo de dato es depende a tus necesidades, para este ejemplo será una pila de String." />
+                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Primero instanciamos un objeto de dicha clase, el tipo de dato es depende a tus necesidades, para este ejemplo será una cola de String." />
                      </children>
                   </TextFlow>
                   <TextFlow>
@@ -59,7 +60,7 @@
                   </TextFlow>
                   <VBox alignment="CENTER" prefHeight="298.0" prefWidth="558.0" styleClass="note-box">
                      <children>
-                        <HBox spacing="20.0">
+                        <HBox spacing="40.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
@@ -73,78 +74,84 @@
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="23.0">
+                        <HBox spacing="50.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="push() :" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="add() :" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserta un elemento en la parte superior de la pila." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserta un elemento (lanza excepción si falla)" />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="30.0">
+                        <HBox spacing="20.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pop() :" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="remove() :" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Elimina y devuelve el elemento en la parte superior." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Elimina y retorna el primer elemento" />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="25.0">
+                        <HBox spacing="55.0">
                            <children>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="peek() :" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="poll() :" wrappingWidth="63.19200134277344" />
                                  </children>
                               </TextFlow>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Devuelve el elemento en la cima sin eliminarlo." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Igual que remove pero retorna null si está vacía" />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox spacing="12.0">
+                        <HBox spacing="45.0">
                            <children>
+                              <TextFlow textAlignment="CENTER">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="peek() :" wrappingWidth="58.12000274658203" />
+                                 </children>
+                              </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="empty() :" />
-                                 </children>
-                              </TextFlow>
-                              <TextFlow textAlignment="CENTER">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verifica si la pila está vacía" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Muestra el primer elemento sin eliminarlo" />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
-                        <HBox prefHeight="69.0" prefWidth="514.0" spacing="20.0">
+                        <HBox spacing="20.0">
                            <children>
-                              <TextFlow prefHeight="369.0" prefWidth="64.0" textAlignment="CENTER">
+                              <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="search() :" wrappingWidth="106.53600311279297" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="isEmpty() :" />
                                  </children>
                               </TextFlow>
-                              <TextFlow prefHeight="71.0" prefWidth="408.0" textAlignment="CENTER">
+                              <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Devuelve la posición desde la cima de la pila (1 basado). Si no existe, devuelve -1." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verifica si la cola está vacía" />
                                  </children>
                               </TextFlow>
                            </children>
                         </HBox>
                      </children>
                   </VBox>
+                  <TextFlow>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo de su aplicación" />
+                     </children>
+                  </TextFlow>
+                  <WebView fx:id="code1" prefHeight="170.0" prefWidth="200.0" />
                   <HBox alignment="CENTER">
                      <children>
                         <Button alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleContinueBtnClick" styleClass="btn-next" text="Continuar">

@@ -1,14 +1,30 @@
-package pe.edu.utp.controller.tema12;
+package pe.edu.utp.controller.tema9;
 
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
+import javafx.scene.web.WebView;
 import pe.edu.utp.App;
 import pe.edu.utp.util.Nivel;
 
-public class Nivel3Controller {
+public class Nivel5Controller {
+
+    @FXML
+    private WebView code1;
+
+    @FXML
+    private WebView code2;
+
+    @FXML
+    private WebView code3;
+
+    @FXML
+    private WebView code4;
+
+    @FXML
+    private WebView code5;
 
     @FXML
     private ComboBox<String> nivelSelector;
@@ -18,17 +34,23 @@ public class Nivel3Controller {
 
     @FXML
     void initialize() {
-        tema = "tema" + 12;
-        nivel = 3;
+        tema = "tema" + 9;
+        nivel = 5;
 
         Nivel n = new Nivel(tema, nivel);
 
-        n.setNivelItems(nivelSelector, 3);
+        n.setCodeView(code1, 1);
+        n.setCodeView(code2, 2);
+        n.setCodeView(code3, 3);
+        n.setCodeView(code4, 4);
+        n.setCodeView(code5, 5);
+
+        n.setNivelItems(nivelSelector, 5);
     }
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot(tema + "/Nivel3Quizz1View");
+        App.setRoot(tema + "/Nivel5Quizz1View");
     }
 
     @FXML
