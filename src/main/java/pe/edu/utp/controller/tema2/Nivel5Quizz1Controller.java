@@ -2,12 +2,10 @@ package pe.edu.utp.controller.tema2;
 
 import java.io.IOException;
 
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.web.WebView;
-import javafx.util.Duration;
 import pe.edu.utp.App;
 
 public class Nivel5Quizz1Controller {
@@ -64,7 +62,7 @@ public class Nivel5Quizz1Controller {
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema2/PuzzleView");
+        App.setRoot("tema2/CodegroundView");
     }
 
     @FXML
