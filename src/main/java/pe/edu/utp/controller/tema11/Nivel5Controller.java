@@ -17,8 +17,8 @@ import pe.edu.utp.util.Codeground;
 
 public class Nivel5Controller {
     private Codeground codeground;
-    private Object[][] testCase1 = { { 10 }, { 10 } };
-    private Object[][] testCase2 = { { 1 }, { 2 } };
+    private Object[][] testCase1 = { { 10, -1 }, { 10 } };
+    private Object[][] testCase2 = { { 20, 5 }, { 3 } };
     @FXML
     private Button btnCase1;
 
@@ -58,7 +58,7 @@ public class Nivel5Controller {
     @FXML
     void initialize() {
         int tema = 11;
-        codeground = new Codeground(new Class[] { Integer.class });
+        codeground = new Codeground(new Class[] { Integer.class, Integer.class });
 
         code.getEngine()
                 .load(getClass().getResource("/pe/edu/utp/monaco/tema" + tema + "/codeground.html").toExternalForm());
@@ -66,7 +66,7 @@ public class Nivel5Controller {
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("");
+        App.setRoot("tema12/Nivel1View");
     }
 
     @FXML
