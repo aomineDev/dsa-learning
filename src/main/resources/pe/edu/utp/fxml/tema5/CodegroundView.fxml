@@ -88,7 +88,7 @@
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Titulo1" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="ASdasd " />
                                  </children>
                               </TextFlow>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Titulo 2" />
