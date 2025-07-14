@@ -1,5 +1,8 @@
 package pe.edu.utp.controller.tema11;
 
+import java.io.IOException;
+import java.io.PrintStream;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -9,9 +12,13 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.scene.web.WebView;
+import pe.edu.utp.App;
+import pe.edu.utp.util.Codeground;
 
 public class Nivel5Controller {
-
+    private Codeground codeground;
+    private Object[][] testCase1 = { { 10 }, { 10 } };
+    private Object[][] testCase2 = { { 1 }, { 2 } };
     @FXML
     private Button btnCase1;
 
@@ -49,28 +56,62 @@ public class Nivel5Controller {
     private Text resultCase2;
 
     @FXML
-    void handleBtnCase1Click(ActionEvent event) {
+    void initialize() {
+        int tema = 11;
+        codeground = new Codeground(new Class[] { Integer.class });
 
+        code.getEngine()
+                .load(getClass().getResource("/pe/edu/utp/monaco/tema" + tema + "/codeground.html").toExternalForm());
     }
 
     @FXML
-    void handleBtnCase2Click(ActionEvent event) {
-
-    }
-
-    @FXML
-    void handleCloseModalClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void handleContinueBtnClick(ActionEvent event) {
-
+    void handleContinueBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("");
     }
 
     @FXML
     void handleExceuteClick(ActionEvent event) {
+        PrintStream originalOut = System.out;
 
+        try {
+            codeground.compile(code);
+
+            codeground.testCase(testCase1[0], testCase1[1][0]);
+            codeground.renderResult(resultCase1, outputText1, btnCase1);
+
+            codeground.testCase(testCase2[0], testCase2[1][0]);
+            codeground.renderResult(resultCase2, outputText2, btnCase2);
+
+            if (codeground.isValid())
+                Codeground.openModal(modal);
+
+        } catch (Exception e) {
+            codeground.handleCodeError(e);
+            codeground.renderResult(resultCase1, outputText1, btnCase1);
+            codeground.renderResult(resultCase2, outputText2, btnCase2);
+        }
+
+        System.setOut(originalOut);
     }
 
+    @FXML
+    void handleBtnCase1Click(ActionEvent event) {
+        case1.setVisible(true);
+        case2.setVisible(false);
+        output1.setVisible(true);
+        output2.setVisible(false);
+    }
+
+    @FXML
+    void handleBtnCase2Click(ActionEvent event) {
+        case1.setVisible(false);
+        case2.setVisible(true);
+        output1.setVisible(false);
+        output2.setVisible(true);
+    }
+
+    @FXML
+    void handleCloseModalClick(MouseEvent event) {
+        Codeground.closeModal(modal);
+    }
 }
