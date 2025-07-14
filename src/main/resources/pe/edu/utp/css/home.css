@@ -1,10 +1,13 @@
 .sidebar {
   -fx-background-color: #2493DF;
   -fx-alignment: TOP_LEFT;
+  -fx-padding: 20;
+  -fx-spacing: 12;
+
 }
 
 .sidebar__title-container {
-  -fx-padding: 20 20 40 20;
+  -fx-padding: 0 0 20 0;
 }
 
 .sidebar__title {
@@ -18,25 +21,29 @@
   -fx-font-size: 16;
   -fx-text-fill: rgba(255, 255, 255, .7);
   -fx-cursor: hand;
-  -fx-min-width: 300;
-  -fx-min-height: 60;
-  -fx-padding: 0 0 0 20;
+  -fx-min-width: 260;
+  -fx-min-height: 45;
+  -fx-padding: 0 0 0 16;
   -fx-cursor: hand;
   -fx-background-color: transparent;
   /* -fx-background-color: transparent; */
 }
 
-.sidebar__link--active {
+.sidebar__link:hover {
+  /* -fx-background-color: #1b84ca; */
   -fx-text-fill: rgb(255, 255, 255);
 }
 
-.sidebar__link:hover {
-  -fx-background-color: #1b84ca;
-  -fx-text-fill: rgb(255, 255, 255);
+.sidebar__link.sidebar__link--active {
+  -fx-background-color: white;
+  -fx-background-radius: 8;
+  -fx-text-fill: #212121;
 }
 
 .btn-subject--1,
-.btn-subject--2 {
+.btn-subject--2,
+.btn-subject--3,
+.btn-subject--4 {
   -fx-min-width: 150;
   -fx-max-width: 150;
   -fx-min-height: 150;
@@ -52,7 +59,6 @@
 .btn-subject--1 {
   -fx-background-color: #74df59;
   -fx-effect: dropshadow(gaussian, rgba(66, 168, 88, .8), 10, .5, 0, 4);
-
 }
 
 .btn-subject--2 {
@@ -60,13 +66,34 @@
   -fx-effect: dropshadow(gaussian, rgba(120, 87, 230, .8), 10, .5, 0, 4);
 }
 
+.btn-subject--3 {
+  -fx-background-color: #fc8762;
+  -fx-effect: dropshadow(gaussian, rgba(252, 135, 98, .8), 10, .5, 0, 4);
+}
+
+.btn-subject--4 {
+  -fx-background-color: rgb(252, 98, 138);
+  -fx-effect: dropshadow(gaussian, rgba(252, 98, 138, .8), 10, .5, 0, 4);
+}
+
 .btn-subject--1:hover {
-  -fx-background-color: #69ca51;
-  -fx-effect: dropshadow(gaussian, rgba(66, 168, 88, .8), 10, .6, 0, 4);
+  -fx-background-color: rgb(105, 202, 81);
+  -fx-effect: dropshadow(gaussian, rgba(105, 202, 81, .8), 10, .6, 0, 4);
 }
 
 .btn-subject--2:hover {
-  -fx-background-color: #7756e2;
+  -fx-background-color: rgb(119, 86, 226);
+  -fx-effect: dropshadow(gaussian, rgba(119, 86, 226, .8), 10, .6, 0, 4);
+}
+
+.btn-subject--3:hover {
+  -fx-background-color: rgb(235, 129, 97);
+  -fx-effect: dropshadow(gaussian, rgba(235, 129, 97, .8), 10, .6, 0, 4);
+}
+
+.btn-subject--4:hover {
+  -fx-background-color: rgb(241, 91, 131);
+  -fx-effect: dropshadow(gaussian, rgba(241, 91, 131, .8), 10, .6, 0, 4);
 }
 
 .btn__container {
@@ -80,10 +107,11 @@
 }
 
 .home__title-1,
-.home__title-2 {
+.home__title-2,
+.home__title-3,
+.home__title-4 {
   -fx-font-size: 35;
   -fx-font-weight: bold;
-  -fx-fill: #74df59;
 }
 
 .home__title-1 {
@@ -93,3 +121,13 @@
 .home__title-2 {
   -fx-fill: #8762FC;
 }
+
+.home__title-3 {
+  -fx-fill: #fc8762;
+}
+
+.home__title-4 {
+  -fx-fill: #fc628a;
+}
+
+<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.61111 1C3.88889 1 2.80556 1.35 2.80556 2.75V5.9C2.80556 6.95 1 7.65 1 7.65C1 7.65 2.80556 8.35 2.80556 9.4V13.25C2.80556 14.65 3.88889 15 4.61111 15M10.3889 1C11.1111 1 12.1944 1.35 12.1944 2.75V5.9C12.1944 6.95 14 7.65 14 7.65C14 7.65 12.1944 8.35 12.1944 9.4V13.25C12.1944 14.65 11.1111 15 10.3889 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.75 10.1818H0L5.25 0V5.81818H9L3.75 16V10.1818Z" fill="black" /></svg>
