@@ -229,7 +229,7 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;dcbaefd&quot;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="dcbaefd" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
@@ -256,7 +256,7 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Esperado: &quot;abc&quot;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="abc" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
