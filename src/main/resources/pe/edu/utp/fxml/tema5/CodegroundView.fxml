@@ -20,8 +20,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.template.CodegroundController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -207,7 +206,7 @@
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haz  superado co exito este reto y superaste los 2 casos. Felicidades!" />
                               <ImageView pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../img/codeground/success.png" />
+                                    <Image url="@../../img/codeground/success.png" />
                                  </image>
                               </ImageView>
                               <Button alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleContinueBtnClick" styleClass="btn-next" text="Continuar">
@@ -225,8 +224,8 @@
       </StackPane>
    </children>
    <stylesheets>
-      <URL value="@../css/styles.css" />
-      <URL value="@../css/scroll.css" />
-      <URL value="@../css/codeground.css" />
+      <URL value="@../../css/styles.css" />
+      <URL value="@../../css/scroll.css" />
+      <URL value="@../../css/codeground.css" />
    </stylesheets>
 </AnchorPane>

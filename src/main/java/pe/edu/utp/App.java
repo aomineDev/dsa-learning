@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         loadPoppinsFont();
-        scene = new Scene(loadFXML("CodegroundView"));
+        scene = new Scene(loadFXML("template/CodegroundView"));
         stage.setTitle("Sistema Educativo - Estructura de Datos");
         stage.setScene(scene);
         stage.show();
