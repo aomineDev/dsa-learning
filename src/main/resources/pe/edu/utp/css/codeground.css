@@ -1,0 +1,107 @@
+.codeground-background {
+  -fx-background-color: #F0F0F0;
+}
+
+.panel {
+  -fx-background-color: white;
+  -fx-background-radius: 20;
+}
+
+.panel-content {
+  -fx-padding: 20;
+  -fx-spacing: 20;
+}
+
+.console-output {
+  -fx-spacing: 12;
+}
+
+.console-output-scroll {
+  -fx-background-color: #F2F3F4;
+  -fx-background-radius: 12;
+}
+
+.console-output__content {
+  -fx-padding: 20;
+}
+
+.console-output__content Text {
+  -fx-font-family: 'Consolas';
+}
+
+.console-output__content .console-output__content--error {
+  -fx-fill: #f1275a;
+}
+
+.btn-execute {
+  -fx-background-color: #24df88;
+  -fx-border-color: #2fa870;
+}
+
+.btn-execute:hover {
+  -fx-background-color: #23d482;
+}
+
+.btn-execute__icon {
+  -fx-fill: white;
+}
+
+.test-btn-container {
+  -fx-spacing: 12;
+}
+
+.test-btn {
+  -fx-background-radius: 8;
+  -fx-padding: 4 24 4 24;
+  -fx-cursor: hand;
+  -fx-font-size: 16;
+  -fx-background-color: transparent;
+
+  -fx-border-radius: 8;
+  -fx-border-width: 1;
+}
+
+.test-btn--success {
+  -fx-text-fill: #00FF9C;
+  /* -fx-border-color: #00FF9C; */
+}
+
+.test-btn--error {
+  -fx-text-fill: #FF0B55;
+  /* -fx-border-color: #FF0B55; */
+}
+
+.test-btn:hover {
+  -fx-background-color: rgba(223, 223, 223, .3);
+}
+
+.test-wrapper {
+  -fx-spacing: 12;
+}
+
+.test-content {
+  -fx-padding: 12;
+  -fx-background-color: #F2F3F4;
+  -fx-background-radius: 8;
+}
+
+.test-content Text {
+  -fx-font-family: 'Consolas';
+}
+
+.modal-overlay {
+  -fx-background-color: rgba(0, 0, 0, .5);
+  -fx-alignment: CENTER;
+}
+
+.modal-content {
+  -fx-background-color: white;
+  -fx-background-radius: 20;
+  -fx-padding: 40;
+  -fx-spacing: 20;
+  -fx-alignment: center;
+}
+
+.modal-title {
+  -fx-fill: #24df88;
+}

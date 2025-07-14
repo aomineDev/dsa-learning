@@ -10,18 +10,27 @@
       height: 100%;
       margin: 0;
     }
+
+    body {
+      background-color: #F0F0F0;
+    }
+
+    #container {
+      border-radius: 20px;
+      overflow: hidden;
+    }
   </style>
-  <script src="./min/vs/loader.js"></script>
+  <script src="../min/vs/loader.js"></script>
   <script>
     let editor
 
-    require.config({ paths: { vs: './min/vs' } });
+    require.config({ paths: { vs: '../min/vs' } });
     require(['vs/editor/editor.main'], function () {
 
       editor = monaco.editor.create(document.getElementById('container'), {
-        value: `public class Probando {
-  public static Integer calc(Integer n) {
-    // Tu codigo aqui
+        value: `public class Ejercicio {
+  public static Integer solucion(Integer n) {
+    // Escribe aqui tu solución
   }
 }`,
         language: 'java',

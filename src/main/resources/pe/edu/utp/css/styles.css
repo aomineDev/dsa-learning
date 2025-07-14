@@ -56,7 +56,8 @@ Text {
 }
 
 .btn-next,
-.btn-confirm {
+.btn-confirm,
+.btn {
   -fx-background-radius: 8;
   -fx-border-radius: 8;
   -fx-border-width: 0 0 3 0;

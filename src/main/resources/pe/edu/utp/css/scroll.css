@@ -2,6 +2,10 @@
   -fx-background-color: transparent;
 }
 
+.scroll-pane {
+  -fx-padding: 0;
+}
+
 .scroll-bar:vertical,
 .scroll-bar:horizontal {
   -fx-background-color: transparent;
@@ -20,4 +24,5 @@
 .scroll-bar .decrement-button {
   -fx-background-color: transparent;
   -fx-padding: 0;
+  -fx-opacity: 0;
 }
