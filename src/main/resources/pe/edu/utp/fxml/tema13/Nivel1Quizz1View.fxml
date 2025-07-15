@@ -29,10 +29,10 @@
                   <VBox prefWidth="100.0" styleClass="list" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text=" Cada nodo puede tener más de dos hijos." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Un nodo puede tener tres conexiones: izquierda, derecha y central." textAlignment="CENTER" wrapText="true" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Cada nodo puede tener como máximo dos hijos: uno izquierdo y uno derecho." textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Todos los nodos deben tener exactamente dos hijos para formar un árbol binario." textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text=" A) Cada nodo puede tener más de dos hijos." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Un nodo puede tener tres conexiones: izquierda, derecha y central." textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Cada nodo puede tener como máximo dos hijos: uno izquierdo y uno derecho." textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) Todos los nodos deben tener exactamente dos hijos para formar un árbol binario." textAlignment="CENTER" wrapText="true" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

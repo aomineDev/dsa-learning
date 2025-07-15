@@ -37,10 +37,10 @@
                   </VBox>
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="511.0" styleClass="btn-quizz" text=" La inserción solo puede hacerse en el lado derecho del árbol" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="510.0" styleClass="btn-quizz" text="El primer nodo insertado en un árbol se llama subnodo" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Luego de insertar la raíz, se puede insertar a la izquierda o derecha" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="505.0" styleClass="btn-quizz" text="Un árbol permite insertar nodos sin límite en cada nodo" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="511.0" styleClass="btn-quizz" text=" A) La inserción solo puede hacerse en el lado derecho del árbol" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="510.0" styleClass="btn-quizz" text="B) El primer nodo insertado en un árbol se llama subnodo" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Luego de insertar la raíz, se puede insertar a la izquierda o derecha" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="505.0" styleClass="btn-quizz" text="E) Un árbol permite insertar nodos sin límite en cada nodo" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

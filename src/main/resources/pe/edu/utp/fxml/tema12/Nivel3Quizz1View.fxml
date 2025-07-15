@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel3Quizz1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel3Quizz1Controller">
    <children>
       <VBox layoutX="234.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -28,10 +28,10 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="¿Qué se hace al eliminar un nodo con dos hijos&#10;en un ABB?" textAlignment="CENTER" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se borra directamente el nodo." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se reemplaza por su sucesor inmediato, que es el menor valor del subárbol derecho." />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se reemplaza por su antecesor inmediato del subárbol izquierdo." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="No se puede eliminar un nodo con dos hijos." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="A) Se borra directamente el nodo." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Se reemplaza por su antecesor inmediato del subárbol izquierdo." />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Se reemplaza, ya que es el menor valor del subárbol derecho." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) No se puede eliminar un nodo con dos hijos." />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

@@ -94,27 +94,63 @@
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Guardianes del arbol binario" />
                               <TextFlow>
                                  <children>
-                                    <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En el reino digital de Estructurania, el equilibrio de la información está en manos del Árbol Binario Sagrado.Tú eres su Guardián, y tu tarea es clara:Construir, modificar y recorrer el árbol según las órdenes del Oráculo.Inserta nuevos nodos, elimina ramas inservibles y responde con sabiduría a los recorridos solicitados." />
+                                    <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Bienvenido, joven programador! Has sido elegido como el nuevo Guardián del Árbol Binario, una estructura mágica que crece con sabiduría y orden. Tu misión es cuidar su crecimiento insertando nodos correctamente.Tendrás dos desafíos. Presta atención a lo que debes hacer en cada uno:" />
                                  </children>
                               </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reglas" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 1: El despertar del arbol" />
                                  </children>
                               </TextFlow>
                               <VBox prefWidth="100.0" styleClass="list">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El primer nodo insertado siempre es la raíz." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Solo se puede eliminar un hijo si ya existe." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Cada nodo puede tener máximo dos hijos." />
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El árbol aún no tiene vida. Tu tarea es plantar su raíz con el valor mágico que recibirás." />
+                                       </children>
+                                    </TextFlow>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Insertar un solo nodo como raíz del árbol." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Retornar el valor insertado como raíz." />
+                                 </children>
+                              </VBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 2: El arbol comienza a ramificarse" />
+                              <VBox prefWidth="100.0" styleClass="list">
+                                 <children>
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  El árbol ya puede expandirse. Esta vez, no solo plantarás la raíz, sino que también deberás hacer crecer dos ramas: una a la izquierda y otra a la derecha." />
+                                       </children>
+                                    </TextFlow>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Insertar la raíz." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Insertar un hijo izquierdo con valor (raíz - 1)." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• IInsertar un hijo derecho con valor (raíz + 1)." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Retornar el total de nodos insertados (debe ser 3)." />
+                                 </children>
+                              </VBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reglas" />
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="list">
+                                 <children>
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El indicador define la accion que realizarias si es -1 aras el caso 1 y si es 5 aras el caso 2" />
+                                       </children>
+                                    </TextFlow>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Crear las clases necesarias para representar un árbol binario" />
                                  </children>
                               </VBox>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reestricciones" />
-                              <VBox prefWidth="100.0" styleClass="list">
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="list">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Se garantiza que el nodo padre existe al insertar o eliminar." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El árbol no tendrá más de 100 nodos." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Cada nodo puede tener máximo dos hijos." />
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Solo se debe retornar un único valor entero desde la función solucion." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Solo puedes usar estructuras básicas de Java (no ArrayList, ni LinkedList, ni librerías externas)." />
+                                       </children>
+                                    </TextFlow>
                                  </children>
                               </VBox>
                               <TextFlow styleClass="simple-code" visible="false">
@@ -149,27 +185,20 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserccion en la raiz -&gt; 10" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
                                              </children>
                                           </TextFlow>
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserccion en el hijo izquiero -&gt; 4" />
-                                             </children>
-                                          </TextFlow>
-                                          <TextFlow styleClass="test-content">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserccion en el hijo derecho -&gt; 6" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-1 -&gt; Indicador" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
-                                          <VBox prefHeight="84.0" prefWidth="560.0" styleClass="simple-code">
+                                          <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                          10                      " textAlignment="CENTER" wrappingWidth="482.296875" />
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                            / \            " wrappingWidth="506.890625" />
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                           4   6" wrappingWidth="497.53125" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
                                              </children>
-                                          </VBox>
+                                          </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
@@ -183,17 +212,20 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Eliminar hijo izqueiro -&gt; 4" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="20" />
+                                             </children>
+                                          </TextFlow>
+                                          <TextFlow styleClass="test-content">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5-&gt;Indicador" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
-                                          <VBox prefHeight="84.0" prefWidth="560.0" styleClass="simple-code">
+                                          <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                          10                      " textAlignment="CENTER" wrappingWidth="482.296875" />
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                             \            " wrappingWidth="506.890625" />
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                             6" wrappingWidth="497.53125" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
                                              </children>
-                                          </VBox>
+                                          </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
                                           <TextFlow styleClass="test-content">
                                              <children>

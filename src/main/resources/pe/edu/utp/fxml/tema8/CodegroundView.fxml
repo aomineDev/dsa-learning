@@ -88,19 +88,19 @@
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Prefijo inverso de palabra" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Prefijo inverso de palabra" />
                                  </children>
                               </TextFlow>
                               <VBox spacing="20.0">
                                  <children>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una cadena indexada desde 0 y un carácter ch, debes invertir el segmento de la cadena que empieza en el índice 0 y termina en la primera aparición de la ch." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una cadena indexada desde 0 y un carácter ch, debes invertir el segmento de la cadena que empieza en el índice 0 y termina en la primera aparición de la ch." />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si el ch letra no se encuentra en la cadena, entonces la cadena debe permanecer igual (no se hace ningún cambio)." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si el ch letra no se encuentra en la cadena, entonces la cadena debe permanecer igual (no se hace ningún cambio)." />
                                        </children>
                                        <padding>
                                           <Insets left="20.0" />
@@ -110,7 +110,7 @@
                               </VBox>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
                                  </children>
                               </TextFlow>
                               <VBox spacing="10.0">
@@ -122,10 +122,10 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="cadena = &quot;abcdefd&quot;, ch = &quot;d&quot;" />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="cadena = &quot;abcdefd&quot;, ch = &quot;d&quot;" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
                                              <font>
@@ -135,7 +135,7 @@
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;dcbaefd&quot;" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
                                              <font>
@@ -145,19 +145,19 @@
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La primera aparición de &quot;d&quot; está en el índice 3. " />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Invierta la parte de la cadena de 0 a 3, la cadena resultante es &quot;dcbaefd&quot;." />
                                        </children>
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
