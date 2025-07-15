@@ -29,10 +29,10 @@
                   <VBox prefWidth="100.0" styleClass="list" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="El valor se coloca siempre en el centro." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se reemplaza el nodo actual si ya existe un valor." textAlignment="CENTER" wrapText="true" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="El valor se compara con los nodos hasta encontrar una posición donde no haya nodo.7" textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="El valor se ignora si ya hay muchos elementos." textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="A) El valor se coloca siempre en el centro." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Se reemplaza el nodo actual si ya existe un valor." textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) El valor se compara con los nodos hasta encontrar una posición donde no haya nodo." textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) El valor se ignora si ya hay muchos elementos." textAlignment="CENTER" wrapText="true" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

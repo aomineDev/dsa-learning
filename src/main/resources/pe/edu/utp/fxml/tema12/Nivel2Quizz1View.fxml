@@ -28,10 +28,10 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="¿Cuál es el principio básico que sigue la búsqueda&#10;en un Árbol Binario de Búsqueda (ABB)?" textAlignment="CENTER" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se recorre todo el árbol sin condiciones." />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Siempre se busca por el lado derecho del árbol." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se compara con el nodo actual y, si es menor, va a la izquierda; si es mayor, va a la derecha." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Se compara con la raíz y se recorre el árbol de forma aleatoria." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="A) Se recorre todo el árbol sin condiciones." />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Siempre se busca por el lado derecho del árbol." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Se compara con el nodo actual y, si es menor, va a la izquierda; si es mayor, va a la derecha." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) Se compara con la raíz y se recorre el árbol de forma aleatoria." />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">
