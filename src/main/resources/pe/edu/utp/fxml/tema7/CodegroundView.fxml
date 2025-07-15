@@ -20,7 +20,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema7.CodegroundController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema7.CodegroundController">
    <children>
       <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -88,26 +88,26 @@
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Puzze final" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Puzze final" />
                                  </children>
                               </TextFlow>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Ronda Musical: ¡El último en pie!" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Ronda Musical: ¡El último en pie!" />
                               <TextFlow>
                                  <children>
-                                    <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En Melodinia, los niños juegan a pasar un tambor mientras suena música. Están sentados en círculo y el tambor se pasa de mano en mano. Cuando se dan un número determinado de pasos, el niño que lo tiene es eliminado del juego. El tambor sigue girando hasta que solo queda uno." />
-                                 </children>
-                              </TextFlow>
-                              <TextFlow>
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tu reto es simular este juego utilizando una lista circular. Deberás eliminar un nodo cada cierto número de pasos hasta que solo uno permanezca." />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En Melodinia, los niños juegan a pasar un tambor mientras suena música. Están sentados en círculo y el tambor se pasa de mano en mano. Cuando se dan un número determinado de pasos, el niño que lo tiene es eliminado del juego. El tambor sigue girando hasta que solo queda uno." />
                                  </children>
                               </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 1: La ronda rapida" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu reto es simular este juego utilizando una lista circular. Deberás eliminar un nodo cada cierto número de pasos hasta que solo uno permanezca." />
                                  </children>
                               </TextFlow>
-                              <VBox prefWidth="100.0" styleClass="list">
+                              <TextFlow>
+                                 <children>
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 1: La ronda rapida" />
+                                 </children>
+                              </TextFlow>
+                              <VBox cache="true" prefWidth="100.0" styleClass="list">
                                  <children>
                                     <TextFlow>
                                        <children>
@@ -121,8 +121,8 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Retornar el numero del niño finalista." />
                                  </children>
                               </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 2: Ronda larga y rápida" />
-                              <VBox prefWidth="100.0" styleClass="list">
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 2: Ronda larga y rápida" />
+                              <VBox cache="true" prefWidth="100.0" styleClass="list">
                                  <children>
                                     <TextFlow>
                                        <children>
@@ -136,7 +136,7 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Retornar el numero del niño finalista." />
                                  </children>
                               </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reglas" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reglas" />
                               <VBox prefHeight="200.0" prefWidth="100.0" styleClass="list">
                                  <children>
                                     <TextFlow>
@@ -148,8 +148,8 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Se elimina al niño (nodo) en ese paso y el juego continúa desde el siguiente." />
                                  </children>
                               </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reestricciones" />
-                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="list">
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reestricciones" />
+                              <VBox cache="true" prefHeight="200.0" prefWidth="100.0" styleClass="list">
                                  <children>
                                     <TextFlow>
                                        <children>
