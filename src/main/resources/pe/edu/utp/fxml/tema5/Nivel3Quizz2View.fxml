@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import java.net.URL?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -11,9 +11,9 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.Nivel3Quizz2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.Nivel3Quizz2Controller">
    <children>
-      <VBox layoutX="60.0" layoutY="149.0" styleClass="quizz-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox layoutX="234.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox prefWidth="200.0" styleClass="btn__go-back__container">
                <children>
@@ -27,31 +27,40 @@
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="ALWAYS">
                <children>
-                  <TextFlow textAlignment="CENTER">
+                  <VBox prefWidth="100.0" styleClass="list">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text=" ¿Cuál es el valor de lista.cabeza.valor tras esta secuencia?" />
+                        <TextFlow textAlignment="CENTER">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text=" ¿Cuál es el valor de lista.cabeza.valor tras esta secuencia?" />
+                           </children>
+                        </TextFlow>
                      </children>
-                  </TextFlow>
+                  </VBox>
                   <WebView fx:id="code1" prefHeight="75.0" prefWidth="200.0" />
-                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="5" />
-                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="10" />
-                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="15" />
-                  <Button fx:id="btn4" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="null" />
+                  <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="511.0" styleClass="btn-quizz" text=" A) 5" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="510.0" styleClass="btn-quizz" text="B) 10" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="502.0" styleClass="btn-quizz" text="C) 15" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="505.0" styleClass="btn-quizz" text="D) null" />
+                     </children>
+                  </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">
                      <graphic>
                         <SVGPath content="M2.5 9.99999C2.5 9.66847 2.6317 9.35052 2.86612 9.1161C3.10054 8.88168 3.41848 8.74999 3.75 8.74999H13.65L10.3667 5.46665C10.1459 5.2297 10.0257 4.91629 10.0314 4.59245C10.0371 4.26862 10.1683 3.95964 10.3973 3.73062C10.6263 3.5016 10.9353 3.37041 11.2591 3.3647C11.583 3.35898 11.8964 3.47919 12.1333 3.69999L17.55 9.11665C17.7841 9.35103 17.9156 9.66874 17.9156 9.99999C17.9156 10.3312 17.7841 10.6489 17.55 10.8833L12.1333 16.3C11.8964 16.5208 11.583 16.641 11.2591 16.6353C10.9353 16.6296 10.6263 16.4984 10.3973 16.2694C10.1683 16.0403 10.0371 15.7314 10.0314 15.4075C10.0257 15.0837 10.1459 14.7703 10.3667 14.5333L13.65 11.25H3.75C3.41848 11.25 3.10054 11.1183 2.86612 10.8839C2.6317 10.6495 2.5 10.3315 2.5 9.99999Z" styleClass="btn-next__icon" />
                      </graphic>
                   </Button>
                </children>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
             </VBox>
          </children>
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="quizz-container" />
+         </styleClass>
       </VBox>
    </children>
    <stylesheets>
-      <URL value="@../../css/quizz.css" />
       <URL value="@../../css/styles.css" />
+      <URL value="@../../css/quizz.css" />
    </stylesheets>
 </AnchorPane>

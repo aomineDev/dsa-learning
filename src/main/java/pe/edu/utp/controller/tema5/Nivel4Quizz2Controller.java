@@ -5,31 +5,36 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
+import pe.edu.utp.util.Nivel;
+import pe.edu.utp.util.Quizz;
 
 public class Nivel4Quizz2Controller {
+  private String tema;
+  private int nivel;
   @FXML
-  private Button btn1;
+  private VBox btnContainer;
 
   @FXML
-  private Button btn2;
+  private WebView code1;
 
   @FXML
-  private Button btn3;
-
-  @FXML
-  private Button btn4;
-
-  @FXML
-  private WebView code;
+  private Button correct;
 
   @FXML
   private Button nextBtn;
 
   @FXML
   void initialize() {
-    code.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema5/t5n4q2.html").toExternalForm());
+    tema = "tema" + 5;
+    nivel = 4;
+
+    Nivel n = new Nivel(tema, nivel);
+
+    n.setCodeView(code1, 4);
+
   }
 
   @FXML
@@ -44,27 +49,6 @@ public class Nivel4Quizz2Controller {
 
   @FXML
   void handleOptionBtnClick(ActionEvent event) {
-    clearAllBtns();
-    Button btn = (Button) event.getSource();
-
-    if (btn.getId().equals("btn2")) {
-      disableAllBtns();
-      btn.getStyleClass().add("btn-quizz--success");
-      nextBtn.setVisible(true);
-    } else {
-      btn.getStyleClass().add("btn-quizz--error");
-    }
-  }
-
-  void clearAllBtns() {
-    btn1.getStyleClass().remove("btn-quizz--error");
-    btn3.getStyleClass().remove("btn-quizz--error");
-    btn4.getStyleClass().remove("btn-quizz--error");
-  }
-
-  void disableAllBtns() {
-    btn1.setDisable(true);
-    btn3.setDisable(true);
-    btn4.setDisable(true);
+    Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
   }
 }

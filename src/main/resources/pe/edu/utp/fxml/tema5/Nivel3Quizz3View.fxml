@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" styleClass="background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.Nivel3Quizz3Controller">
    <children>
-      <VBox layoutX="320.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" styleClass="quizz-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox layoutX="198.0" layoutY="119.0" prefHeight="200.0" prefWidth="100.0" styleClass="quizz-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox styleClass="btn__go-back__container">
                <children>
@@ -24,10 +24,10 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Quizz 3" />
                </children>
             </HBox>
-            <VBox styleClass="quizz-type-1-container" VBox.vgrow="ALWAYS">
+            <VBox styleClass="quizz-type-1-container" VBox.vgrow="SOMETIMES">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Completa el siguiente metodo" />
-                  <VBox prefHeight="217.0" prefWidth="475.0" spacing="4.0" styleClass="quizz-code">
+                  <VBox fx:id="code" prefHeight="501.0" prefWidth="560.0" styleClass="quizz-code">
                      <children>
                         <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="4.0">
                            <children>
@@ -134,7 +134,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="}" />
                      </children>
                   </VBox>
-                  <VBox fx:id="btnContainer" alignment="CENTER">
+                  <VBox fx:id="btnContainer" alignment="CENTER" spacing="8.0">
                      <children>
                         <Button graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleConfirmBtnClick" styleClass="btn-confirm" text="Confirmar">
                            <graphic>
@@ -154,7 +154,7 @@
       </VBox>
    </children>
    <stylesheets>
-      <URL value="@../../css/quizz.css" />
       <URL value="@../../css/styles.css" />
+      <URL value="@../../css/quizz.css" />
    </stylesheets>
 </AnchorPane>

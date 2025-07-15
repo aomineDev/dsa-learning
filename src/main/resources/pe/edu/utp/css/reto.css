@@ -1,0 +1,79 @@
+.reto-container {
+  -fx-padding: 20 60 20 60;
+  -fx-spacing: 16;
+}
+
+.reto-background {
+  -fx-background-color: #ffffff;
+}
+
+.reto-field {
+  -fx-spacing: 8;
+}
+
+.reto-btn-container {
+  -fx-spacing: 24;
+}
+
+.reto-text-field {
+  -fx-background-color: transparent;
+  -fx-border-color: #9da3a7;
+  -fx-border-radius: 12;
+  -fx-border-width: 2 2 3 2;
+  -fx-text-fill: #212121;
+  -fx-font-family: 'Poppins', sans-serif;
+  -fx-font-weight: bold;
+  -fx-font-size: 16;
+  -fx-padding: 8;
+}
+
+.reto-text-field:focused {
+  -fx-border-color: #2493DF;
+  -fx-text-fill: #2493DF;
+}
+
+.reto-text-field.reto-text-field--success {
+  -fx-border-color: #24df88;
+  -fx-text-fill: #24df88;
+}
+
+.reto-btn {
+  -fx-background-color: transparent;
+  -fx-background-radius: 10;
+  -fx-border-color: #9da3a7;
+  -fx-border-radius: 10;
+  -fx-border-width: 2 2 3 2;
+  -fx-font-size: 16;
+  -fx-text-fill: #9da3a7;
+  -fx-cursor: hand;
+  -fx-font-weight: bold;
+  -fx-padding: 8 0;
+}
+
+.reto-btn:hover {
+  -fx-background-color: rgba(223, 223, 223, .3);
+}
+
+.reto-btn--success,
+.reto-btn--error {
+  -fx-border-width: 0 0 3 0;
+  -fx-text-fill: white;
+}
+
+.reto-btn--success {
+  -fx-background-color: #24df88;
+  -fx-border-color: #2fa870;
+}
+
+.reto-btn--error {
+  -fx-background-color: #f1275a;
+  -fx-border-color: #bb2a4e;
+}
+
+.reto-btn--error:hover {
+  -fx-background-color: #f1275a;
+}
+
+.reto-btn--success:disabled {
+  -fx-opacity: 1.0
+}
