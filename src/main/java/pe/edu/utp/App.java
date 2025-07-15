@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         loadPoppinsFont();
-        scene = new Scene(loadFXML("tema7/Nivel4View"));
+        scene = new Scene(loadFXML("HomeView"));
         stage.setTitle("Sistema Educativo - Estructura de Datos");
         stage.setScene(scene);
         stage.setMaximized(true);
