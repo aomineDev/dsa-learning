@@ -20,11 +20,15 @@
          <children>
             <VBox minWidth="300.0" prefHeight="200.0" prefWidth="300.0" styleClass="sidebar">
                <children>
-                  <TextFlow styleClass="sidebar__title-container">
+                  <Pane styleClass="sidebar__title-container">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sidebar__title" text="Algoritmos y Estructuras de Datos" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home/logo.png" />
+                           </image>
+                        </ImageView>
                      </children>
-                  </TextFlow>
+                  </Pane>
                   <Button fx:id="btnLink1" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#hadleUnitBtnClick" text="Unidad 1">
                      <styleClass>
                         <String fx:value="sidebar__link" />

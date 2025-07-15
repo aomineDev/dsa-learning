@@ -133,7 +133,7 @@ public class Nivel4Quizz3Controller {
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("HomeView");
+    App.setRoot("tema5/CodegroundView");
   }
 
   void clearAllBtnStyle() {

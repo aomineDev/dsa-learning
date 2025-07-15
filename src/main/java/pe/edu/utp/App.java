@@ -22,6 +22,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("HomeView"));
         stage.setTitle("Sistema Educativo - Estructura de Datos");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     }
 

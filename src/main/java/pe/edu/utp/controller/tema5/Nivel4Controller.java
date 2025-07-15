@@ -45,5 +45,4 @@ public class Nivel4Controller {
     String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
     App.setRoot("tema5/Nivel" + nivel + "View");
   }
-
 }

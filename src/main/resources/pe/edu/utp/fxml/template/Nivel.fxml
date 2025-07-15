@@ -48,7 +48,12 @@
                   <VBox prefWidth="100.0" styleClass="list">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• 1" />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• 2" />
+                        <TextFlow>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="list__subtitle" text="• Subtitulo: " />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                           </children>
+                        </TextFlow>
                      </children>
                   </VBox>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Titulo 3" />
