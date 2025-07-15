@@ -13,7 +13,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel3Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel3Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -28,7 +28,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 3: Árboles binarios" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 3: Árboles binarios" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
@@ -36,16 +36,16 @@
                   </HBox>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La implementación de un árbol binario consiste en crear nodos y enlazarlos. En un árbol binario de búsqueda (ABB), los valores menores al nodo actual se colocan en el subárbol izquierdo, y los mayores en el subárbol derecho. Esta propiedad facilita búsquedas y recorridos ordenados." />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La implementación de un árbol binario consiste en crear nodos y enlazarlos. En un árbol binario de búsqueda (ABB), los valores menores al nodo actual se colocan en el subárbol izquierdo, y los mayores en el subárbol derecho. Esta propiedad facilita búsquedas y recorridos ordenados." />
                      </children>
                   </TextFlow>
                   <TextFlow />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo Visual" />
-                  <WebView fx:id="code1" minHeight="600.0" prefHeight="100.0" prefWidth="558.0" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Resumen Código:" />
+                  <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo Visual" />
+                  <WebView fx:id="code1" cache="true" minHeight="600.0" prefHeight="100.0" prefWidth="558.0" />
+                  <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Resumen Código:" />
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="1. public static Nodo insertar(Nodo raiz, int valor)">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="1. public static Nodo insertar(Nodo raiz, int valor)">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font></Text>
@@ -53,12 +53,12 @@
                   </TextFlow>
                   <TextFlow prefHeight="38.0" prefWidth="558.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Función recursiva que inserta un valor en su posición correcta en el árbol." wrappingWidth="552.71875" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Función recursiva que inserta un valor en su posición correcta en el árbol." wrappingWidth="552.71875" />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="2. if (raiz == null) return new Nodo(valor);">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="2. if (raiz == null) return new Nodo(valor);">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -67,12 +67,12 @@
                   </TextFlow>
                   <TextFlow prefHeight="38.0" prefWidth="558.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si el árbol está vacío, se crea un nuevo nodo como raíz o subnodo." wrappingWidth="552.71875" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Si el árbol está vacío, se crea un nuevo nodo como raíz o subnodo." wrappingWidth="552.71875" />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="3. if (valor &lt; raiz.valor)">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="3. if (valor &lt; raiz.valor)">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -81,7 +81,7 @@
                   </TextFlow>
                   <TextFlow prefHeight="38.0" prefWidth="558.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si el valor es menor, se va al subárbol izquierdo." wrappingWidth="552.71875" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Si el valor es menor, se va al subárbol izquierdo." wrappingWidth="552.71875" />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
