@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
+import pe.edu.utp.util.Nivel;
 
 public class Nivel7Controller {
 
@@ -16,6 +17,21 @@ public class Nivel7Controller {
     @FXML
     private ComboBox<String> nivelSelector;
 
+    private String tema;
+    private int nivel;
+
+    @FXML
+    void initialize() {
+        tema = "tema" + 3;
+        nivel = 7;
+
+        Nivel n = new Nivel(tema, nivel);
+
+        n.setCodeView(code1, 1);
+
+        n.setNivelItems(nivelSelector, 7);
+    }
+
     @FXML
     void handleNivelSelectorClick(ActionEvent event) throws IOException {
         String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
@@ -23,13 +39,7 @@ public class Nivel7Controller {
     }
 
     @FXML
-    void initialize() {
-        code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema3/t3n7_1.html").toExternalForm());
-        nivelSelector.getItems().addAll("nivel 1", "nivel 2", "nivel 3", "nivel 4", "nivel 5", "nivel 6", "nivel 7");    
-    }
-
-    @FXML
-    void handleActionBtn(ActionEvent event) throws IOException{
+    void handleActionBtn(ActionEvent event) throws IOException {
         App.setRoot("tema3/Nivel7Quizz1View");
     }
 

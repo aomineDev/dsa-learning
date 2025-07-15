@@ -17,8 +17,8 @@ import pe.edu.utp.util.Codeground;
 
 public class CodegroundController {
   private Codeground codeground;
-    private Object[][] testCase1 = { { "[5,3,6,2,4,nulo,7]", '3' }, { "[5,3,6,2,nulo,nulo,7]" } };
-    private Object[][] testCase2 = { { "[5,3,6,2,4,nulo,7]", '0' }, { "--" } };
+  private Object[][] testCase1 = { { "[5,3,6,2,4,nulo,7]", '3' }, { "[5,3,6,2,nulo,nulo,7]" } };
+  private Object[][] testCase2 = { { "[5,3,6,2,4,nulo,7]", '0' }, { "--" } };
 
   @FXML
   private Button btnCase1;
@@ -58,7 +58,7 @@ public class CodegroundController {
 
   @FXML
   void initialize() {
-    int tema = 0;
+    int tema = 12;
     codeground = new Codeground(new Class[] { Integer.class });
 
     code.getEngine()

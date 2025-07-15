@@ -7,9 +7,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
+import pe.edu.utp.util.Nivel;
 
 public class Nivel6Controller {
-
+    private String tema;
+    private int nivel;
     @FXML
     private WebView code1;
 
@@ -20,27 +22,32 @@ public class Nivel6Controller {
     private ComboBox<String> nivelSelector;
 
     @FXML
-    void handleNivelSelectorClick(ActionEvent event) throws IOException {
-        String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
-        App.setRoot("tema7/Nivel" + nivel + "View");
-    }
-
-    @FXML
     void initialize() {
-        code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema7/t7n6_1.html").toExternalForm());
-        code2.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema7/t7n6_2.html").toExternalForm());
-        nivelSelector.getItems().addAll("nivel 1", "nivel 2", "nivel 3", "nivel 4", "nivel 5", "nivel 6");    
+        tema = "tema" + 7;
+        nivel = 6;
+
+        Nivel n = new Nivel(tema, nivel);
+
+        n.setCodeView(code1, 1);
+        n.setCodeView(code2, 2);
+
+        n.setNivelItems(nivelSelector, 6);
     }
 
     @FXML
-    void handleContinueBtnClick(ActionEvent event) throws Exception{
-        App.setRoot("tema7/Nivel6Quizz1View");
+    void handleContinueBtnClick(ActionEvent event) throws IOException {
+        App.setRoot(tema + "/Nivel6Quizz1View");
     }
 
     @FXML
-    void handleGoBackBtnClick(ActionEvent event) throws Exception {
+    void handleGoBackBtnClick(ActionEvent event) throws IOException {
         App.setRoot("HomeView");
     }
 
-}
+    @FXML
+    void handleNivelSelectorClick(ActionEvent event) throws IOException {
+        String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
+        App.setRoot(tema + "/Nivel" + nivel + "View");
+    }
 
+}

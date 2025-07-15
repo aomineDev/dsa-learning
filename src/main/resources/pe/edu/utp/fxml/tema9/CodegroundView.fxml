@@ -20,19 +20,19 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema8.CodegroundController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema9.CodegroundController">
    <children>
       <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <GridPane hgap="20.0" vgap="20.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints maxHeight="566.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="566.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
+               </rowConstraints>
                <children>
                   <AnchorPane style="-fx-background-color: transparent;">
                      <children>
@@ -88,32 +88,34 @@
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Prefijo inverso de palabra" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="El juego del círculo de amigos" />
                                  </children>
                               </TextFlow>
                               <VBox spacing="20.0">
                                  <children>
                                     <TextFlow>
                                        <children>
-                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una cadena indexada desde 0 y un carácter ch, debes invertir el segmento de la cadena que empieza en el índice 0 y termina en la primera aparición de la ch." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En un juego, n amigos están sentados en círculo y numerados del 1 al n, en sentido horario. Comenzando por el amigo 1, se cuenta k amigos (incluyendo al que inicia el conteo). El último amigo contado es eliminado del juego y ya no participa más." />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si el ch letra no se encuentra en la cadena, entonces la cadena debe permanecer igual (no se hace ningún cambio)." />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Luego, el conteo se reinicia desde el siguiente amigo en el sentido de las agujas del reloj. Este proceso continúa hasta que solo queda un amigo, quien será el ganador del juego." />
                                        </children>
-                                       <padding>
-                                          <Insets left="20.0" />
-                                       </padding>
+                                    </TextFlow>
+                                    <TextFlow cache="true">
+                                       <children>
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu tarea es determinar qué número de amigo ganará el juego." />
+                                       </children>
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
-                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
@@ -122,32 +124,63 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="cadena = &quot;abcdefd&quot;, ch = &quot;d&quot;" />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" n = 5, k = 2" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow cache="true">
+                                    <TextFlow>
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;dcbaefd&quot;" />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" 3" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow cache="true">
+                                    <TextFlow>
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La primera aparición de &quot;d&quot; está en el índice 3. " />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow cache="true">
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Invierta la parte de la cadena de 0 a 3, la cadena resultante es &quot;dcbaefd&quot;." />
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="A) Amigos: [1, 2, 3, 4, 5]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Se cuenta: 1, 2 → 2 eliminado → quedan [3, 4, 5, 1]" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="B) Se cuenta: 3, 4 → 4 eliminado → quedan [5, 1, 3]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="C) Se cuenta: 5, 1 → 1 eliminado → quedan [3, 5]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="D) Se cuenta: 3, 5 → 5 eliminado → queda [3]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El ganador es el amigo 3." />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
                                        </children>
                                     </TextFlow>
                                  </children>
@@ -166,7 +199,7 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="cadena = &quot;abcd&quot;, ch = &quot;z&quot;" />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" n = 6, k = 5" />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
@@ -176,7 +209,7 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;abcd&quot;" />
+                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" 1" />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
@@ -186,12 +219,48 @@
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;z&quot; no existe en la palabra." />
-                                       </children>
-                                    </TextFlow>
-                                    <TextFlow>
-                                       <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="No debe realizar ninguna operación inversa, la cadena resultante es &quot;abcd&quot;." />
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="A) Amigos: [1, 2, 3, 4, 5, 6]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Se cuenta: 1, 2, 3, 4, 5 → 5 eliminado → [6, 1, 2, 3, 4]" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="B) Se cuenta: 6, 1, 2, 3, 4 → 4 eliminado → [6, 1, 2, 3]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="C) Se cuenta: 6, 1, 2, 3, 6 → 6 eliminado → [1, 2, 3]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="D) Se cuenta: 1, 2, 3, 1, 2 → 2 eliminado → [3, 1]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="E) Se cuenta: 3, 1, 3, 1, 3 → 3 eliminado → queda [1]" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El ganador es el amigo 1." />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
                                        </children>
                                     </TextFlow>
                                  </children>
@@ -220,8 +289,8 @@
                                              <children>
                                                 <VBox>
                                                    <children>
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadena: &quot;abcdefd&quot;" />
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ch: “d”" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="n = 4" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="k = 2" />
                                                    </children>
                                                 </VBox>
                                              </children>
@@ -229,7 +298,7 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="dcbaefd" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
@@ -247,8 +316,8 @@
                                              <children>
                                                 <VBox>
                                                    <children>
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadena: &quot;abc&quot;" />
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ch: “o”" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="n = 7" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="k = 2" />
                                                    </children>
                                                 </VBox>
                                              </children>
@@ -256,7 +325,7 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="abc" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />

@@ -36,7 +36,7 @@ public class Nivel5Quizz1Controller {
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("HomeView");
+        App.setRoot("tema9/CodegroundView");
     }
 
     @FXML
