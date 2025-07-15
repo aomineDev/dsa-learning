@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel1Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -36,7 +36,7 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="¿Qué es la inserción en un ABB?" />
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un Árbol Binario de Búsqueda (ABB) es una estructura donde cada nodo organiza sus valores: los menores a la izquierda y los mayores a la derecha. La inserción consiste en ubicar cada nuevo valor respetando esta regla hasta encontrar un espacio vacío." />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un Árbol Binario de Búsqueda (ABB) es una estructura donde cada nodo organiza sus valores: los menores a la izquierda y los mayores a la derecha. La inserción consiste en ubicar cada nuevo valor respetando esta regla hasta encontrar un espacio vacío." />
                      </children>
                   </TextFlow>
                   <TextFlow>

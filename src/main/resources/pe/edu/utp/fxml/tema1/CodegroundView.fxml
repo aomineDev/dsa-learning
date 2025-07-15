@@ -92,7 +92,7 @@
                               </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Eres el encargado de un pequeño almacén de 10 cajas, donde todas las cajas están alineadas en una sola fila: un estante recto. Cada caja contiene un número que representa el peso de un paquete almacenado, el peso maximo por caja es de 100kg." />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Eres el encargado de un pequeño almacén de 10 cajas, donde todas las cajas están alineadas en un estante recto. Cada caja contiene un número que representa el peso de los paquetes almacenados, el peso maximo por caja es de 100kg." />
                                  </children>
                               </TextFlow>
                               <TextFlow layoutX="30.0" layoutY="88.0">
@@ -132,10 +132,10 @@
                               </TextFlow>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Parametros" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="pesos:" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="valores separados por coma → &quot;peso1,peso2...,etc&quot;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="una cadena con los valores separados por coma → &quot;peso1,peso2...,etc&quot;" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="acciones:" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="acciones separadas por espacios &quot;comando,indice,peso comando,indice&quot;" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si el comando es eliminar no tendra valor" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="acciones separadas por espacios y comas &quot;comando,indice,peso comando,indice&quot;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si el comando es eliminar, no tendra valor" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Salida" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="La suma de todos los pesos despues de ejecutar los comandos" />
                            </children>
