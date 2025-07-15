@@ -5,8 +5,10 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
+import pe.edu.utp.util.Quizz;
 
 public class Nivel5Quizz1Controller {
 
@@ -14,16 +16,13 @@ public class Nivel5Quizz1Controller {
     private WebView code1;
 
     @FXML
-    private Button btn1;
-
-    @FXML
-    private Button btn2;
-
-    @FXML
-    private Button btn3;
+    private Button correct;
 
     @FXML
     private Button nextBtn;
+
+    @FXML
+    private VBox btnContainer;
 
     @FXML
     void initialize() {
@@ -31,33 +30,8 @@ public class Nivel5Quizz1Controller {
     }
 
     @FXML
-    void handleActionBtn1(ActionEvent event) throws Exception {
-        cleanBtns();
-        btn1.getStyleClass().add("btn-quizz--success");
-        disableBtns();
-        nextBtn.setVisible(true);
-    }
-
-    @FXML
-    void handleActionBtn2(ActionEvent event) throws Exception {
-        cleanBtns();
-        btn2.getStyleClass().add("btn-quizz--error");
-    }
-
-    @FXML
-    void handleActionBtn3(ActionEvent event) throws Exception {
-        cleanBtns();
-        btn3.getStyleClass().add("btn-quizz--error");
-    }
-
-    void cleanBtns() {
-        btn2.getStyleClass().remove("btn-quizz--error");
-        btn3.getStyleClass().remove("btn-quizz--error");
-    }
-
-    void disableBtns() {
-        btn2.setDisable(true);
-        btn3.setDisable(true);
+    void handleGoBackBtnClick(ActionEvent event) throws IOException {
+        App.setRoot("HomeView");
     }
 
     @FXML
@@ -66,8 +40,8 @@ public class Nivel5Quizz1Controller {
     }
 
     @FXML
-    void handleActionBtnAtras(ActionEvent event) throws Exception {
-        App.setRoot("HomeView");
+    void handleOptionBtnClick(ActionEvent event) {
+        Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
     }
 
 }
