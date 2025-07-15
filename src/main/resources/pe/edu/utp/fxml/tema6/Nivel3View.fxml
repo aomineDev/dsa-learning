@@ -44,7 +44,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo Visual" />
                      </children>
                   </TextFlow>
-                  <WebView fx:id="Code1" minHeight="400.0" prefHeight="700.0" prefWidth="610.0" />
+                  <WebView fx:id="Code1" minHeight="350.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Resumen Código:" />

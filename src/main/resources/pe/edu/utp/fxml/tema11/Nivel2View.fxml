@@ -12,7 +12,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel2Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -27,7 +27,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Eliminar un nodo" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Eliminar un nodo" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
@@ -35,44 +35,44 @@
                   </HBox>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Que significa eliminar un nodo?" wrappingWidth="267.21484375" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Que significa eliminar un nodo?" wrappingWidth="267.21484375" />
                      </children>
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar un nodo en un árbol binario significa quitar un nodo que ya existe dentro del árbol.Esto rompe la conexión entre ese nodo y su padre, y hace que el nodo desaparezca de la estructura." />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar un nodo en un árbol binario significa quitar un nodo que ya existe dentro del árbol.Esto rompe la conexión entre ese nodo y su padre, y hace que el nodo desaparezca de la estructura." />
                      </children>
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Eliminar desde la raiz" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Eliminar desde la raiz" />
                      </children>
                   </TextFlow>
                   <VBox prefWidth="100.0" styleClass="list">
                      <children>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Verificar si el arbol esta vacio" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Verificar si el arbol esta vacio" />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Elimas toda la raiz y asi tambie todo el arbol" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Elimas toda la raiz y asi tambie todo el arbol" />
                            </children>
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code1" minHeight="110.0" prefHeight="110.0" prefWidth="558.0" />
+                  <WebView fx:id="code1" cache="true" minHeight="110.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Eliminar el nodo de la izquierda" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Eliminar el nodo de la izquierda" />
                      </children>
                   </TextFlow>
                   <VBox prefHeight="56.0" prefWidth="558.0">
                      <children>
-                        <TextFlow>
+                        <TextFlow cache="true">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Revisa si el nodo del lado izquierdo del padre existe (es decir, si no es null)." />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Revisa si el nodo del lado izquierdo del padre existe (es decir, si no es null)." />
                            </children>
                         </TextFlow>
                         <TextFlow>
@@ -82,12 +82,12 @@
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si sí existe, lo elimina poniendo ese espacio como vacío (null)." />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si sí existe, lo elimina poniendo ese espacio como vacío (null)." />
                            </children>
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code2" minHeight="160.0" prefHeight="160.0" prefWidth="558.0" />
+                  <WebView fx:id="code2" cache="true" minHeight="160.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Eliminar el nodo de la derecha" />
@@ -112,7 +112,7 @@
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code3" minHeight="160.0" prefHeight="160.0" prefWidth="558.0" />
+                  <WebView fx:id="code3" cache="true" minHeight="160.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <VBox styleClass="list" />
                   <VBox prefWidth="100.0" styleClass="note-box">
                      <children>
