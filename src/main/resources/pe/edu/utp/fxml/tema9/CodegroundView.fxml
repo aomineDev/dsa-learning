@@ -95,27 +95,27 @@
                                  <children>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En un juego, n amigos están sentados en círculo y numerados del 1 al n, en sentido horario. Comenzando por el amigo 1, se cuenta k amigos (incluyendo al que inicia el conteo). El último amigo contado es eliminado del juego y ya no participa más." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En un juego, n amigos están sentados en círculo y numerados del 1 al n, en sentido horario. Comenzando por el amigo 1, se cuenta k amigos (incluyendo al que inicia el conteo). El último amigo contado es eliminado del juego y ya no participa más." />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Luego, el conteo se reinicia desde el siguiente amigo en el sentido de las agujas del reloj. Este proceso continúa hasta que solo queda un amigo, quien será el ganador del juego." />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
                                           <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu tarea es determinar qué número de amigo ganará el juego." />
                                        </children>
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
@@ -185,12 +185,12 @@
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
