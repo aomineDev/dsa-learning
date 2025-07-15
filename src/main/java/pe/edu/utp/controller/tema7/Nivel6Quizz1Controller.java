@@ -28,7 +28,7 @@ public class Nivel6Quizz1Controller {
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("HomeView");
+        App.setRoot("tema7/CodegroundView");
     }
 
     @FXML
@@ -54,6 +54,5 @@ public class Nivel6Quizz1Controller {
         btn2.setDisable(true);
         btn3.setDisable(true);
     }
-
 
 }

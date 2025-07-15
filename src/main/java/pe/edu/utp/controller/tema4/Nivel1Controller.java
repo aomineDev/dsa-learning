@@ -21,7 +21,7 @@ public class Nivel1Controller {
         nivel = 1;
 
         Nivel n = new Nivel(tema, nivel);
-        n.setNivelItems(nivelSelector, 4);
+        n.setNivelItems(nivelSelector, 2);
     }
 
     @FXML
