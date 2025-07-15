@@ -67,7 +67,7 @@ public class CodegroundController {
 
   @FXML
   void handleContinueBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema11/Nivel1View");
+    App.setRoot("HomeView");
   }
 
   @FXML

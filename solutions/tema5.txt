@@ -1,0 +1,134 @@
+public class Ejercicio {
+  public static String solucion(String lista, String comandos) {
+    // Escribe aqui tu solución
+    String[] listaStr = lista.split(",");
+    ListaEnlazada listaEnlazada = new ListaEnlazada();
+
+    for (int i = 0; i < listaStr.length; i++) {
+      listaEnlazada.insertar(listaStr[i]);
+    }
+
+    String[] comandosStr = comandos.split(" ");
+
+    for (int i = 0; i < comandosStr.length; i++) {
+      String[] comando = comandosStr[i].split(",");
+      int pos = Integer.parseInt(comando[1]);
+      String item = "";
+      if (comando[0].equals("insertar")) {
+        item = comando[2];
+        listaEnlazada.insertar(pos, item);
+      } else if (comando[0].equals("eliminar")) {
+        listaEnlazada.eliminar(pos);
+      } else if (comando[0].equals("actualizar")) {
+        item = comando[2];
+        listaEnlazada.actualizar(pos, item);
+      }
+    }
+
+    return listaEnlazada.valores();
+  }
+}
+
+class Nodo {
+  // Escribe aqui tu clase nodo
+  String valor;
+  Nodo siguiente;
+
+  public Nodo(String valor) {
+    this.valor = valor;
+    this.siguiente = null;
+  }
+}
+
+class ListaEnlazada {
+  Nodo cabeza;
+
+  public ListaEnlazada() {
+    cabeza = null;
+  }
+
+  // Escribe aqui tu clase lista enlazada con sus metodos
+  void insertar(String valor) {
+    Nodo nuevoNodo = new Nodo(valor);
+
+    if (cabeza == null) {
+      cabeza = nuevoNodo;
+      return;
+    }
+
+    Nodo actual = cabeza;
+    while (actual.siguiente != null) {
+      actual = actual.siguiente;
+    }
+
+    actual.siguiente = nuevoNodo;
+  }
+
+  void insertar(int pos, String valor) {
+    if (cabeza == null && pos != 0) {
+      return;
+    }
+
+    Nodo nuevoNodo = new Nodo(valor);
+
+    if (pos == 0) {
+      nuevoNodo.siguiente = cabeza;
+      cabeza = nuevoNodo;
+      return;
+    }
+
+    Nodo actual = cabeza;
+    for (int i = 0; i < pos - 1; i++) {
+      actual = actual.siguiente;
+    }
+
+    nuevoNodo.siguiente = actual.siguiente;
+    actual.siguiente = nuevoNodo;
+  }
+
+  void actualizar(int pos, String valor) {
+    if (cabeza == null) {
+      return;
+    }
+
+    Nodo actual = cabeza;
+    for (int i = 0; i < pos; i++) {
+      actual = actual.siguiente;
+    }
+
+    actual.valor = valor;
+  }
+
+  void eliminar(int pos) {
+    if (cabeza == null) {
+      return;
+    }
+
+    if (pos == 0) {
+      cabeza = cabeza.siguiente;
+      return;
+    }
+
+    Nodo actual = cabeza;
+    for (int i = 0; i < pos - 1; i++) {
+      actual = actual.siguiente;
+    }
+
+    actual.siguiente = actual.siguiente.siguiente;
+  }
+
+  String valores() {
+    if (cabeza == null) {
+      return "";
+    }
+
+    String valores = "";
+    Nodo actual = cabeza;
+    while (actual != null) {
+      valores += actual.valor + ",";
+      actual = actual.siguiente;
+    }
+    
+    return valores.substring(0, valores.length() - 1);
+  }
+}

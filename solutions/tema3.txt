@@ -1,0 +1,49 @@
+String[] tableroStr = tablero.split(" ");
+    String[][] tableroArr = new String[8][8];
+    int reynaRowIndex = -1;
+    int reynaColumnIndex = -1;
+    int control = 0;
+
+    for (int i = 0; i < tableroStr.length; i++) {
+      tableroArr[i] = tableroStr[i].split("");
+      int index = tableroStr[i].indexOf("Q");
+
+      if (index != -1) {
+        reynaRowIndex = i;
+        reynaColumnIndex = index;
+      }
+    }
+
+    int[][] direcciones = {
+        { -1, 0 },
+        { 1, 0 },
+        { 0, 1 },
+        { 0, -1 },
+        { -1, 1 },
+        { -1, -1 },
+        { 1, 1 },
+        { 1, -1 }
+    };
+
+    for (int[] dir : direcciones) {
+      int r = reynaRowIndex + dir[0];
+      int c = reynaColumnIndex + dir[1];
+
+      while (r >= 0 && r < 8 && c >= 0 && c < 8) {
+        String pieza = tableroArr[r][c];
+
+        if (pieza.equals(".")) {
+          control++;
+        } else if (pieza.equals("b") && reyna.equals("white") || pieza.equals("w") && reyna.equals("black")) {
+          control++;
+          break;
+        } else {
+          break;
+        }
+
+        r += dir[0];
+        c += dir[1];
+      }
+    }
+
+    return control;

@@ -69,7 +69,7 @@ public class CodegroundController {
 
   @FXML
   void handleContinueBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("");
+    App.setRoot("HomeView");
   }
 
   @FXML

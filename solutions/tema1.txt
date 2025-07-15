@@ -1,0 +1,40 @@
+String[] pesosStr = pesos.split(",");
+    String[] accionesStr = acciones.split(" ");
+    int[] pesosInt = new int[10];
+
+    for (int i = 0; i < pesosStr.length; i++) {
+      pesosInt[i] = Integer.parseInt(pesosStr[i]);
+    }
+
+    for (String accion : accionesStr) {
+      String[] accionStr = accion.split(",");
+      int pos = Integer.parseInt(accionStr[1]);
+      int valor = 0;
+      switch (accionStr[0]) {
+        case "insertar":
+          valor = Integer.parseInt(accionStr[2]);
+
+          if (pesosInt[pos] + valor <= 100) {
+            pesosInt[pos] += valor;
+          }
+
+          break;
+        case "actualizar":
+          valor = Integer.parseInt(accionStr[2]);
+          pesosInt[pos] = valor;
+          break;
+        case "eliminar":
+          pesosInt[pos] = 0;
+          break;
+
+      }
+
+    }
+
+    int total = 0;
+
+    for (int peso : pesosInt) {
+      total += peso;
+    }
+
+    return total;
