@@ -1,0 +1,60 @@
+public class ListaCircular {
+    private Nodo cabeza;
+
+    public void crearLista(int total) {
+        if (total <= 0) return;
+
+        cabeza = new Nodo(1);
+        Nodo actual = cabeza;
+
+        for (int i = 2; i <= total; i++) {
+            actual.siguiente = new Nodo(i);
+            actual = actual.siguiente;
+        }
+
+        actual.siguiente = cabeza; // Cerrar el ciclo
+    }
+
+    public int ejecutarJuego(int pasos) {
+        if (cabeza == null || cabeza.siguiente == cabeza) {
+            return cabeza != null ? cabeza.valor : -1;
+        }
+
+        Nodo actual = cabeza;
+        Nodo anterior = null;
+
+        while (actual != actual.siguiente) {
+            for (int i = 0; i < pasos - 1; i++) {
+                anterior = actual;
+                actual = actual.siguiente;
+            }
+
+            // Eliminar el nodo actual
+            anterior.siguiente = actual.siguiente;
+
+            if (actual == cabeza) {
+                cabeza = actual.siguiente;
+            }
+
+            actual = actual.siguiente;
+        }
+
+        return actual.valor; // El último que queda
+    }
+}
+public class Nodo {
+    int valor;
+    Nodo siguiente;
+
+    public Nodo(int valor) {
+        this.valor = valor;
+        this.siguiente = null;
+    }
+}
+public class Ejercicio{
+    public static Integer solucion(Integer totalNiños, Integer pasos) {
+        ListaCircular ronda = new ListaCircular();
+        ronda.crearLista(totalNiños);
+        return ronda.ejecutarJuego(pasos);
+    }
+}
