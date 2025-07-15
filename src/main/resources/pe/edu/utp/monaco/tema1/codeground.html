@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body,
+    #container {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background-color: #F0F0F0;
+    }
+
+    #container {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+  </style>
+  <script src="../min/vs/loader.js"></script>
+  <script>
+    let editor
+
+    require.config({ paths: { vs: '../min/vs' } });
+    require(['vs/editor/editor.main'], function () {
+
+      editor = monaco.editor.create(document.getElementById('container'), {
+        value: `public class Ejercicio {
+  public static Integer solucion(String pesos, String acciones) {
+    // Escribe aqui tu solución
+
+  }
+}`,
+        language: 'java',
+        theme: 'vs-dark',
+        fontSize: 14,
+        minimap: {
+          enabled: false
+        },
+        scrollBeyondLastLine: false,
+        padding: {
+          top: 12
+        },
+        automaticLayout: true
+      });
+    });
+
+    function getCode() {
+      return editor.getValue()
+    }
+  </script>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+</html>

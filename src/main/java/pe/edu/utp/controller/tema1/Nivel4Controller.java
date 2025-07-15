@@ -30,11 +30,12 @@ public class Nivel4Controller {
         code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema1/t1n4_1.html").toExternalForm());
         code2.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema1/t1n4_2.html").toExternalForm());
         nivelSelector.getItems().addAll("nivel 1", "nivel 2", "nivel 3", "nivel 4", "nivel 5");
+        nivelSelector.getSelectionModel().select(3);
     }
 
     @FXML
     void handleContinueBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema1/Nivel5View");
+        App.setRoot("tema1/Nivel4Quizz1View");
     }
 
     @FXML

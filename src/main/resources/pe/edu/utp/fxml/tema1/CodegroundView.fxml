@@ -19,7 +19,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema5.CodegroundController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema1.CodegroundController">
    <children>
       <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -81,55 +81,63 @@
                         <String fx:value="panel-content" />
                      </styleClass>
                   </VBox>
-                  <ScrollPane cache="true" fitToHeight="true" fitToWidth="true" styleClass="panel" GridPane.columnIndex="1">
+                  <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="panel" GridPane.columnIndex="1">
                      <content>
                         <VBox prefHeight="200.0" prefWidth="100.0" styleClass="panel-content">
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="El Inventario del Castillo Viviente" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="El Almacén de Cajas" />
                                  </children>
                               </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En lo alto de una montaña, se alza el Castillo Viviente, una antigua fortaleza mágica que mantiene un inventario viviente de objetos místicos en su interior. Cada objeto está conectado al siguiente mediante hebras de energía mágica." />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Eres el encargado de un pequeño almacén de 10 cajas, donde todas las cajas están alineadas en una sola fila: un estante recto. Cada caja contiene un número que representa el peso de un paquete almacenado, el peso maximo por caja es de 100kg." />
                                  </children>
                               </TextFlow>
-                              <TextFlow layoutX="30.0" layoutY="140.0">
+                              <TextFlow layoutX="30.0" layoutY="88.0">
                                  <children>
-                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El guardián del castillo, el mago Virondor, ha dejado a su aprendiz (tú) a cargo del Hechizo de Gestión del Inventario. Este hechizo te permite insertar o eliminar objetos en el inventario." />
-                                 </children>
-                              </TextFlow>
-                              <TextFlow layoutX="30.0" layoutY="449.0">
-                                 <children>
-                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Cada comando tiene una posición específica en la lista, ya que el orden en que los objetos están alineados altera el flujo mágico del castillo." />
-                                 </children>
-                              </TextFlow>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Parametros" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="lista" />
-                              <TextFlow>
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadena con los elementos iniciales de la lista enlazada, separados por coma." />
-                                 </children>
-                              </TextFlow>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="comandos" />
-                              <TextFlow>
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadena con uno o más comandos separados por espacio.Cada comando es una subcadena con formato:" />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Al iniciar el dia te dan la lista de pesos de cada caja del dia anterior, tambien una lista de acciones que debes realizar con las cajas:" />
                                  </children>
                               </TextFlow>
                               <VBox prefWidth="100.0" styleClass="list">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• &quot;insertar,&lt;posición&gt;,&lt;valor&gt;&quot;" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• &quot;eliminar,&lt;posición&gt;&quot;" />
+                                    <TextFlow>
+                                       <children>
+                                          <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• A veces llega un nuevo paquete que debe insertarse en una caja específica, agregando su peso al total de la caja." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Otras veces, el peso de un paquete debe ser corregido (actualización)." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Y en ocasiones, se retira un paquete y debes eliminarlo, dejando el peso de la caja en 0." />
+                                       </children>
+                                    </TextFlow>
                                  </children>
                               </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida" />
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Una cadena con los elementos finales de la lista, separados por coma." />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una vez que completes todas las órdenes, debes calcular la suma total del peso de todos los paquetes restantes para llevar un reporte de inventario final." />
                                  </children>
                               </TextFlow>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Restricciones" />
+                              <TextFlow>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si se intenta agregar un nuevo articulo a una caja pero esta supera el liminte, el articulo se descartara." />
+                                 </children>
+                              </TextFlow>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Parametros" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="pesos:" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="valores separados por coma → &quot;peso1,peso2...,etc&quot;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="acciones:" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="acciones separadas por espacios &quot;comando,indice,peso comando,indice&quot;" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si el comando es eliminar no tendra valor" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Salida" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="La suma de todos los pesos despues de ejecutar los comandos" />
                            </children>
                         </VBox>
                      </content>
@@ -152,13 +160,13 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="lista: &quot;espada,poción,escudo&quot;&#10;comandos: &quot;eliminar,1 insertar,0,varita insertar,2,anillo&quot;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pesos: &quot;2,23,12,45,12,2,65,75,12,23&quot;&#10;acciones: &quot;insertar,1,8 actualizar,2,10 eliminar,0&quot;" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;varita,espada,anillo,escudo&quot;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="275" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
@@ -174,13 +182,13 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="lista: &quot;escudo&quot;&#10;comandos: &quot;insertar,1,espada insertar,0,anillo eliminar,1&quot;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pesos: &quot;45,12,23,65,58,75,34,26,82,67&quot;&#10;acciones: &quot;insertar,8,32 actualizar,5,50 eliminar,1&quot;" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;anillo,espada&quot;" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="450" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />

@@ -1,4 +1,4 @@
-package pe.edu.utp.controller.template;
+package pe.edu.utp.controller.tema1;
 
 import java.io.IOException;
 
@@ -6,10 +6,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
+import javafx.scene.web.WebView;
 import pe.edu.utp.App;
 import pe.edu.utp.util.Quizz;
 
-public class Quizz1Controller {
+public class Nivel2Quizz1Controller {
   private String tema;
   private int nivel;
   private int q;
@@ -23,18 +24,18 @@ public class Quizz1Controller {
   @FXML
   private VBox btnContainer;
 
-  // @FXML
-  // private WebView code;
+  @FXML
+  private WebView code;
 
   @FXML
   void initialize() {
-    tema = "tema" + 0;
-    nivel = 0;
-    q = 0;
+    tema = "tema" + 1;
 
-    // code.getEngine()
-    // .load(getClass().getResource("/pe/edu/utp/monaco/" + tema + "/n" + nivel +
-    // "q" + q + ".html").toExternalForm());
+    nivel = 2;
+    q = 1;
+
+    code.getEngine()
+        .load(getClass().getResource("/pe/edu/utp/monaco/" + tema + "/n" + nivel + "q" + q + ".html").toExternalForm());
   }
 
   @FXML
@@ -44,7 +45,7 @@ public class Quizz1Controller {
 
   @FXML
   void handleNextBtnClick(ActionEvent event) throws IOException {
-    App.setRoot(tema + "/");
+    App.setRoot(tema + "/Nivel3View");
   }
 
   @FXML
