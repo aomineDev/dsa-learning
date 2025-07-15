@@ -1,0 +1,60 @@
+public class Ejercicio{
+    public static int solucion(Integer raizValor, Integer indicador) {
+        ArbolBinario arbol = new ArbolBinario();
+
+        if (indicador == -1) {
+            return arbol.insertarRaiz(raizValor);
+        }
+
+        arbol.insertarRaiz(raizValor);
+        arbol.insertarIzquierda(raizValor - 1);
+        arbol.insertarDerecha(raizValor + 1);
+
+        return arbol.contarNodos(); // Espera 3
+    }
+}
+class ArbolBinario {
+    private Nodo raiz;
+
+    public int insertarRaiz(int valor) {
+        if (raiz == null) {
+            raiz = new Nodo(valor);
+            return valor;
+        }
+        return -1;
+    }
+
+    public int insertarIzquierda(int nuevoValor) {
+        if (raiz != null && raiz.izquierdo == null) {
+            raiz.izquierdo = new Nodo(nuevoValor);
+            return nuevoValor;
+        }
+        return -1;
+    }
+
+    public int insertarDerecha(int nuevoValor) {
+        if (raiz != null && raiz.derecho == null) {
+            raiz.derecho = new Nodo(nuevoValor);
+            return nuevoValor;
+        }
+        return -1;
+    }
+
+    public int contarNodos() {
+        return contar(raiz);
+    }
+
+    private int contar(Nodo nodo) {
+        if (nodo == null) return 0;
+        return 1 + contar(nodo.izquierdo) + contar(nodo.derecho);
+    }
+}
+class Nodo {
+    int valor;
+    Nodo izquierdo;
+    Nodo derecho;
+
+    Nodo(int valor) {
+        this.valor = valor;
+    }
+}
