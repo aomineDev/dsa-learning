@@ -13,7 +13,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel4Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel4Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -28,7 +28,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 4: Recorridos en árboles binarios" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 4: Recorridos en árboles binarios" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
@@ -36,19 +36,31 @@
                   </HBox>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un recorrido permite visitar todos los nodos de un árbol en un orden determinado. En los árboles binarios, los tres recorridos más comunes son:" />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un recorrido permite visitar todos los nodos de un árbol en un orden determinado. En los árboles binarios, los tres recorridos más comunes son:" />
                      </children>
                   </TextFlow>
                   <TextFlow />
                   <VBox prefWidth="100.0" styleClass="list">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Preorden: Visita el nodo actual, luego el subárbol izquierdo y después&#10; el derecho." />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Inorden: Visita primero el subárbol izquierdo, luego el nodo actual y al &#10;final el derecho." />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Postorden: Visita el subárbol izquierdo, luego el derecho y al final el &#10;nodo actual." />
+                        <TextFlow>
+                           <children>
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Preorden: Visita el nodo actual, luego el subárbol izquierdo y después&#10; el derecho." />
+                           </children>
+                        </TextFlow>
+                        <TextFlow>
+                           <children>
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Inorden: Visita primero el subárbol izquierdo, luego el nodo actual y al &#10;final el derecho." />
+                           </children>
+                        </TextFlow>
+                        <TextFlow cache="true">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Postorden: Visita el subárbol izquierdo, luego el derecho y al final el &#10;nodo actual." />
+                           </children>
+                        </TextFlow>
                      </children>
                   </VBox>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo Visual" />
-                  <WebView fx:id="code1" minHeight="550.0" prefHeight="100.0" prefWidth="558.0" />
+                  <WebView fx:id="code1" cache="true" minHeight="550.0" prefHeight="100.0" prefWidth="558.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Resumen Código:" />
                   <TextFlow styleClass="simple-code">
                      <children>
@@ -73,7 +85,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <TextFlow prefHeight="34.0" prefWidth="558.0">
+                  <TextFlow cache="true" prefHeight="34.0" prefWidth="558.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Condición base para evitar errores con nodos nulos." wrappingWidth="552.71875" />
                      </children>

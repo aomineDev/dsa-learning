@@ -88,32 +88,32 @@
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Eliminar nodo en un ABB" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Eliminar nodo en un ABB" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="20.0">
+                              <VBox cache="true" spacing="20.0">
                                  <children>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una referencia de nodo raíz de un ABB y una clave, elimine el nodo con la clave dada en el ABB. Regresar el referencia del nodo raíz (posiblemente actualizado) del ABB." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dada una referencia de nodo raíz de un ABB y una clave, elimine el nodo con la clave dada en el ABB. Regresar el referencia del nodo raíz (posiblemente actualizado) del ABB." />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow layoutX="10.0" layoutY="10.0">
+                                    <TextFlow cache="true" layoutX="10.0" layoutY="10.0">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Básicamente, la eliminación se puede dividir en dos etapas:" />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Básicamente, la eliminación se puede dividir en dos etapas:" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Busque un nodo para eliminar." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Busque un nodo para eliminar." />
                                        </children>
                                        <padding>
                                           <Insets left="20.0" />
                                        </padding>
                                     </TextFlow>
-                                    <TextFlow layoutX="10.0" layoutY="136.0">
+                                    <TextFlow cache="true" layoutX="10.0" layoutY="136.0">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si se encuentra el nodo, elimínelo." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si se encuentra el nodo, elimínelo." />
                                        </children>
                                        <padding>
                                           <Insets left="20.0" />
@@ -121,90 +121,90 @@
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="raíz = [5,3,6,2,4,nulo,7], clave = 3" />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="raíz = [5,3,6,2,4,nulo,7], clave = 3" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La clave dada para eliminar es 3. Entonces encontramos el nodo con valor 3 y lo eliminamos." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La clave dada para eliminar es 3. Entonces encontramos el nodo con valor 3 y lo eliminamos." />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una respuesta válida es [5,4,6,2,null,null,7], que se muestra en el ABB anterior.Tenga en cuenta que otra respuesta válida es [5,2,6,null,4,null,7] y también se acepta." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una respuesta válida es [5,4,6,2,null,null,7], que se muestra en el ABB anterior.Tenga en cuenta que otra respuesta válida es [5,2,6,null,4,null,7] y también se acepta." />
                                        </children>
                                     </TextFlow>
                                  </children>
                               </VBox>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
                                  </children>
                               </TextFlow>
                               <VBox spacing="10.0">
                                  <children>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Entrada: ">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="raíz = [5,3,6,2,4,nulo,7], clave = 0" />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="raíz = [5,3,6,2,4,nulo,7], clave = 0" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Salida:">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,3,6,2,4,nulo,7]" />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,3,6,2,4,nulo,7]" />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Explicación: ">
                                              <font>
                                                 <Font name="System Bold" size="12.0" />
                                              </font>
                                           </Text>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El árbol no contiene un nodo con valor = 0." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El árbol no contiene un nodo con valor = 0." />
                                        </children>
                                     </TextFlow>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La clave que se desea eliminar es 0, pero como ese valor no se encuentra en el árbol, el árbol permanece igual. Por eso, la salida es exactamente la misma que la entrada: [5,3,6,2,4,nulo,7]." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La clave que se desea eliminar es 0, pero como ese valor no se encuentra en el árbol, el árbol permanece igual. Por eso, la salida es exactamente la misma que la entrada: [5,3,6,2,4,nulo,7]." />
                                        </children>
                                     </TextFlow>
                                  </children>

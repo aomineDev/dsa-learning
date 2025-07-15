@@ -13,7 +13,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel1Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -28,7 +28,7 @@
                         </Button>
                         <TextFlow HBox.hgrow="ALWAYS">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 1: Estructura básica de un árbol" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Nivel 1: Estructura básica de un árbol" />
                            </children>
                         </TextFlow>
                         <ComboBox fx:id="nivelSelector" onAction="#handleNivelSelectorClick" promptText="Nivel" styleClass="nivel-selector" />
@@ -36,17 +36,17 @@
                   </HBox>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un árbol es una estructura jerárquica compuesta por nodos. Su representación visual empieza desde la raíz (nodo principal) y se extiende hacia sus hijos. Los árboles pueden ser generales (con muchos hijos por nodo) o binarios, donde cada nodo tiene como máximo dos hijos: izquierdo y derecho." />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un árbol es una estructura jerárquica compuesta por nodos. Su representación visual empieza desde la raíz (nodo principal) y se extiende hacia sus hijos. Los árboles pueden ser generales (con muchos hijos por nodo) o binarios, donde cada nodo tiene como máximo dos hijos: izquierdo y derecho." />
                      </children>
                   </TextFlow>
                   <TextFlow />
                   <VBox prefWidth="100.0" styleClass="list" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo visual:" />
-                  <WebView fx:id="code1" minHeight="400.0" prefHeight="145.0" prefWidth="588.0" />
+                  <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo visual:" />
+                  <WebView fx:id="code1" minHeight="390.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Resumen Código:" />
-                  <TextFlow styleClass="simple-code">
+                  <TextFlow cache="true" styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="1. int valor; ">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="1. int valor; ">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -55,12 +55,12 @@
                   </TextFlow>
                   <TextFlow styleClass="text">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Define el contenido del nodo, en este caso un número entero. Representa el dato principal que almacena el nodo del árbol." />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Define el contenido del nodo, en este caso un número entero. Representa el dato principal que almacena el nodo del árbol." />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="2. Nodo izquierdo; Nodo derecho;">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="2. Nodo izquierdo; Nodo derecho;">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -69,12 +69,12 @@
                   </TextFlow>
                   <TextFlow styleClass="text">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Son referencias a otros nodos. Permiten establecer las conexiones hacia el hijo izquierdo y el hijo derecho, formando así un árbol binario." />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Son referencias a otros nodos. Permiten establecer las conexiones hacia el hijo izquierdo y el hijo derecho, formando así un árbol binario." />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="3. public Nodo(int valor)">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="3. public Nodo(int valor)">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -83,12 +83,12 @@
                   </TextFlow>
                   <TextFlow styleClass="text">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Es el constructor que permite crear un nodo con un valor específico." />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Es el constructor que permite crear un nodo con un valor específico." />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="4. Nodo raiz = new Nodo(10);">
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="4. Nodo raiz = new Nodo(10);">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                            </font>
@@ -97,7 +97,7 @@
                   </TextFlow>
                   <TextFlow styleClass="text">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crea el nodo raíz del árbol con valor 10." />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Crea el nodo raíz del árbol con valor 10." />
                      </children>
                   </TextFlow>
                   <TextFlow styleClass="simple-code">

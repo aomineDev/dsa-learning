@@ -8,8 +8,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel3Quizz1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel3Quizz1Controller">
    <children>
       <VBox layoutX="234.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -25,13 +26,17 @@
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="ALWAYS">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Al insertar un nuevo nodo en un árbol binario de búsqueda, &#10;¿qué condición se evalúa para decidir si debe ir a la &#10;izquierda del nodo actual?" textAlignment="CENTER" />
+                  <TextFlow textAlignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Al insertar un nuevo nodo en un árbol binario de búsqueda, &#10;¿qué condición se evalúa para decidir si debe ir a la &#10;izquierda del nodo actual?" textAlignment="CENTER" />
+                     </children>
+                  </TextFlow>
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="A) Si el valor es mayor o igual que el nodo actual." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Si el valor es distinto al del nodo actual." />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Si el valor es menor que el del nodo actual." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) Si el valor ya existe en otro nivel del árbol." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="500.0" styleClass="btn-quizz" text="A) Si el valor es mayor o igual que el nodo actual." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="500.0" styleClass="btn-quizz" text="B) Si el valor es distinto al del nodo actual." />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="500.0" styleClass="btn-quizz" text="C) Si el valor es menor que el del nodo actual." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="500.0" styleClass="btn-quizz" text="D) Si el valor ya existe en otro nivel del árbol." />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">
