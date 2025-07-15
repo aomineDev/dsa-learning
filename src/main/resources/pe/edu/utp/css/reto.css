@@ -37,6 +37,10 @@
   -fx-text-fill: #24df88;
 }
 
+.reto-text-field.reto-text-field--success:disabled {
+  -fx-opacity: 1.0;
+}
+
 .reto-btn {
   -fx-background-color: transparent;
   -fx-background-radius: 10;

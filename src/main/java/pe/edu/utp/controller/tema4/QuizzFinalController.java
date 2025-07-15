@@ -3,10 +3,12 @@ package pe.edu.utp.controller.tema4;
 import java.io.IOException;
 
 import javafx.animation.FadeTransition;
+import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -15,7 +17,9 @@ import javafx.util.Duration;
 import pe.edu.utp.App;
 
 public class QuizzFinalController {
+  private TranslateTransition transition;
   private int points;
+
   @FXML
   private TextField answer1;
 
@@ -35,7 +39,14 @@ public class QuizzFinalController {
   private WebView code;
 
   @FXML
+  private ImageView auto;
+
+  @FXML
   void initialize() {
+    transition = new TranslateTransition();
+    transition.setNode(auto);
+    transition.setDuration(Duration.seconds(1));
+
     code.getEngine()
         .load(getClass().getResource("/pe/edu/utp/html/tema4/qf.html").toExternalForm());
   }
@@ -60,6 +71,9 @@ public class QuizzFinalController {
       btn.getStyleClass().add("reto-btn--success");
       disableAllBtns();
       points++;
+      transition.setByY(-200);
+      transition.play();
+
       handleWin();
     } else {
       btn.getStyleClass().add("reto-btn--error");
@@ -75,8 +89,11 @@ public class QuizzFinalController {
     if (textField.getText().equals(answer)) {
       textField.getStyleClass().add("reto-text-field--success");
       textField.setEditable(false);
+      textField.setDisable(true);
       points++;
       handleWin();
+      transition.setByY(-200);
+      transition.play();
     }
   }
 

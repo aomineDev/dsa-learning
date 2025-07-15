@@ -9,7 +9,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
@@ -62,12 +61,16 @@
                         </VBox>
                      </content>
                   </ScrollPane>
-                  <Pane>
+                  <AnchorPane>
                      <children>
-                        <WebView fx:id="code" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="600.0" />
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="201.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" />
+                        <WebView fx:id="code" minHeight="-Infinity" minWidth="-1.0" prefHeight="-1.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <ImageView fx:id="auto" fitHeight="150.0" fitWidth="200.0" layoutX="261.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0">
+                           <image>
+                              <Image url="@../../image/auto.png" />
+                           </image>
+                        </ImageView>
                      </children>
-                  </Pane>
+                  </AnchorPane>
                </children>
             </HBox>
             <StackPane fx:id="modal" prefHeight="150.0" prefWidth="200.0" visible="false">
