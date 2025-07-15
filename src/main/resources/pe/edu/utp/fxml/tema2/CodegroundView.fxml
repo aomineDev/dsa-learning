@@ -86,21 +86,21 @@
                      <content>
                         <VBox prefHeight="200.0" prefWidth="100.0" styleClass="panel-content">
                            <children>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Buscar la primera diferencia y retornarla" />
                                  </children>
                               </TextFlow>
                               <VBox spacing="20.0">
                                  <children>
-                                    <TextFlow>
+                                    <TextFlow cache="true">
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dado dos arreglos de enteros a y b, encuentra el índice del primer elemento diferente entre ellos. Si los arreglos son iguales hasta donde ambos tengan elementos, pero uno es más largo que el otro, devuelve el índice donde termina el arreglo más corto. " />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dado dos arreglos de enteros a y b, encuentra el índice del primer elemento diferente entre ellos. Si los arreglos son iguales hasta donde ambos tengan elementos, pero uno es más largo que el otro, devuelve el índice donde termina el arreglo más corto. " />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
                                        <children>
-                                          <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si son completamente iguales en tamaño y contenido, devuelve -1." />
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si son completamente iguales en tamaño y contenido, devuelve -1." />
                                        </children>
                                        <padding>
                                           <Insets left="20.0" />
@@ -108,12 +108,12 @@
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 1:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
@@ -147,12 +147,12 @@
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
                                  </children>
                               </TextFlow>
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>
@@ -186,13 +186,13 @@
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow>
+                              <TextFlow cache="true">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 2:" />
                                  </children>
                               </TextFlow>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Ejemplo 3:" />
-                              <VBox spacing="10.0">
+                              <VBox cache="true" spacing="10.0">
                                  <children>
                                     <TextFlow>
                                        <children>

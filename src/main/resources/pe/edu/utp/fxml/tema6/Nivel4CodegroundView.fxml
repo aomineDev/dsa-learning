@@ -87,10 +87,14 @@
                         <VBox prefHeight="200.0" prefWidth="100.0" styleClass="panel-content">
                            <children>
                               <TextFlow />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Convertir un número binario de una lista enlazada a un entero" />
                               <TextFlow>
                                  <children>
-                                    <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dado el encabezado, que es un nodo de referencia de una lista enlazada simple. El valor de cada nodo de la lista enlazada es 0 o 1. La lista enlazada contiene la representación binaria de un número.&#10;Devuelve el valor decimal del número en la lista enlazada.&#10;El bit más significativo se encuentra en el encabezado de la lista enlazada." />
+                                    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Convertir un número binario de una lista enlazada a un entero" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow>
+                                 <children>
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Dado el encabezado, que es un nodo de referencia de una lista enlazada simple. El valor de cada nodo de la lista enlazada es 0 o 1. La lista enlazada contiene la representación binaria de un número.&#10;Devuelve el valor decimal del número en la lista enlazada.&#10;El bit más significativo se encuentra en el encabezado de la lista enlazada." />
                                  </children>
                               </TextFlow>
                               <TextFlow />
@@ -148,13 +152,13 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="caso 2" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: 0" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="caso 2" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Salida: 0" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />

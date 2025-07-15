@@ -10,6 +10,8 @@ import pe.edu.utp.App;
 import pe.edu.utp.util.Quizz;
 
 public class Nivel3Quizz1Controller {
+    @FXML
+    private VBox btnContainer;
 
     @FXML
     private Button correct;
@@ -18,16 +20,17 @@ public class Nivel3Quizz1Controller {
     private Button nextBtn;
 
     @FXML
-    private VBox btnContainer;
-
-    @FXML
     void initialize() {
 
     }
 
     @FXML
+    void handleOptionBtnClick(ActionEvent event) {
+        Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
+    }
+
     void handleGoBackBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("HomeView");
+        App.setRoot("tema3/Nivel3View");
     }
 
     @FXML
@@ -35,8 +38,4 @@ public class Nivel3Quizz1Controller {
         App.setRoot("tema6/Nivel4CodegroundView");
     }
 
-    @FXML
-    void handleOptionBtnClick(ActionEvent event) {
-        Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
-    }
 }

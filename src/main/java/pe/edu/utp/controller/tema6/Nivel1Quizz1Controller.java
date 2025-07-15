@@ -2,7 +2,6 @@ package pe.edu.utp.controller.tema6;
 
 import java.io.IOException;
 
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,7 +10,6 @@ import pe.edu.utp.App;
 import pe.edu.utp.util.Quizz;
 
 public class Nivel1Quizz1Controller {
-
     @FXML
     private Button correct;
 

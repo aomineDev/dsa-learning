@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
@@ -26,7 +27,11 @@
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="ALWAYS">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Pregunta" />
+                  <TextFlow textAlignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Titulo" />
+                     </children>
+                  </TextFlow>
                   <VBox prefWidth="100.0" styleClass="list">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• 1" />

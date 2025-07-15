@@ -33,9 +33,13 @@ Text {
 }
 
 .list {
-  -fx-padding: 0 0 0 20;
+  -fx-padding: 0 0 0 12;
+  -fx-spacing: 6;
 }
 
+.list .list__subtitle {
+  -fx-font-weight: bold;
+}
 
 .btn__go-back__container {
   -fx-alignment: center-left;
