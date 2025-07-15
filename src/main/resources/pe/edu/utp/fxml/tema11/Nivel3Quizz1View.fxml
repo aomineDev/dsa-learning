@@ -28,7 +28,7 @@
                <children>
                   <VBox prefWidth="100.0" styleClass="list">
                      <children>
-                        <TextFlow>
+                        <TextFlow textAlignment="CENTER">
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="¿Cómo se realiza la búsqueda en un árbol binario no ordenado?" />
                            </children>
