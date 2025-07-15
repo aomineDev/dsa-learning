@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel1Quizz1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema12.Nivel1Quizz1Controller">
    <children>
       <VBox layoutX="234.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -29,10 +29,10 @@
                   <VBox prefWidth="100.0" styleClass="list" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="A) El valor se coloca siempre en el centro." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Se reemplaza el nodo actual si ya existe un valor." textAlignment="CENTER" wrapText="true" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) El valor se compara con los nodos hasta encontrar una posición donde no haya nodo." textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) El valor se ignora si ya hay muchos elementos." textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="600.0" styleClass="btn-quizz" text="A) El valor se coloca siempre en el centro." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="600.0" styleClass="btn-quizz" text="B) Se reemplaza el nodo actual si ya existe un valor." textAlignment="CENTER" wrapText="true" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="600.0" styleClass="btn-quizz" text="C) El valor se compara con los nodos hasta encontrar una posición donde no haya nodo." textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="600.0" styleClass="btn-quizz" text="D) El valor se ignora si ya hay muchos elementos." textAlignment="CENTER" wrapText="true" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

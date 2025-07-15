@@ -137,7 +137,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <WebView fx:id="code1" minHeight="200.0" prefHeight="263.0" prefWidth="558.0" />
+                  <WebView fx:id="code1" minHeight="180.0" prefHeight="0.0" prefWidth="558.0" />
                   <HBox alignment="CENTER">
                      <children>
                         <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleActionBtn" styleClass="btn-next" text="Continuar">

@@ -7,8 +7,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.web.WebView;
 import pe.edu.utp.App;
+import pe.edu.utp.util.Nivel;
 
 public class Nivel3Controller {
+  private String tema;
+  private int nivel;
   @FXML
   private WebView code1;
 
@@ -23,19 +26,21 @@ public class Nivel3Controller {
 
   @FXML
   void initialize() {
-    code1.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema5/t5n3_1.html").toExternalForm());
-    code2.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema5/t5n3_2.html").toExternalForm());
-    code3.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema5/t5n3_3.html").toExternalForm());
+    tema = "tema" + 5;
+    nivel = 3;
 
-    nivelSelector.getItems().addAll("nivel 1", "nivel 2", "nivel 3", "nivel 4");
+    Nivel n = new Nivel(tema, nivel);
 
-    nivelSelector.getSelectionModel().select(2);
+    n.setCodeView(code1, 1);
+    n.setCodeView(code2, 2);
+    n.setCodeView(code3, 3);
 
+    n.setNivelItems(nivelSelector, 4);
   }
 
   @FXML
   void handleContinueBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema5/Nivel3Quizz1View");
+    App.setRoot(tema + "/Nivel3Quizz1View");
   }
 
   @FXML
@@ -46,6 +51,6 @@ public class Nivel3Controller {
   @FXML
   void handleNivelSelectorClick(ActionEvent event) throws IOException {
     String nivel = nivelSelector.getSelectionModel().getSelectedIndex() + 1 + "";
-    App.setRoot("tema5/Nivel" + nivel + "View");
+    App.setRoot(tema + "/Nivel" + nivel + "View");
   }
 }

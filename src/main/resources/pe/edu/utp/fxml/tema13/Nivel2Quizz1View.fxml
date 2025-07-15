@@ -8,8 +8,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel2Quizz1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema13.Nivel2Quizz1Controller">
    <children>
       <VBox layoutX="234.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -25,13 +26,17 @@
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="ALWAYS">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="En un árbol binario, ¿cuál de las siguientes afirmaciones &#10;es correcta?" textAlignment="CENTER" />
+                  <TextFlow textAlignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="En un árbol binario, ¿cuál de las siguientes afirmaciones &#10;es correcta?" textAlignment="CENTER" />
+                     </children>
+                  </TextFlow>
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="517.0" styleClass="btn-quizz" text="A) Todos los nodos deben tener obligatoriamente dos hijos." />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Un nodo puede tener como máximo dos hijos: izquierdo y derecho." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Solo el nodo raíz puede tener dos hijos." />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) Los árboles binarios no permiten nodos sin hijos." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="579.0" styleClass="btn-quizz" text="A) Todos los nodos deben tener obligatoriamente dos hijos." />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="579.0" styleClass="btn-quizz" text="B) Un nodo puede tener como máximo dos hijos: izquierdo y derecho." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="579.0" styleClass="btn-quizz" text="C) Solo el nodo raíz puede tener dos hijos." />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefWidth="579.0" styleClass="btn-quizz" text="D) Los árboles binarios no permiten nodos sin hijos." />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

@@ -12,7 +12,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel1Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -35,59 +35,59 @@
                   </HBox>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Que significa insertar un nodo ?" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Que significa insertar un nodo ?" />
                      </children>
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La inserción es el proceso de agregar un nuevo nodo al árbol binario, respetando la regla de que cada nodo puede tener como máximo dos hijos. El primer nodo que se inserta en un árbol binario es conocido como la raíz. A partir de allí, se pueden insertar nuevos nodos como hijos izquierdos o derechos de cualquier nodo existente" />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La inserción es el proceso de agregar un nuevo nodo al árbol binario, respetando la regla de que cada nodo puede tener como máximo dos hijos. El primer nodo que se inserta en un árbol binario es conocido como la raíz. A partir de allí, se pueden insertar nuevos nodos como hijos izquierdos o derechos de cualquier nodo existente" />
                      </children>
                   </TextFlow>
                   <TextFlow prefHeight="32.0" prefWidth="197.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Insertar en la raiz" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Insertar en la raiz" />
                      </children>
                   </TextFlow>
                   <VBox prefWidth="100.0" styleClass="list">
                      <children>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Evaluas que no exista otra raíz dentro del arbol" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Evaluas que no exista otra raíz dentro del arbol" />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Creas un nodo que almacena la raiz" />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Creas un nodo que almacena la raiz" />
                            </children>
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code1" minHeight="145.0" prefHeight="145.0" prefWidth="588.0" />
+                  <WebView fx:id="code1" cache="true" minHeight="145.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Insertar al lado izquierdo" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Insertar al lado izquierdo" />
                      </children>
                   </TextFlow>
                   <VBox prefHeight="56.0" prefWidth="558.0">
                      <children>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Revisa si el espacio del lado izquierdo del nodo está libre." />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Revisa si el espacio del lado izquierdo del nodo está libre." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si está libre, pone allí un nuevo nodo con el valor que le pasamos." />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si está libre, pone allí un nuevo nodo con el valor que le pasamos." />
                            </children>
                         </TextFlow>
                         <TextFlow>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Si ya hay algo, muestra un mensaje diciendo que ese lugar ya está ocupado." />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Si ya hay algo, muestra un mensaje diciendo que ese lugar ya está ocupado." />
                            </children>
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code2" minHeight="145.0" prefHeight="145.0" prefWidth="558.0" />
+                  <WebView fx:id="code2" cache="true" minHeight="145.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Insertar al lado derecho" />
@@ -112,7 +112,7 @@
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code3" minHeight="145.0" prefHeight="145.0" prefWidth="558.0" />
+                  <WebView fx:id="code3" cache="true" minHeight="145.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <VBox styleClass="list" />
                   <VBox prefWidth="100.0" styleClass="note-box">
                      <children>

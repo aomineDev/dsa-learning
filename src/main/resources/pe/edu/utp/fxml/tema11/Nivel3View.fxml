@@ -12,7 +12,7 @@
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel3Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema11.Nivel3Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -72,7 +72,7 @@
                         </TextFlow>
                      </children>
                   </VBox>
-                  <WebView fx:id="code1" minHeight="230.0" prefHeight="230.0" prefWidth="558.0" />
+                  <WebView fx:id="code1" cache="true" minHeight="200.0" prefHeight="-1.0" prefWidth="-1.0" />
                   <VBox styleClass="list" />
                   <VBox prefWidth="100.0" styleClass="note-box">
                      <children>

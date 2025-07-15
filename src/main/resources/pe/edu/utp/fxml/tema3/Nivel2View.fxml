@@ -96,7 +96,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <WebView fx:id="code1" minHeight="103.0" prefHeight="103.0" prefWidth="546.0" />
+                  <WebView fx:id="code1" minHeight="-1.0" prefHeight="70.0" prefWidth="546.0" />
                   <TextFlow>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Luego, se cuenta cuántos ceros contiene y se evalúa el porcentaje:">
@@ -106,7 +106,7 @@
                         </Text>
                      </children>
                   </TextFlow>
-                  <WebView fx:id="code2" minHeight="250.0" prefHeight="263.0" prefWidth="558.0" />
+                  <WebView fx:id="code2" minHeight="200.0" prefHeight="220.0" prefWidth="558.0" />
                   <HBox alignment="CENTER">
                      <children>
                         <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleActionBtn" styleClass="btn-next" text="Continuar">

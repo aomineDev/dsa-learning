@@ -26,7 +26,7 @@
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="SOMETIMES">
                <children>
-                  <TextFlow>
+                  <TextFlow textAlignment="CENTER">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Completa el siguiente metodo, para insertar un valor numerico en la raiz del arbol" />
                      </children>
