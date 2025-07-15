@@ -36,7 +36,7 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="¿Qué significa insertar?" />
                   <TextFlow prefWidth="200.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insertar un nodo significa añadir un nuevo elemento a la lista, actualizando los punteros para que la cadena de nodos siga conectada correctamente." />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Insertar un nodo significa añadir un nuevo elemento a la lista, actualizando los punteros para que la cadena de nodos siga conectada correctamente." />
                      </children>
                   </TextFlow>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Insertar al inicio" />
