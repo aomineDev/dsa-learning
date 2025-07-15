@@ -233,7 +233,7 @@
                                              <children>
                                                 <VBox>
                                                    <children>
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: [5,3,6,2,4,nulo,7]" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: [5,3,6,2,4,null,7]" />
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="clave: 3" />
                                                    </children>
                                                 </VBox>
@@ -242,13 +242,13 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text fx:id="resultCase1" strokeType="OUTSIDE" strokeWidth="0.0" text="[5,4,6,2,nulo,nulo,7]" />
+                                                <Text fx:id="resultCase1" strokeType="OUTSIDE" strokeWidth="0.0" text="--" />
                                              </children>
                                           </TextFlow>
                                        </children>
@@ -260,7 +260,7 @@
                                              <children>
                                                 <VBox>
                                                    <children>
-                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: [5,3,6,2,4,nulo,7]" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada: [5,3,6]" />
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="clave: 0" />
                                                    </children>
                                                 </VBox>
@@ -269,7 +269,7 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="[5,3,6,2,4,nulo,7]" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
