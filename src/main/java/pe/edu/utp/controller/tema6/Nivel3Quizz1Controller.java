@@ -29,6 +29,7 @@ public class Nivel3Quizz1Controller {
         Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
     }
 
+    @FXML
     void handleGoBackBtnClick(ActionEvent event) throws IOException {
         App.setRoot("tema3/Nivel3View");
     }
