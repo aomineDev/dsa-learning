@@ -1,4 +1,4 @@
-package pe.edu.utp.controller.tema12;
+package pe.edu.utp.controller.tema3;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -17,8 +17,10 @@ import pe.edu.utp.util.Codeground;
 
 public class CodegroundController {
   private Codeground codeground;
-  private Object[][] testCase1 = { { "5,3,6,2,4,nulo,7", "a" }, { 7 } };
-  private Object[][] testCase2 = { { "5,3,6,2,4,nulo,7", "c" }, { 3 } };
+  private Object[][] testCase1 = {
+      { "white", "Q....... ........ ........ ........ ........ ........ ........ ........" }, { 21 } };
+  private Object[][] testCase2 = {
+      { "black", "........ ........ ...w.... w....b.w ...b.... b..Q.w.w ...w.... ........" }, { 13 } };
 
   @FXML
   private Button btnCase1;
@@ -58,8 +60,8 @@ public class CodegroundController {
 
   @FXML
   void initialize() {
-    int tema = 12;
-    codeground = new Codeground(new Class[] { String.class, String.class} );
+    int tema = 3;
+    codeground = new Codeground(new Class[] { String.class, String.class });
 
     code.getEngine()
         .load(getClass().getResource("/pe/edu/utp/monaco/tema" + tema + "/codeground.html").toExternalForm());
@@ -67,7 +69,7 @@ public class CodegroundController {
 
   @FXML
   void handleContinueBtnClick(ActionEvent event) throws IOException {
-    App.setRoot("tema13/Nivel1View");
+    App.setRoot("");
   }
 
   @FXML

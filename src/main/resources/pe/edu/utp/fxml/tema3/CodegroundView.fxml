@@ -15,24 +15,23 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema7.CodegroundController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="codeground-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema3.CodegroundController">
    <children>
       <StackPane layoutX="407.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <GridPane hgap="20.0" vgap="20.0">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               </rowConstraints>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0000305175781" minWidth="10.0" prefWidth="640.3333740234375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.3333129882812" minWidth="10.0" prefWidth="639.6666259765625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
                <children>
                   <AnchorPane style="-fx-background-color: transparent;">
                      <children>
@@ -82,97 +81,82 @@
                         <String fx:value="panel-content" />
                      </styleClass>
                   </VBox>
-                  <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="panel" GridPane.columnIndex="1">
+                  <ScrollPane cache="true" fitToHeight="true" fitToWidth="true" styleClass="panel" GridPane.columnIndex="1">
                      <content>
                         <VBox prefHeight="200.0" prefWidth="100.0" styleClass="panel-content">
                            <children>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Puzze final" />
-                                 </children>
-                              </TextFlow>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Ronda Musical: ¡El último en pie!" />
-                              <TextFlow>
-                                 <children>
-                                    <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="En Melodinia, los niños juegan a pasar un tambor mientras suena música. Están sentados en círculo y el tambor se pasa de mano en mano. Cuando se dan un número determinado de pasos, el niño que lo tiene es eliminado del juego. El tambor sigue girando hasta que solo queda uno." />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Reyna del ajedrez" />
                                  </children>
                               </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tu reto es simular este juego utilizando una lista circular. Deberás eliminar un nodo cada cierto número de pasos hasta que solo uno permanezca." />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="El ajedrez se juega en un tablero de 8x8 compuesto por 64 casillas. En este juego, es importante controlar una gran cantidad de estas casillas para obtener ventaja sobre el oponente. " />
                                  </children>
                               </TextFlow>
                               <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 1: La ronda rapida" />
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="La pieza de ajedrez que puede controlar más casillas es la reina. Puede moverse en cualquier casilla vertical, horizontal y diagonalmente." />
+                                 </children>
+                              </TextFlow>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Tu misión" />
+                              <TextFlow>
+                                 <children>
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear un programa capaz de calcular el número de casillas controladas por la reina en una posición específica." />
                                  </children>
                               </TextFlow>
                               <VBox prefWidth="100.0" styleClass="list">
                                  <children>
                                     <TextFlow>
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• 5 niños se sientan en círculo y el tambor se pasa cada 3 pasos. El juego comienza con el niño número 1. Tu trabajo es simular la ronda y determinar qué niño queda al final." />
-                                       </children>
-                                    </TextFlow>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Crear una lista circular con los niños del 1 al 5." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Empezar desde el nodo 1." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Eliminar un niño cada 3 pasos." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Continuar hasta que quede solo uno." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Retornar el numero del niño finalista." />
-                                 </children>
-                              </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Caso 2: Ronda larga y rápida" />
-                              <VBox prefWidth="100.0" styleClass="list">
-                                 <children>
-                                    <TextFlow>
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  7 niños se sientan en círculo. Esta vez, el tambor se pasa cada 2 pasos. El objetivo sigue siendo encontrar quién sobrevive al final." />
-                                       </children>
-                                    </TextFlow>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Crear la lista circular con los niños del 1 al 7." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Empezar en el nodo 1." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Eliminar un niño cada 2 pasos." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Continuar hasta que quede solo uno." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Retornar el numero del niño finalista." />
-                                 </children>
-                              </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reglas" />
-                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="list">
-                                 <children>
-                                    <TextFlow>
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Crea tu propia clase de lista circular enlazada desde cero." />
-                                       </children>
-                                    </TextFlow>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• El tambor se pasa una cantidad de veces igual al número de pasos recibido como entrada." />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Se elimina al niño (nodo) en ese paso y el juego continúa desde el siguiente." />
-                                 </children>
-                              </VBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Reestricciones" />
-                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="list">
-                                 <children>
-                                    <TextFlow>
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Debes retornar únicamente el valor del último niño que queda." />
+                                          <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Una casilla que contiene una pieza del mismo color no se considera controlada." />
                                        </children>
                                     </TextFlow>
                                     <TextFlow>
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• No se permite usar ArrayList, List ni otras colecciones de Java." />
+                                          <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• Sin embargo, una casilla que contiene una pieza del color opuesto sí se considera controlada." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="• La casilla donde se encuentra la reina no se contabiliza." />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Una casilla se considera controlada cuando la reina puede moverse a ella." />
                                        </children>
                                     </TextFlow>
                                  </children>
                               </VBox>
-                              <TextFlow styleClass="simple-code" visible="false">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Entrada" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="reyna" />
+                              <TextFlow>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="simple-code__text" text="codigo simple">
-                                       <font>
-                                          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
-                                       </font>
-                                    </Text>
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text=" El color de la reina (white o black)" />
                                  </children>
                               </TextFlow>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-4" text="Codigo" visible="false" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="tablero" />
+                              <TextFlow>
+                                 <children>
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una cadena de 8 caracteres separados por un espacio que describe el tablero de ajedrez." />
+                                 </children>
+                              </TextFlow>
+                              <VBox prefWidth="100.0" styleClass="list">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=". = Casilla vacía" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Q = La reina" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="w = Pieza blanca" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b = Pieza negra" />
+                                 </children>
+                              </VBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Resultado" />
+                              <TextFlow>
+                                 <children>
+                                    <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Un entero que corresponde al número de casillas controladas por la reina" />
+                                 </children>
+                              </TextFlow>
                            </children>
                         </VBox>
                      </content>
@@ -190,23 +174,18 @@
                               </HBox>
                               <StackPane prefHeight="150.0" prefWidth="200.0">
                                  <children>
-                                    <VBox fx:id="case1" prefHeight="200.0" prefWidth="100.0" styleClass="test-wrapper">
+                                    <VBox fx:id="case1" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" styleClass="test-wrapper">
                                        <children>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5 Niños" />
-                                             </children>
-                                          </TextFlow>
-                                          <TextFlow styleClass="test-content">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3 Pasos" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="reyna: &quot;white&quot;&#10;tablero: &quot;&#10;Q.......&#10;........&#10;........&#10;........&#10;........&#10;........&#10;........&#10;........&#10;&quot;" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4 " />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="21" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
@@ -222,18 +201,13 @@
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Datos de entrada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7 Niños" />
-                                             </children>
-                                          </TextFlow>
-                                          <TextFlow styleClass="test-content">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2 Pasos" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="reyna: &quot;black&quot;&#10;tablero: &quot;&#10;........&#10;........&#10;...w....&#10;w....b.w&#10;...b....&#10;b..Q.w.w&#10;...w....&#10;........&#10;&quot;" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida Esperada:" />
                                           <TextFlow styleClass="test-content">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13" />
                                              </children>
                                           </TextFlow>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Salida obtenida:" />
@@ -267,7 +241,7 @@
                                     <String fx:value="modal-title" />
                                  </styleClass>
                               </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haz  superado con exito este reto y superaste los 2 casos. Felicidades!" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haz  superado co exito este reto y superaste los 2 casos. Felicidades!" />
                               <ImageView pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../img/codeground/success.png" />

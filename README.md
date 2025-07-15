@@ -13,30 +13,3 @@ M15.5294 0.409577C15.819 0.682827 15.9881 1.05968 15.9994 1.45728C16.0107 1.8548
 ### 
 M50 50C50 56.775 38.5531 62.5 25 62.5C11.4469 62.5 0 56.775 0 50V40.625C0 47.4 11.4469 53.125 25 53.125C38.5531 53.125 50 47.4 50 40.625V50ZM50 34.375C50 41.15 38.5531 46.875 25 46.875C11.4469 46.875 0 41.15 0 34.375V25C0 31.775 11.4469 37.5 25 37.5C38.5531 37.5 50 31.775 50 25V34.375ZM25 0C38.5531 0 50 5.725 50 12.5V18.75C50 25.525 38.5531 31.25 25 31.25C11.4469 31.25 0 25.525 0 18.75V12.5C0 5.725 11.4469 0 25 0Z
 
-Eres el encargado de un pequeño almacén de 10 cajas, donde todas las cajas están alineadas en una sola fila: un estante recto. Cada caja contiene un número que representa el peso de un paquete almacenado, el peso maximo por caja es de 100kg.
-
-Al iniciar el dia te dan la lista de pesos de cada caja del dia anterior, tambien una lista de acciones que debes realizar con las cajas:
-
-A veces llega un nuevo paquete que debe insertarse en una caja específica, agregando su peso al total de la caja.
-
-Otras veces, el peso de un paquete debe ser corregido (actualización).
-
-Y en ocasiones, se retira un paquete y debes eliminarlo, dejando el peso de la caja en 0.
-
-Una vez que completes todas las órdenes, debes calcular la suma total del peso de todos los paquetes restantes para llevar un reporte de inventario final.
-
-Restricciones
-Si se intenta agregar un nuevo articulo a una caja pero esta supera el liminte, el articulo se descartara.
-
-Parametros
-pesosIniciales
-valores separados por coma → "peso1,peso2...,etc"
-comandos comandos separados por espacio "comando,indice,peso comando,indice"
-Si el comando es eliminar no tendra valor
-
-Salida
-La suma de todos los pesos despues de ejecutar los comandos
-
-
-
-

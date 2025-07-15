@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.utp.controller.tema6.Nivel1Quizz1Controller">
    <children>
@@ -20,19 +21,23 @@
                         <SVGPath content="M28 16C28 15.4696 27.7893 14.9609 27.4142 14.5858C27.0391 14.2107 26.5304 14 26 14H10.16L15.4133 8.74668C15.7666 8.36755 15.9589 7.86609 15.9498 7.34796C15.9407 6.82982 15.7308 6.33546 15.3643 5.96903C14.9979 5.60259 14.5035 5.39269 13.9854 5.38355C13.4673 5.37441 12.9658 5.56674 12.5867 5.92002L3.92 14.5867C3.54546 14.9617 3.33509 15.47 3.33509 16C3.33509 16.53 3.54546 17.0384 3.92 17.4134L12.5867 26.08C12.9658 26.4333 13.4673 26.6256 13.9854 26.6165C14.5035 26.6073 14.9979 26.3974 15.3643 26.031C15.7308 25.6646 15.9407 25.1702 15.9498 24.6521C15.9589 24.1339 15.7666 23.6325 15.4133 23.2534L10.16 18H26C26.5304 18 27.0391 17.7893 27.4142 17.4142C27.7893 17.0392 28 16.5305 28 16Z" styleClass="btn__go-back__icon" />
                      </graphic>
                   </Button>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Quizz " />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Quizz 1" />
                </children>
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="ALWAYS">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="¿Qué se necesita para recorrer una lista enlazada simple?" textAlignment="CENTER" />
+                  <TextFlow textAlignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Text" />
+                     </children>
+                  </TextFlow>
                   <VBox prefWidth="100.0" styleClass="list" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Un índice como en arreglos" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Un puntero al primer nodo " textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="El valor del último nodo" textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Una estructura tipo pila" textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="511.0" styleClass="btn-quizz" text="A) Un índice como en arreglos" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="510.0" styleClass="btn-quizz" text="B) Un puntero al primer nodo " />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="500.0" styleClass="btn-quizz" text="C) El valor del último nodo" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="505.0" styleClass="btn-quizz" text="D) Una estructura tipo pila" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

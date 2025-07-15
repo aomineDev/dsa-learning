@@ -257,7 +257,7 @@
                                     <String fx:value="modal-title" />
                                  </styleClass>
                               </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haz  superado co exito este reto y superaste los 2 casos. Felicidades!" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haz  superado con exito este reto y superaste los 2 casos. Felicidades!" />
                               <ImageView pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../img/codeground/success.png" />

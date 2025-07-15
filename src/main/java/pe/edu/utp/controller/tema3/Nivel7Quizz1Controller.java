@@ -32,7 +32,7 @@ public class Nivel7Quizz1Controller {
 
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
-        App.setRoot("tema3/");
+        App.setRoot("tema7/CodegroundView");
     }
 
     @FXML

@@ -20,6 +20,16 @@ public class Nivel3Quizz1Controller {
     private Button nextBtn;
 
     @FXML
+    void initialize() {
+
+    }
+
+    @FXML
+    void handleOptionBtnClick(ActionEvent event) {
+        Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
+    }
+
+    @FXML
     void handleGoBackBtnClick(ActionEvent event) throws IOException {
         App.setRoot("tema3/Nivel3View");
     }
@@ -27,11 +37,6 @@ public class Nivel3Quizz1Controller {
     @FXML
     void handleNextBtnClick(ActionEvent event) throws IOException {
         App.setRoot("tema6/Nivel4CodegroundView");
-    }
-
-    @FXML
-    void handleOptionBtnClick(ActionEvent event) {
-        Quizz.handleQUizz1Buttons(event, btnContainer, nextBtn);
     }
 
 }
