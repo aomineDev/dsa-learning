@@ -37,10 +37,10 @@
                   </VBox>
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="511.0" styleClass="btn-quizz" text="Buscando solo en el subárbol izquierdo" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="510.0" styleClass="btn-quizz" text="Siguiendo un orden ascendente desde la raíz" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="502.0" styleClass="btn-quizz" text="Aplicando una fórmula para ubicar directamente el valor" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="505.0" styleClass="btn-quizz" text="Recorriendo nodo por nodo hasta encontrar el valor" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="511.0" styleClass="btn-quizz" text="A) Buscando solo en el subárbol izquierdo" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="510.0" styleClass="btn-quizz" text="B) Siguiendo un orden ascendente desde la raíz" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="502.0" styleClass="btn-quizz" text="C) Aplicando una fórmula para ubicar directamente el valor" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" prefHeight="46.0" prefWidth="505.0" styleClass="btn-quizz" text="D) Recorriendo nodo por nodo hasta encontrar el valor" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">

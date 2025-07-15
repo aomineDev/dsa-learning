@@ -29,10 +29,10 @@
                   <VBox prefWidth="100.0" styleClass="list" />
                   <VBox fx:id="btnContainer" styleClass="btn-quizz-container">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Nodo actual → Hijo izquierdo → Hijo derecho" />
-                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Hijo izquierdo → Nodo actual → Hijo derecho" textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Hijo derecho → Nodo actual → Hijo izquierdo" textAlignment="CENTER" wrapText="true" />
-                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="Nodo actual → Hijo derecho → Hijo izquierdo" textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="A) Nodo actual → Hijo izquierdo → Hijo derecho" />
+                        <Button fx:id="correct" mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="B) Hijo izquierdo → Nodo actual → Hijo derecho" textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="C) Hijo derecho → Nodo actual → Hijo izquierdo" textAlignment="CENTER" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#handleOptionBtnClick" styleClass="btn-quizz" text="D) Nodo actual → Hijo derecho → Hijo izquierdo" textAlignment="CENTER" wrapText="true" />
                      </children>
                   </VBox>
                   <Button fx:id="nextBtn" contentDisplay="RIGHT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleNextBtnClick" styleClass="btn-next" text="Continuar" visible="false">
