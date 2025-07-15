@@ -37,12 +37,12 @@
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="¿Qué es una lista enlazada?" />
                   <TextFlow>
                      <children>
-                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una lista enlazada es una colección de elementos (llamados nodos) donde cada nodo apunta al siguiente." />
+                        <Text cache="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Una lista enlazada es una colección de elementos (llamados nodos) donde cada nodo apunta al siguiente." />
                      </children>
                   </TextFlow>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A diferencia de un Array, los elementos no están uno al lado del otro en memoria. En su lugar, cada nodo contiene:" />
+                        <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="A diferencia de un Array, los elementos no están uno al lado del otro en memoria. En su lugar, cada nodo contiene:" />
                      </children>
                   </TextFlow>
                   <VBox prefWidth="100.0" styleClass="list">
@@ -87,7 +87,7 @@
                         <SVGPath content="M16.9175 1.05394C16.5212 0.65769 16.0379 0.359463 15.506 0.183021C14.9741 0.00657868 14.4084 -0.0432011 13.8538 0.0376476C13.2993 0.118496 12.7713 0.327739 12.312 0.648703C11.8526 0.969668 11.4746 1.39348 11.2079 1.88638L7.54473 8.66344L1.95515 10.8897C1.77056 10.9631 1.60708 11.0812 1.4794 11.2334C1.35172 11.3855 1.26383 11.5671 1.22364 11.7616C1.18345 11.9561 1.1922 12.1576 1.24912 12.348C1.30603 12.5383 1.40933 12.7115 1.54973 12.852L5.50082 16.8031L0.352647 21.9513L0 24L2.04871 23.6474L7.19688 18.4992L11.1456 22.4479C11.2859 22.5883 11.459 22.6917 11.6492 22.7488C11.8394 22.8059 12.0408 22.8149 12.2353 22.7749C12.4298 22.735 12.6114 22.6474 12.7637 22.5199C12.916 22.3925 13.0343 22.2293 13.1079 22.0448L15.3462 16.4505L22.1136 12.7897C22.6065 12.523 23.0303 12.145 23.3513 11.6856C23.6723 11.2263 23.8815 10.6983 23.9624 10.1438C24.0432 9.58923 23.9934 9.02348 23.817 8.4916C23.6405 7.95971 23.3423 7.47639 22.9461 7.08013L16.9175 1.05394Z" fill="#b22c2c" styleClass="note-box__icon" />
                         <TextFlow textAlignment="CENTER">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="note-box__text" text="Cuando se crea un nodo, su referencia al siguiente nodo (siguiente) apunta a null por defecto." />
+                              <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="note-box__text" text="Cuando se crea un nodo, su referencia al siguiente nodo (siguiente) apunta a null por defecto." />
                            </children>
                         </TextFlow>
                      </children>
