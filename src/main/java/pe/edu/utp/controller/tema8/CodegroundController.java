@@ -26,7 +26,7 @@ public class CodegroundController {
     @FXML
     private Button btnCase2;
 
-    // @FXML
+    @FXML
     private VBox case1;
 
     @FXML
