@@ -26,8 +26,8 @@
             </HBox>
             <VBox styleClass="quizz-type-1-container" VBox.vgrow="SOMETIMES">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Completa el siguiente codigo" />
-                  <VBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-2" text="Completa el siguiente código" />
+                  <VBox styleClass="list">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Una lista con los siguiente numeros: 12, 4, 3" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="•  Intercambiar el 12 por 1" />

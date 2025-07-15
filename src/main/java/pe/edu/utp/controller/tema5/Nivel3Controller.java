@@ -28,6 +28,9 @@ public class Nivel3Controller {
     code3.getEngine().load(getClass().getResource("/pe/edu/utp/monaco/tema5/t5n3_3.html").toExternalForm());
 
     nivelSelector.getItems().addAll("nivel 1", "nivel 2", "nivel 3", "nivel 4");
+
+    nivelSelector.getSelectionModel().select(2);
+
   }
 
   @FXML

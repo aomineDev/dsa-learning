@@ -9,7 +9,7 @@
 
 .panel-content {
   -fx-padding: 20;
-  -fx-spacing: 20;
+  -fx-spacing: 12;
 }
 
 .console-output {
