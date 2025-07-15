@@ -1,0 +1,19 @@
+ String[] partesA = a.split(",");
+    String[] partesB = b.split(",");
+
+    int minLength = Math.min(partesA.length, partesB.length);
+
+    for(
+    int i = 0;i<minLength;i++)
+    {
+        int valorA = Integer.parseInt(partesA[i].trim());
+        int valorB = Integer.parseInt(partesB[i].trim());
+
+        if (valorA != valorB) {
+            return i;
+        }
+    }if(partesA.length!=partesB.length)
+    {
+        return minLength;
+    }
+    return-1;

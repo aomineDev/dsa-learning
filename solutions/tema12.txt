@@ -1,0 +1,75 @@
+public class Ejercicio {
+    public static Integer solucion(String entrada, Integer clave) {
+   
+        class TreeNode {
+            int val;
+            TreeNode left, right;
+            TreeNode(int x) { val = x; }
+        }
+
+        if (entrada == null || entrada.isEmpty()) return null;
+
+        String[] arr = entrada.split(",");
+        if (arr[0].equals("null")) return null;
+
+        TreeNode root = new TreeNode(Integer.parseInt(arr[0]));
+
+        Queue q = new LinkedList();
+        q.offer(root);
+        int i = 1;
+
+        // Construcción del árbol
+        while (i < arr.length) {
+            TreeNode curr = (TreeNode) q.poll(); // Cast obligatorio
+            if (i < arr.length && !arr[i].equals("null")) {
+                curr.left = new TreeNode(Integer.parseInt(arr[i]));
+                q.offer(curr.left);
+            }
+            i++;
+            if (i < arr.length && !arr[i].equals("null")) {
+                curr.right = new TreeNode(Integer.parseInt(arr[i]));
+                q.offer(curr.right);
+            }
+            i++;
+        }
+
+        // Eliminar el nodo
+        int key = clave;
+        TreeNode curr = root, parent = null;
+        while (curr != null && curr.val != key) {
+            parent = curr;
+            curr = (key < curr.val) ? curr.left : curr.right;
+        }
+
+        if (curr == null) return root.val;
+
+        TreeNode replacement;
+        if (curr.left == null) {
+            replacement = curr.right;
+        } else if (curr.right == null) {
+            replacement = curr.left;
+        } else {
+            TreeNode succ = curr.right, succParent = curr;
+            while (succ.left != null) {
+                succParent = succ;
+                succ = succ.left;
+            }
+            if (succParent != curr) {
+                succParent.left = succ.right;
+                succ.right = curr.right;
+            }
+            succ.left = curr.left;
+            replacement = succ;
+        }
+
+        if (parent == null) {
+            root = replacement;
+        } else if (parent.left == curr) {
+            parent.left = replacement;
+        } else {
+            parent.right = replacement;
+        }
+
+        return root != null ? root.val : null;
+    }
+}

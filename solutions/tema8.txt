@@ -1,0 +1,33 @@
+Stack<Character> pila = new Stack<>();
+    StringBuilder cadena = new StringBuilder();
+    int i = 0;
+    boolean bandera = false;
+
+    for(;i<word.length();i++)
+    {
+
+        pila.push(word.charAt(i));
+
+        if (ch == word.charAt(i)) {
+
+            bandera = true;
+            i++;
+            break;
+
+        }
+
+    }
+
+    if(!bandera)
+    {
+        return word;
+    }
+
+    while(!pila.isEmpty())
+    {
+        cadena.append(pila.pop());
+    }
+
+    cadena.append(word.substring(i));
+
+    return cadena.toString();
